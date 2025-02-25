@@ -1,4 +1,4 @@
-import { HexKeys, HexKeysUnion } from "@/consts/foxhole";
+import { HexKeysUnion } from "@/consts/foxhole";
 
 export type TeamId = 'NONE' | 'COLONIALS' | 'WARDENS'
 
