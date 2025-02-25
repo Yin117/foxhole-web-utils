@@ -1,4 +1,4 @@
-import { ResourcesComparePage } from "@/pages/resources-compare"
+import { ResourcesComparePage } from "@/components/pages/resourcesCompare"
 
 export default function ResourcesCompare() {
   return <ResourcesComparePage/>

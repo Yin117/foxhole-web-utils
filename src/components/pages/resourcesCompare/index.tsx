@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useMemo, useState } from "react";
-import styles from './resources-compare.module.css';
+import styles from './resourcesCompare.module.css';
 import { getMapItemDetail, hexInfo, HexKeys, HexKeysUnion, warNumbers, worldExtents } from '@/consts/foxhole';
 import { getObjectEntries } from '@/helpers/typescriptHelper';
 import { MapDynamic } from '@/types/warData';
@@ -121,7 +121,7 @@ export function ResourcesComparePage() {
   // This will be made up of several components in order to simplifiy
   // the code and handle edge cases, such as if War Number picked is invalid
 
-  if (!window) {
+  if (typeof window === 'undefined') {
     return <Typography>Loading...</Typography>;
   }
 
