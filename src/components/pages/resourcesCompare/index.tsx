@@ -34,6 +34,10 @@ function refactorMapDynamicData(display: MapDynamic) { // , compare: MapDynamic 
     .filter(({ iconType }) => {
       const details = getMapItemDetail(iconType);
 
+      if (!details) {
+        return false;
+      }
+
       if (details.isUndocumented) {
         return false;
       }

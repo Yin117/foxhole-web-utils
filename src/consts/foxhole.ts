@@ -317,6 +317,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     folder: 'MapIcons',
     iconFunc: () => 'MapIconBunkerBaseTier1',
     isBunker: true,
+    isPlayerBuilt: true,
   },
   49: {
     isUndocumented: true,
@@ -324,6 +325,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     folder: 'MapIcons',
     iconFunc: () => 'MapIconBunkerBaseTier2',
     isBunker: true,
+    isPlayerBuilt: true,
   },
   50: {
     isUndocumented: true,
@@ -331,6 +333,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     folder: 'MapIcons',
     iconFunc: () => 'MapIconBunkerBaseTier3',
     isBunker: true,
+    isPlayerBuilt: true,
   },
   51: {
     name: 'Mass Production Factory',
@@ -400,6 +403,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     // iconDestroyed: 'MapIconStormCannon_DESTROYED',
     isStormCannon: true,
     isPlatform: true,
+    isPlayerBuilt: true,
     // dryingTimeMS: 1000 * 60 * 60 * 48, // 48hrs
   },
   60: {
@@ -411,6 +415,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     // iconDestroyed: 'MapIconIntelCenterEdited_DESTROYED',
     isIntelCenter: true,
     isPlatform: true,
+    isPlayerBuilt: true,
     // dryingTimeMS: 1000 * 60 * 60 * 24, // 24hrs
   },
   61: {
@@ -561,6 +566,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     name: 'Weather Station',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconWeatherStation',
+    isPlayerBuilt: true,
   },
   84: {
     isUndocumented: true,
