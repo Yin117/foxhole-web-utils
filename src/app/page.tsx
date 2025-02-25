@@ -33,7 +33,7 @@ export default function Home() {
           >
             <Image
               aria-hidden
-              src="/foxhole-web-utils/file.svg"
+              src="/foxhole-web-utils/images/file.svg"
               alt="File icon"
               width={16}
               height={16}
@@ -47,7 +47,7 @@ export default function Home() {
           >
             <Image
               aria-hidden
-              src="/foxhole-web-utils/window.svg"
+              src="/foxhole-web-utils/images/window.svg"
               alt="Window icon"
               width={16}
               height={16}
@@ -61,7 +61,7 @@ export default function Home() {
           >
             <Image
               aria-hidden
-              src="/foxhole-web-utils/globe.svg"
+              src="/foxhole-web-utils/images/globe.svg"
               alt="Globe icon"
               width={16}
               height={16}

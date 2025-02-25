@@ -1,5 +1,9 @@
-export type mapItem = {
-  teamId: 'NONE' | 'COLONIALS' | 'WARDENS',
+import { HexKeys, HexKeysUnion } from "@/consts/foxhole";
+
+export type TeamId = 'NONE' | 'COLONIALS' | 'WARDENS'
+
+export type MapItem = {
+  teamId: TeamId,
   iconType: number,
   x: number,
   y: number,
@@ -7,9 +11,9 @@ export type mapItem = {
   viewDirection?: number,
 };
 
-export type mapDynamic = {
-  mapName: string,
+export type MapDynamic = {
+  mapName: HexKeysUnion,
   regionId: number,
   scorchedVictoryTowns: number,
-  mapItems: mapItem[],
+  mapItems: MapItem[],
 }

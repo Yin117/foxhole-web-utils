@@ -18,10 +18,13 @@
     "@mui/icons-material": "^6.4.5",
     "@mui/material": "^6.4.5",
     "@mui/styled-engine-sc": "^6.4.3",
+    "konva": "^9.3.18",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "styled-components": "^6.1.15"
+    "react-konva": "^19.0.3",
+    "styled-components": "^6.1.15",
+    "use-image": "^1.1.1"
   },
   "overrides": {
     "@emotion/serialize": "1.2.0"

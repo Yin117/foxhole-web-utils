@@ -28,6 +28,12 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+
+  // https://github.com/konvajs/react-konva#usage-with-nextjs
+  webpack: config => {
+    config.externals = [...config.externals, { canvas: 'canvas' }]; // required to make Konva & react-konva work
+    return config;
+  },
 };
 
 export default nextConfig;
