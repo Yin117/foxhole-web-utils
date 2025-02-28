@@ -9,13 +9,17 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import styles from './resourcesCompare.module.css';
 import { getMapItemDetail, hexInfo, HexKeys, HexKeysUnion, warNumbers, worldExtents } from '@/consts/foxhole';
 import { getObjectEntries } from '@/helpers/typescriptHelper';
 import { MapDynamic } from '@/types/warData';
+import { useQuery } from '@tanstack/react-query';
+import { getCurrentMapDynamicForRegion } from '@/apiFunctions/foxhole/dynamicMap';
 
 // TODO: Responsive: https://konvajs.org/docs/sandbox/Responsive_Canvas.html
+
+const CURRENT_WAR = 'CurrentWar';
 
 const Region = dynamic(() => import('@/components/canvas/Region'), {
   ssr: false,
@@ -71,7 +75,7 @@ const warNumberMenuItems =
         WC{wn}
       </MenuItem>
     )
-  });
+  }).reverse();
 
 
 function NoDataBox() {
@@ -90,33 +94,63 @@ function NoDataBox() {
 
 
 export function ResourcesComparePage() {
-  const [beforeWarNumber, setBeforeWarNumber] = useState(warNumbers[0]);
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const [beforeWarNumber, setBeforeWarNumber] = useState(CURRENT_WAR);
   const [afterWarNumber, setAfterWarNumber] = useState(warNumbers[warNumbers.length - 1]);
   const [regionHex, setRegionHex] = useState<HexKeysUnion>(HexKeys.WestgateHex);
+  
 
+  const {
+    data: currentWarMapDynamicPromise,
+  } = useQuery({
+    queryKey: ['MapDynamic', regionHex],
+    queryFn: async () => {
+      return await getCurrentMapDynamicForRegion(regionHex)
+    },
+    staleTime: 1000 * 60 * 5, // 5mins
+    enabled: true,
+  });
+
+  console.log('currentWarMapDynamicPromise', currentWarMapDynamicPromise);
+
+  // World - Before 
   const worldMapDynamicDataForWarBefore = useMemo(() => {
     return getMapDynamicForWar(beforeWarNumber);
   }, [beforeWarNumber]);
 
+  // World - After
   const worldMapDynamicDataForWarAfter = useMemo(() => {
     return getMapDynamicForWar(afterWarNumber);
   }, [afterWarNumber]);
 
+  // Map Dynamic - Before
   const hexMapDynamicForWarBefore = useMemo(() => {
+    if (beforeWarNumber === CURRENT_WAR) {
+      return currentWarMapDynamicPromise?.data
+    }
     if (!worldMapDynamicDataForWarBefore) {
       return undefined;
     }
     console.log('worldMapDynamicDataForWarBefore', worldMapDynamicDataForWarBefore);
     return worldMapDynamicDataForWarBefore?.find(({ mapName }) => mapName === regionHex);
-  }, [worldMapDynamicDataForWarBefore, regionHex]);
+  }, [worldMapDynamicDataForWarBefore, regionHex, beforeWarNumber, currentWarMapDynamicPromise?.data]);
 
+
+  // Map Dynamic - After
   const hexMapDynamicForWarAfter = useMemo(() => {
+    if (afterWarNumber === CURRENT_WAR) {
+      return currentWarMapDynamicPromise?.data
+    }
     if (!worldMapDynamicDataForWarAfter) {
       return undefined;
     }
     console.log('worldMapDynamicDataForWarAfter', worldMapDynamicDataForWarAfter);
     return worldMapDynamicDataForWarAfter?.find(({ mapName }) => mapName === regionHex);
-  }, [worldMapDynamicDataForWarAfter, regionHex]);
+  }, [worldMapDynamicDataForWarAfter, regionHex, afterWarNumber, currentWarMapDynamicPromise?.data]);
 
   console.log('hexMapDynamicForWarBefore', hexMapDynamicForWarBefore);
   console.log('hexMapDynamicForWarAfter', hexMapDynamicForWarAfter);
@@ -125,12 +159,12 @@ export function ResourcesComparePage() {
   // This will be made up of several components in order to simplifiy
   // the code and handle edge cases, such as if War Number picked is invalid
 
-  if (typeof window === 'undefined') {
+  if (!isClient || typeof window === 'undefined') {
     return <Typography>Loading...</Typography>;
   }
 
   return (
-    <div className={pageStyles.page}>
+    <div id="components-pages-resourcesCompare" className={pageStyles.page}>
       <div className={styles.container}>
 
         {/* Toolbar */}
@@ -138,12 +172,15 @@ export function ResourcesComparePage() {
           <TextField
             select
             fullWidth
-            label="War Number"
+            label="War"
             value={beforeWarNumber}
             onChange={({ target: { value } }) => {
               setBeforeWarNumber(value);
             }}
           >
+            <MenuItem value={CURRENT_WAR}>
+              Current War
+            </MenuItem>
             {warNumberMenuItems}
           </TextField>
         </div>
@@ -184,12 +221,15 @@ export function ResourcesComparePage() {
           <TextField
             select
             fullWidth
-            label="War Number"
+            label="War"
             value={afterWarNumber}
             onChange={({ target: { value } }) => {
               setAfterWarNumber(value);
             }}
           >
+          <MenuItem value={CURRENT_WAR}>
+            Current War
+          </MenuItem>
             {warNumberMenuItems}
           </TextField>
         </div>
@@ -198,6 +238,7 @@ export function ResourcesComparePage() {
         <div className={styles.regionBefore}>
           {hexMapDynamicForWarBefore ?
           <Region
+            hex={regionHex}
             data={refactorMapDynamicData(hexMapDynamicForWarBefore /*, hexMapDynamicForWarAfter*/)}
             width={worldExtents.getWidthFromHeight(getRegionHeight(window))}
             height={getRegionHeight(window)}
@@ -217,6 +258,7 @@ export function ResourcesComparePage() {
         <div  className={styles.regionAfter}>
           {hexMapDynamicForWarAfter ?
           <Region
+            hex={regionHex}
             data={refactorMapDynamicData(hexMapDynamicForWarAfter /*, hexMapDynamicForWarBefore*/)}
             width={worldExtents.getWidthFromHeight(getRegionHeight(window))}
             height={getRegionHeight(window)}

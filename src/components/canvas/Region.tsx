@@ -1,4 +1,4 @@
-import { getMapItemDetail, hexInfo } from "@/consts/foxhole";
+import { getMapItemDetail, hexInfo, HexKeysUnion } from "@/consts/foxhole";
 import {
   MapDynamic,
   MapItem,
@@ -15,6 +15,7 @@ import { ImageConfig } from "konva/lib/shapes/Image";
 const iconSize = 24;
 
 type PropsRegion = {
+  hex: HexKeysUnion,
   width?: number,
   height?: number
   data: MapDynamic & {
@@ -37,7 +38,7 @@ function MapItemImage({ mapItem, iconSize, hexWidth, hexHeight }: { mapItem: Map
     return null;
   }
 
-  console.log(`Render ${detail.iconFunc(mapItem.teamId)}`, mapItem);
+  // console.log(`Render ${detail.iconFunc(mapItem.teamId)}`, mapItem);
   
   // TODO: shift icons by 50% their width and
 
@@ -85,13 +86,14 @@ function MapItemImages({ mapItems, iconSize, hexWidth, hexHeight }: { mapItems: 
 
 export default function Region(props: PropsRegion) {
   const {
+    hex,
     data,
     width = 500,
     height = 500,
   } = props;
   
   console.log('Region', { data });
-  const [image] = useImage(`/foxhole-web-utils/images/Maps/${hexInfo[data.mapName]?.icon}.png`);
+  const [image] = useImage(`/foxhole-web-utils/images/Maps/${hexInfo[hex]?.icon}.png`);
   
   return (
     <Stage width={width} height={height} style={{ border: '1px solid gainsboro' }}>

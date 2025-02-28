@@ -1,24 +1,41 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Box, Typography } from "@mui/material";
-import Link from "next/link";
+import { HomeNavCard } from "@/components/homeNavCard";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <Typography
-          variant="h1"
+          variant="h3"
         >
-          Foxhole Web Utils
+          Welcome,
         </Typography>
 
-        <Box>
-          <Link
-            href={`/tools/resources-compare`}
-          >
-            Compare War Resource Layouts
-          </Link>
+        <Typography>
+          Below are cards that will take you to various areas of the app, at the moment there
+          {' '}is one feature, but more may turn up on request to
+          {' '}<span style={{ fontWeight: 'bold' }}>Yinoguns</span> on Discord, or
+          {' '}<a className={styles.hyperlink} href="https://github.com/Yin117/foxhole-web-utils/tree/main" target="_blank">clone the repo</a> and submit your own Pull Request with a new Feature or small changes!
+          {' '}(Subject to Approval)
+        </Typography>
+
+        <Box
+          display="flex"
+          flexWrap="wrap"
+          flexDirection="row"
+          justifyContent="space-between"
+          marginTop={5}
+        >
+          <Box maxWidth="30%">
+            <HomeNavCard
+              label="Compare War Resource Layouts"
+              imagePath="/foxhole-web-utils/images/Concepts/App/CompareResources.png"
+              navPath="/tools/resources-compare"
+            />
+          </Box>
+
         </Box>
       </main>
       <footer className={styles.footer}>

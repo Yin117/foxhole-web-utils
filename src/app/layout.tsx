@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import styles from "./page.module.css";
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
-import Link from "next/link";
+import { Box } from "@mui/material";
+import { ApplicationBar } from "@/components/elements/applicationBar/ApplicationBar";
+import { Providers } from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,30 +28,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <AppBar>
-          <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-            <Link href="/">
-              <Typography variant="h6">
-                Foxhole Web Utils
-              </Typography>
-            </Link>
-          </Toolbar>
-        </AppBar>
-        {/* TODO: make responseive */}
-        <Box className={styles.pageSpace}>
-          {children}
-        </Box>
-      </body>
+      <Providers>
+        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+          <ApplicationBar/>
+          {/* TODO: make responseive */}
+          <Box className={styles.pageSpace}>
+            {children}
+          </Box>
+        </body>
+      </Providers>
     </html>
   );
 }

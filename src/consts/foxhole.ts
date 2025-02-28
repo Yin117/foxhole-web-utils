@@ -390,6 +390,12 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     name: 'Town Base 3',
     friendlyName: 'Town Hall',
     folder: 'MapIcons',
+    iconFunc: (teamId?: TeamId) =>
+      teamId === factions.colonials.mapItemKey
+        ? 'MapIconTownBaseTier3Colonial'
+        : teamId === factions.wardens.mapItemKey
+          ? 'MapIconTownBaseTier3Warden'
+          : 'MapIconTownBaseTier1',
     doNotTint: true,
     isMapBase: true,
     isScoreBase: true,

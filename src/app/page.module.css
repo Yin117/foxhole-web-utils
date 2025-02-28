@@ -69,6 +69,11 @@
   gap: 16px;
 }
 
+.hyperlink {
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .ctas a {
   appearance: none;
   border-radius: 128px;

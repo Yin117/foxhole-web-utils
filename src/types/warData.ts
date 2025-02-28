@@ -17,3 +17,13 @@ export type MapDynamic = {
   scorchedVictoryTowns: number,
   mapItems: MapItem[],
 }
+
+export type WarState = {
+  conquestEndTime: number | null,
+  conquestStartTime: number | null,
+  requiredVictoryTowns: number,
+  resistanceStartTime: number | null,
+  warId: string,
+  warNumber: number,
+  winner: TeamId,
+};
