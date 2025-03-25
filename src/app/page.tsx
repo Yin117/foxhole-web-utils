@@ -1,9 +1,21 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Box, Typography } from "@mui/material";
+import { Box, IconButton, Menu, MenuItem, Tooltip, Typography } from "@mui/material";
 import { HomeNavCard } from "@/components/homeNavCard";
+import { Palette } from "@mui/icons-material";
+import { useState } from "react";
 
 export default function Home() {
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -37,6 +49,37 @@ export default function Home() {
           </Box>
 
         </Box>
+
+        
+
+        <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
+          <Tooltip title="Theme Settings">
+            <IconButton
+              onClick={handleClick}
+              size="small"
+              sx={{ ml: 2 }}
+              aria-controls={open ? 'theme-menu' : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? 'true' : undefined}
+            >
+              <Palette/>
+            </IconButton>
+          </Tooltip>
+        </Box>
+        <Menu
+          anchorEl={anchorEl}
+          id="theme-menu"
+          open={open}
+          onClose={handleClose}
+          onClick={handleClose}
+        >
+          <MenuItem onClick={() => console.log('lightBlue')}>
+            Blue
+          </MenuItem>
+          <MenuItem onClick={() => console.log('yellow')}>
+            Yellow
+          </MenuItem>
+        </Menu>
       </main>
       <footer className={styles.footer}>
         <Typography variant="caption">
