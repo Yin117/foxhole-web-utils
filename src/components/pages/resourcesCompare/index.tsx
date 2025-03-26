@@ -16,6 +16,7 @@ import { getObjectEntries } from '@/helpers/typescriptHelper';
 import { MapDynamic } from '@/types/warData';
 import { useQuery } from '@tanstack/react-query';
 import { getCurrentMapDynamicForRegion } from '@/apiFunctions/foxhole/dynamicMap';
+import { getCurrentWarState } from '@/apiFunctions/foxhole/war';
 
 // TODO: Responsive: https://konvajs.org/docs/sandbox/Responsive_Canvas.html
 
@@ -65,18 +66,20 @@ function refactorMapDynamicData(display: MapDynamic) { // , compare: MapDynamic 
   };
 }
 
-const warNumberMenuItems = 
-  warNumbers.map(wn => {
-    return (
-      <MenuItem
-        key={wn}
-        value={wn}
-      >
-        WC{wn}
-      </MenuItem>
-    )
-  }).reverse();
-
+function getWarNumberMenuItems(currentWar?: number) {
+  return (
+    warNumbers.map(wn => {
+      return (
+        <MenuItem
+          key={wn}
+          value={wn}
+        >
+          WC{wn}{wn === String(currentWar) ? ' (also Current War)' : ''}
+        </MenuItem>
+      )
+    }).reverse()
+  );
+}
 
 function NoDataBox() {
   return (
@@ -98,6 +101,16 @@ export function ResourcesComparePage() {
   useEffect(() => {
     setIsClient(true);
   }, []);
+
+  const {
+    data: currentWarData,
+  } = useQuery({
+    queryKey: ['CurrentWar'],
+    queryFn: async () => {
+      return await getCurrentWarState();
+    },
+    enabled: true,
+  });
 
   const [beforeWarNumber, setBeforeWarNumber] = useState(CURRENT_WAR);
   const [afterWarNumber, setAfterWarNumber] = useState(warNumbers[warNumbers.length - 1]);
@@ -181,7 +194,7 @@ export function ResourcesComparePage() {
             <MenuItem value={CURRENT_WAR}>
               Current War
             </MenuItem>
-            {warNumberMenuItems}
+            {getWarNumberMenuItems()}
           </TextField>
         </div>
 
@@ -227,10 +240,10 @@ export function ResourcesComparePage() {
               setAfterWarNumber(value);
             }}
           >
-          <MenuItem value={CURRENT_WAR}>
-            Current War
-          </MenuItem>
-            {warNumberMenuItems}
+            <MenuItem value={CURRENT_WAR}>
+              Current War
+            </MenuItem>
+            {getWarNumberMenuItems(currentWarData?.data.warNumber)}
           </TextField>
         </div>
 

@@ -21,6 +21,7 @@ export function ApplicationBar() {
 
   // console.log('data', data);
   const warNumber = data?.data.warNumber;
+  const isResistancePhase = !!data?.data.resistanceStartTime;
 
 
   return (
@@ -42,7 +43,7 @@ export function ApplicationBar() {
         </Link>
         {warNumber && (
           <Typography marginLeft={2}>
-            WC{warNumber}
+            WC{warNumber}{isResistancePhase ? ' (Resistance Phase)' : ''}
           </Typography>
         )}
         <Box marginLeft="auto">
