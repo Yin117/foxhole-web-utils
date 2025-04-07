@@ -82,7 +82,7 @@ jobs:
           path: ./out
 
   # Deployment job
-  deploy:
+  deploy: 
     environment:
       name: foxhole-web-utils
       url: ${{ steps.deployment.outputs.page_url }}
