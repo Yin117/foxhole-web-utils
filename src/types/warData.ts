@@ -7,14 +7,14 @@ export type MapItem = {
   iconType: number,
   x: number,
   y: number,
-  flags: number,
+  flags?: number,
   viewDirection?: number,
 };
 
 export type MapDynamic = {
   mapName: HexKeysUnion,
   regionId: number,
-  scorchedVictoryTowns: number,
+  scorchedVictoryTowns?: number,
   mapItems: MapItem[],
 }
 
