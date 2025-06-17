@@ -42,14 +42,16 @@ function MapItemImage({ mapItem, iconSize, hexWidth, hexHeight }: { mapItem: Map
   
   // TODO: shift icons by 50% their width and
 
+  const width = mapItem.width ?? iconSize;
+  const height = mapItem.height ?? iconSize;
   return (
     <URLImage
       {...mapItem}
       src={src}
-      x={mapItem.x * hexWidth}
-      y={mapItem.y * hexHeight}
-      width={mapItem.width ?? iconSize}
-      height={mapItem.height ?? iconSize}
+      x={(mapItem.x * hexWidth) - (width / 2)}
+      y={(mapItem.y * hexHeight) - (height / 2)}
+      width={width}
+      height={height}
       alt={detail.name ?? detail.friendlyName}
     />
   )
