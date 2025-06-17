@@ -5,7 +5,7 @@ import Link from "next/link";
 
 
 type PropsHomeNavCard = {
-  imagePath: string,
+  imagePath?: string,
   label: string,
   navPath: string,
 }
@@ -33,6 +33,7 @@ export function HomeNavCard(props: PropsHomeNavCard) {
             species, ranging across all continents except Antarctica
           </Typography> */}
         </CardContent>
+        {imagePath &&
         <Image
           alt={label}
           src={imagePath}
@@ -40,27 +41,8 @@ export function HomeNavCard(props: PropsHomeNavCard) {
           height={0}
           sizes="100vw"
           style={{ width: '100%', height: 'auto' }} // optional
-        />
+        />}
       </Link>
     </Card>
   );
-
-
-  return (
-    <Box>
-      <Link
-        href={navPath}
-      >
-        {label}
-      </Link>
-      <Image
-        alt={label}
-        src={imagePath}
-        width={0}
-        height={0}
-        sizes="100vw"
-        style={{ width: '100%', height: 'auto' }} // optional
-      />
-    </Box>
-  )
 }
