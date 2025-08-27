@@ -12,10 +12,12 @@ export type MapItem = {
 };
 
 export type MapDynamic = {
+  inserted: string;
   mapName: HexKeysUnion,
   regionId: number,
   scorchedVictoryTowns?: number,
   mapItems: MapItem[],
+  etag?: string;
 }
 
 export type WarState = {
