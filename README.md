@@ -4,6 +4,10 @@
 ## Application Available Below
 [https://yin117.github.io/foxhole-web-utils/](https://yin117.github.io/foxhole-web-utils/)
 
+If you find the tool not loading, please try a CTRL+SHIFT+R to force a reload bypassing the cache.
+
+If the issue persists, contact me on Discord: Yinoguns
+
 ---
 
 This [Next.js](https://nextjs.org) project was bootstrapped with with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
