@@ -1,5 +1,8 @@
-# Application Available Here:
-https://yin117.github.io/foxhole-web-utils/
+# Foxhole Web Utils
+[![pages-build-deployment](https://github.com/Yin117/foxhole-web-utils/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/Yin117/foxhole-web-utils/actions/workflows/pages/pages-build-deployment)
+
+## Application Available Below
+[https://yin117.github.io/foxhole-web-utils/](https://yin117.github.io/foxhole-web-utils/)
 
 ---
 
