@@ -1,5 +1,5 @@
 # Foxhole Web Utils
-[![pages-build-deployment](https://github.com/Yin117/foxhole-web-utils/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/Yin117/foxhole-web-utils/actions/workflows/pages/pages-build-deployment)
+[![pages-build-deployment](https://github.com/Yin117/foxhole-web-utils/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/Yin117/foxhole-web-utils/actions/workflows/pages/pages-build-deployment) [![Deploy Next.js site to Pages](https://github.com/Yin117/foxhole-web-utils/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Yin117/foxhole-web-utils/actions/workflows/deploy.yml)
 
 ## Application Available Below
 [https://yin117.github.io/foxhole-web-utils/](https://yin117.github.io/foxhole-web-utils/)
