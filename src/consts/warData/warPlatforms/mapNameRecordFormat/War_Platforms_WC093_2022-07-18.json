@@ -1,0 +1,814 @@
+{
+  "TheFingersHex": {
+    "_id": "62b5ea0d599298397904d955",
+    "inserted": "2022-07-18T00:20:10.538Z",
+    "mapName": "TheFingersHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "TempestIslandHex": {
+    "_id": "62b5ea0d599298397904d951",
+    "inserted": "2022-07-18T00:20:10.246Z",
+    "mapName": "TempestIslandHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "GreatMarchHex": {
+    "_id": "62b5ea0c599298397904d915",
+    "inserted": "2022-07-17T23:10:05.834Z",
+    "mapName": "GreatMarchHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "MarbanHollow": {
+    "_id": "62b5ea0c599298397904d925",
+    "inserted": "2022-07-18T00:20:07.066Z",
+    "mapName": "MarbanHollow",
+    "platforms": [],
+    "__v": 0
+  },
+  "ViperPitHex": {
+    "_id": "62b5ea0c599298397904d921",
+    "inserted": "2022-07-17T22:30:06.712Z",
+    "mapName": "ViperPitHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.28523672,
+        "y": 0.2102866,
+        "flags": 0,
+        "detected": "2022-07-06T16:00:07.961Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-15T21:25:00.312Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.52074474,
+        "y": 0.3074779,
+        "flags": 0,
+        "detected": "2022-07-12T05:40:08.371Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-16T01:05:00.385Z"
+      }
+    ],
+    "__v": 0
+  },
+  "BasinSionnachHex": {
+    "_id": "62b5ea0c599298397904d901",
+    "inserted": "2022-07-18T00:00:04.470Z",
+    "mapName": "BasinSionnachHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "DeadLandsHex": {
+    "_id": "62b5ea0c599298397904d90d",
+    "inserted": "2022-07-18T00:20:05.328Z",
+    "mapName": "DeadLandsHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "HeartlandsHex": {
+    "_id": "62b5ea0c599298397904d8f9",
+    "inserted": "2022-07-17T15:40:04.025Z",
+    "mapName": "HeartlandsHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.69318783,
+        "y": 0.39926285,
+        "flags": 0,
+        "detected": "2022-07-06T16:40:03.912Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-13T18:15:00.212Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.55079436,
+        "y": 0.63204104,
+        "flags": 4,
+        "detected": "2022-07-07T09:30:04.025Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-17T07:05:00.154Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.53529245,
+        "y": 0.6735233,
+        "flags": 4,
+        "detected": "2022-07-07T09:30:04.025Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-17T07:35:00.137Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.56632334,
+        "y": 0.6465193,
+        "flags": 0,
+        "detected": "2022-07-07T11:10:04.026Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-17T06:55:00.211Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.53523815,
+        "y": 0.54855484,
+        "flags": 0,
+        "detected": "2022-07-08T00:20:04.040Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-16T23:55:00.225Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.29605332,
+        "y": 0.88277346,
+        "flags": 4,
+        "detected": "2022-07-09T22:00:03.893Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-10T13:05:00.375Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.539151,
+        "y": 0.5352892,
+        "flags": 0,
+        "detected": "2022-07-12T05:50:04.838Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-16T23:25:00.130Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.2935091,
+        "y": 0.87824017,
+        "flags": 0,
+        "detected": "2022-07-13T04:30:04.220Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-13T07:15:00.257Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.6070933,
+        "y": 0.6169582,
+        "flags": 4,
+        "detected": "2022-07-15T22:40:04.002Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-17T05:35:00.333Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.5975547,
+        "y": 0.62427074,
+        "flags": 4,
+        "detected": "2022-07-15T23:00:04.145Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-17T05:35:00.333Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.6166321,
+        "y": 0.60964596,
+        "flags": 0,
+        "detected": "2022-07-15T23:00:04.145Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-17T05:35:00.333Z"
+      }
+    ],
+    "__v": 0
+  },
+  "EndlessShoreHex": {
+    "_id": "62b5ea0c599298397904d93d",
+    "inserted": "2022-07-18T00:20:08.816Z",
+    "mapName": "EndlessShoreHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "WestgateHex": {
+    "_id": "62b5ea0c599298397904d8e1",
+    "inserted": "2022-07-17T23:40:02.213Z",
+    "mapName": "WestgateHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "OarbreakerHex": {
+    "_id": "62b5ea0c599298397904d8c9",
+    "inserted": "2022-07-17T21:20:00.566Z",
+    "mapName": "OarbreakerHex",
+    "platforms": [
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.570825,
+        "y": 0.75229114,
+        "flags": 0,
+        "detected": "2022-07-07T14:30:00.504Z",
+        "isDestroyed": false
+      }
+    ],
+    "__v": 0
+  },
+  "AcrithiaHex": {
+    "_id": "62b5ea0c599298397904d931",
+    "inserted": "2022-07-18T00:20:07.958Z",
+    "mapName": "AcrithiaHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.6364663,
+        "y": 0.1529655,
+        "flags": 0,
+        "detected": "2022-07-06T12:40:07.884Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.64790815,
+        "y": 0.15335941,
+        "flags": 0,
+        "detected": "2022-07-06T12:50:07.986Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.6759124,
+        "y": 0.4562323,
+        "flags": 0,
+        "detected": "2022-07-14T06:40:08.052Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-16T17:25:00.582Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.67591244,
+        "y": 0.4562323,
+        "flags": 4,
+        "detected": "2022-07-17T23:50:07.783Z",
+        "isDestroyed": false
+      }
+    ],
+    "__v": 0
+  },
+  "MooringCountyHex": {
+    "_id": "62b5ea0c599298397904d8ed",
+    "inserted": "2022-07-17T17:20:03.090Z",
+    "mapName": "MooringCountyHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "WeatheredExpanseHex": {
+    "_id": "62b5ea0c599298397904d939",
+    "inserted": "2022-07-17T23:40:08.440Z",
+    "mapName": "WeatheredExpanseHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "MorgensCrossingHex": {
+    "_id": "62b5ea0d599298397904d949",
+    "inserted": "2022-07-18T00:20:09.671Z",
+    "mapName": "MorgensCrossingHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.6648586,
+        "y": 0.33383724,
+        "flags": 0,
+        "detected": "2022-07-17T02:00:10.348Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-17T06:05:00.485Z"
+      }
+    ],
+    "__v": 0
+  },
+  "LochMorHex": {
+    "_id": "62b5ea0c599298397904d8f5",
+    "inserted": "2022-07-17T23:10:03.593Z",
+    "mapName": "LochMorHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.507953,
+        "y": 0.45760086,
+        "flags": 0,
+        "detected": "2022-07-08T13:40:03.902Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-12T22:25:00.158Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.5656623,
+        "y": 0.37168035,
+        "flags": 0,
+        "detected": "2022-07-12T21:15:00.165Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-13T10:15:00.224Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.58209246,
+        "y": 0.35901242,
+        "flags": 0,
+        "detected": "2022-07-12T21:45:00.203Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-13T10:35:00.226Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.42160904,
+        "y": 0.5651528,
+        "flags": 4,
+        "detected": "2022-07-12T19:25:00.203Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-13T05:05:00.330Z"
+      }
+    ],
+    "__v": 0
+  },
+  "StonecradleHex": {
+    "_id": "62b5ea0c599298397904d8d9",
+    "inserted": "2022-07-17T20:30:01.615Z",
+    "mapName": "StonecradleHex",
+    "platforms": [
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.7115233,
+        "y": 0.6285147,
+        "flags": 4,
+        "detected": "2022-07-10T11:55:00.087Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.40708387,
+        "y": 0.8543772,
+        "flags": 0,
+        "detected": "2022-07-17T11:40:01.765Z",
+        "isDestroyed": false
+      }
+    ],
+    "__v": 0
+  },
+  "AllodsBightHex": {
+    "_id": "62b5ea0c599298397904d941",
+    "inserted": "2022-07-18T00:20:09.105Z",
+    "mapName": "AllodsBightHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.23965317,
+        "y": 0.30455145,
+        "flags": 0,
+        "detected": "2022-07-11T14:50:11.104Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-14T19:55:00.701Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.23965321,
+        "y": 0.3045514,
+        "flags": 0,
+        "detected": "2022-07-16T22:40:09.343Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-17T05:05:00.377Z"
+      }
+    ],
+    "__v": 0
+  },
+  "KalokaiHex": {
+    "_id": "62b5ea0c599298397904d919",
+    "inserted": "2022-07-17T23:00:06.414Z",
+    "mapName": "KalokaiHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.48258865,
+        "y": 0.47833878,
+        "flags": 0,
+        "detected": "2022-07-05T03:00:07.134Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-16T21:55:00.220Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.48280212,
+        "y": 0.46947363,
+        "flags": 0,
+        "detected": "2022-07-05T03:00:07.134Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-16T21:05:00.303Z"
+      }
+    ],
+    "__v": 0
+  },
+  "RedRiverHex": {
+    "_id": "62b5ea0c599298397904d8fd",
+    "inserted": "2022-07-17T17:40:04.287Z",
+    "mapName": "RedRiverHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "OriginHex": {
+    "_id": "62b5ea0c599298397904d8d1",
+    "inserted": "2022-07-17T23:20:01.162Z",
+    "mapName": "OriginHex",
+    "platforms": [
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.6431515,
+        "y": 0.892912,
+        "flags": 0,
+        "detected": "2022-07-09T02:20:01.059Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.6359101,
+        "y": 0.901432,
+        "flags": 0,
+        "detected": "2022-07-09T02:30:01.061Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.63382685,
+        "y": 0.89164543,
+        "flags": 0,
+        "detected": "2022-07-09T02:40:01.138Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.30785155,
+        "y": 0.7216902,
+        "flags": 0,
+        "detected": "2022-07-10T16:20:01.136Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.578471,
+        "y": 0.5833009,
+        "flags": 0,
+        "detected": "2022-07-10T23:30:01.064Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.8284395,
+        "y": 0.6058578,
+        "flags": 0,
+        "detected": "2022-07-11T19:50:01.495Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.8223345,
+        "y": 0.6151391,
+        "flags": 4,
+        "detected": "2022-07-11T21:00:01.471Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 60,
+        "x": 0.8002376,
+        "y": 0.6261722,
+        "flags": 0,
+        "detected": "2022-07-12T08:00:01.413Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 60,
+        "x": 0.4416268,
+        "y": 0.66688,
+        "flags": 0,
+        "detected": "2022-07-12T22:00:01.069Z",
+        "isDestroyed": false
+      }
+    ],
+    "__v": 0
+  },
+  "HowlCountyHex": {
+    "_id": "62b5ea0c599298397904d91d",
+    "inserted": "2022-07-17T20:10:06.390Z",
+    "mapName": "HowlCountyHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.7372291,
+        "y": 0.7225602,
+        "flags": 4,
+        "detected": "2022-07-13T03:30:06.470Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-13T22:15:00.387Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.7272437,
+        "y": 0.72113264,
+        "flags": 4,
+        "detected": "2022-07-13T03:50:06.534Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-13T15:25:00.421Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.7320126,
+        "y": 0.734502,
+        "flags": 4,
+        "detected": "2022-07-13T04:30:07.043Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-13T22:45:00.309Z"
+      }
+    ],
+    "__v": 0
+  },
+  "SpeakingWoodsHex": {
+    "_id": "62b5ea0c599298397904d8e9",
+    "inserted": "2022-07-17T16:50:02.802Z",
+    "mapName": "SpeakingWoodsHex",
+    "platforms": [
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.4938838,
+        "y": 0.12975964,
+        "flags": 0,
+        "detected": "2022-07-11T15:10:03.717Z",
+        "isDestroyed": false
+      }
+    ],
+    "__v": 0
+  },
+  "ShackledChasmHex": {
+    "_id": "62b5ea0c599298397904d92d",
+    "inserted": "2022-07-18T00:20:07.664Z",
+    "mapName": "ShackledChasmHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "TerminusHex": {
+    "_id": "62b5ea0c599298397904d945",
+    "inserted": "2022-07-17T23:10:09.272Z",
+    "mapName": "TerminusHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.16968295,
+        "y": 0.47242054,
+        "flags": 0,
+        "detected": "2022-07-07T06:40:09.294Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.17158593,
+        "y": 0.46294874,
+        "flags": 0,
+        "detected": "2022-07-07T07:30:09.242Z",
+        "isDestroyed": false
+      }
+    ],
+    "__v": 0
+  },
+  "LinnMercyHex": {
+    "_id": "62b5ea0c599298397904d8f1",
+    "inserted": "2022-07-17T19:30:03.315Z",
+    "mapName": "LinnMercyHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "ClansheadValleyHex": {
+    "_id": "62b5ea0c599298397904d935",
+    "inserted": "2022-07-18T00:00:08.161Z",
+    "mapName": "ClansheadValleyHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.547788,
+        "y": 0.8494764,
+        "flags": 0,
+        "detected": "2022-07-05T18:30:08.173Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-17T03:15:00.647Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.30659842,
+        "y": 0.656301,
+        "flags": 4,
+        "detected": "2022-07-11T01:20:08.132Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-14T02:05:00.401Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.74693036,
+        "y": 0.5914664,
+        "flags": 0,
+        "detected": "2022-07-12T00:00:10.059Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-14T03:05:00.414Z"
+      }
+    ],
+    "__v": 0
+  },
+  "NevishLineHex": {
+    "_id": "62b5ea0c599298397904d8c5",
+    "inserted": "2022-07-17T23:40:00.234Z",
+    "mapName": "NevishLineHex",
+    "platforms": [
+      {
+        "teamId": "WARDENS",
+        "iconType": 60,
+        "x": 0.46109015,
+        "y": 0.24144822,
+        "flags": 0,
+        "detected": "2022-07-11T04:30:00.227Z",
+        "isDestroyed": false
+      }
+    ],
+    "__v": 0
+  },
+  "GodcroftsHex": {
+    "_id": "62b5ea0d599298397904d94d",
+    "inserted": "2022-07-18T00:10:09.959Z",
+    "mapName": "GodcroftsHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "CallumsCapeHex": {
+    "_id": "62b5ea0c599298397904d8d5",
+    "inserted": "2022-07-17T16:20:01.380Z",
+    "mapName": "CallumsCapeHex",
+    "platforms": [
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.63693297,
+        "y": 0.41733846,
+        "flags": 0,
+        "detected": "2022-07-17T16:20:01.380Z",
+        "isDestroyed": false
+      }
+    ],
+    "__v": 0
+  },
+  "FishermansRowHex": {
+    "_id": "62b5ea0c599298397904d8cd",
+    "inserted": "2022-07-17T23:20:00.858Z",
+    "mapName": "FishermansRowHex",
+    "platforms": [
+      {
+        "teamId": "WARDENS",
+        "iconType": 60,
+        "x": 0.42990133,
+        "y": 0.63479525,
+        "flags": 0,
+        "detected": "2022-07-11T11:50:00.962Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 60,
+        "x": 0.6309029,
+        "y": 0.8766067,
+        "flags": 0,
+        "detected": "2022-07-12T18:40:01.076Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 60,
+        "x": 0.63080627,
+        "y": 0.8660254,
+        "flags": 0,
+        "detected": "2022-07-12T19:00:00.976Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 60,
+        "x": 0.4748623,
+        "y": 0.74661124,
+        "flags": 0,
+        "detected": "2022-07-14T01:00:00.969Z",
+        "isDestroyed": false
+      },
+      {
+        "teamId": "WARDENS",
+        "iconType": 59,
+        "x": 0.47599834,
+        "y": 0.6951335,
+        "flags": 0,
+        "detected": "2022-07-15T17:30:00.870Z",
+        "isDestroyed": false
+      }
+    ],
+    "__v": 0
+  },
+  "UmbralWildwoodHex": {
+    "_id": "62b5ea0c599298397904d911",
+    "inserted": "2022-07-17T20:00:05.647Z",
+    "mapName": "UmbralWildwoodHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "ReachingTrailHex": {
+    "_id": "62b5ea0c599298397904d905",
+    "inserted": "2022-07-17T23:20:04.897Z",
+    "mapName": "ReachingTrailHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "CallahansPassageHex": {
+    "_id": "62b5ea0c599298397904d909",
+    "inserted": "2022-07-17T23:30:04.798Z",
+    "mapName": "CallahansPassageHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "AshFieldsHex": {
+    "_id": "62b5ea0c599298397904d8e5",
+    "inserted": "2022-07-17T20:10:02.485Z",
+    "mapName": "AshFieldsHex",
+    "platforms": [],
+    "__v": 0
+  },
+  "DrownedValeHex": {
+    "_id": "62b5ea0c599298397904d929",
+    "inserted": "2022-07-17T23:30:07.144Z",
+    "mapName": "DrownedValeHex",
+    "platforms": [
+      {
+        "teamId": "COLONIALS",
+        "iconType": 59,
+        "x": 0.6841634,
+        "y": 0.88093716,
+        "flags": 0,
+        "detected": "2022-07-05T05:50:07.961Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-14T21:05:00.306Z"
+      },
+      {
+        "teamId": "COLONIALS",
+        "iconType": 60,
+        "x": 0.16732293,
+        "y": 0.5071361,
+        "flags": 0,
+        "detected": "2022-07-14T20:55:00.352Z",
+        "isDestroyed": true,
+        "destructionDetected": "2022-07-16T23:25:00.420Z"
+      }
+    ],
+    "__v": 0
+  },
+  "FarranacCoastHex": {
+    "_id": "62b5ea0c599298397904d8dd",
+    "inserted": "2022-07-17T23:00:02.051Z",
+    "mapName": "FarranacCoastHex",
+    "platforms": [],
+    "__v": 0
+  }
+}
