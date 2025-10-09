@@ -46,7 +46,7 @@ export function ApplicationBar() {
             WC{warNumber}{isResistancePhase ? ' (Resistance Phase)' : ''}
           </Typography>
         )}
-        <Box marginLeft="auto">
+        <Box display="flex" marginLeft="auto" alignItems="center">
           <Image
             aria-hidden
             src="/foxhole-web-utils/images/FoxholeBotImage.png"

@@ -202,7 +202,7 @@ export function MetaStats() {
     <div id="components-pages-metaStats" className={pageStyles.page}>
       <div className={styles.container}>
         <Box>
-          <Typography variant="body1" fontSize="small" textAlign="center" fontStyle="italic">
+          <Typography variant="body1" fontSize="small" textAlign="center" fontStyle="italic" marginBottom={2}>
             Disclaimer: Totals below are <strong>not incremental</strong>, that is to say for example; if a Storm Cannon is Built, Destroyed,
             and then Rebuilt it will only count once for both Built and Lost. Likiwise the same for Rocket Sites in that
             5 Rockets <strong>Assembled</strong> on the same Site, will only count as 1 Rocket <u>Site</u> Built.
