@@ -147,13 +147,13 @@ export function MetaStats() {
           const factionKey = factionKeyToProp(platform.teamId);
           if (getMapItemDetail(platform.iconType).isStormCannon) {
             totals[factionKey].sc.built += 1;
-            if (platform.isDestroyed !== true) {
+            if (platform.isDestroyed === true) {
               totals[factionKey].sc.lost += 1;
             }
           }
           if (getMapItemDetail(platform.iconType).isIntelCenter) {
             totals[factionKey].ic.built += 1;
-            if (platform.isDestroyed !== true) {
+            if (platform.isDestroyed === true) {
               totals[factionKey].ic.lost += 1;
             }
           }
@@ -161,7 +161,7 @@ export function MetaStats() {
         for (const site of mapData.rocketSites) {
           const factionKey = factionKeyToProp(site.teamId);
           totals[factionKey].rocketSites.built += 1;
-          if (site.isDestroyed !== true) {
+          if (site.isDestroyed === true) {
             totals[factionKey].rocketSites.lost += 1;
           }
         }
@@ -203,9 +203,9 @@ export function MetaStats() {
       <div className={styles.container}>
         <Box>
           <Typography variant="body1" fontSize="small" textAlign="center" fontStyle="italic" marginBottom={2}>
-            Disclaimer: Totals below are <strong>not incremental</strong>, that is to say for example; if a Storm Cannon is Built, Destroyed,
-            and then Rebuilt it will only count once for both Built and Lost. Likiwise the same for Rocket Sites in that
-            5 Rockets <strong>Assembled</strong> on the same Site, will only count as 1 Rocket <u>Site</u> Built.
+            Disclaimer: Totals below are <strong>not incremental</strong>, and only consider their last situation. That is to say for example; if a Storm Cannon is Built, Destroyed,
+            and then Rebuilt it will only count once for Built (and Zero for lost). Likiwise the same for Rocket Sites in that
+            the numbers below should be read as Sites, not as individual rockets (which are assembled upon a Site).
           </Typography>
           <TableContainer sx={{ maxHeight: '80vh'}}>
             <Table stickyHeader aria-label="sticky table">
