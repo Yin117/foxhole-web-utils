@@ -20,7 +20,6 @@ worldExtentsDraft.x.total = Math.abs(worldExtentsDraft.x.min) + worldExtentsDraf
 
 export const worldExtents = worldExtentsDraft;
 
-
 export const factions = {
   none: {
     mapItemKey: 'NONE',
@@ -41,6 +40,16 @@ export const factions = {
 
 export const factionForKey = (key: TeamId) => {
   return getObjectEntries(factions).find(([, value]) => value.mapItemKey === key);
+}
+
+export const factionKeyToProp = (key: TeamId) => {
+  if (key === 'COLONIALS') {
+    return 'colonials';
+  }
+  if (key === 'WARDENS') {
+    return 'wardens';
+  }
+  return 'none';
 }
 
 

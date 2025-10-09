@@ -14,8 +14,7 @@ export default function Home() {
         </Typography>
 
         <Typography>
-          Below are cards that will take you to various areas of the app, at the moment there
-          {' '}is one feature, but more may turn up on request to
+          Below are cards that will take you to various areas of the app, more features, may turn up, e.g. on request to
           {' '}<span style={{ fontWeight: 'bold' }}>Yinoguns</span> on Discord, or
           {' '}<a className={styles.hyperlink} href="https://github.com/Yin117/foxhole-web-utils/tree/main" target="_blank">clone the repo</a> and submit your own Pull Request with a new Feature or small changes!
           {' '}(Subject to Approval)
@@ -33,6 +32,14 @@ export default function Home() {
               label="Compare War Resource Layouts"
               imagePath="/foxhole-web-utils/images/Concepts/App/CompareResources.png"
               navPath="/tools/resources-compare"
+            />
+          </Box>
+
+          <Box maxWidth="30%">
+            <HomeNavCard
+              label="Meta Stats"
+              imagePath="/foxhole-web-utils/images/Concepts/App/MetaStats.png"
+              navPath="/tools/meta-stats"
             />
           </Box>
 

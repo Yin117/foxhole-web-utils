@@ -1,0 +1,1600 @@
+[
+    {
+        "_id": "68b08c3cc25049a00365787a",
+        "inserted": "2025-10-08T16:05:00.009Z",
+        "mapName": "OarbreakerHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a00365787e",
+        "inserted": "2025-10-08T16:05:00.046Z",
+        "mapName": "FishermansRowHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a003657882",
+        "inserted": "2025-10-08T16:05:00.053Z",
+        "mapName": "StemaLandingHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a003657886",
+        "inserted": "2025-10-08T16:05:00.061Z",
+        "mapName": "NevishLineHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a00365788a",
+        "inserted": "2025-10-08T16:05:00.071Z",
+        "mapName": "FarranacCoastHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a00365788e",
+        "inserted": "2025-10-08T16:05:00.079Z",
+        "mapName": "WestgateHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.5708275,
+                "y": 0.11983128,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-24T10:00:02.021Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-30T21:10:02.019Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.62240344,
+                "y": 0.8012258,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-07T16:20:01.926Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a003657892",
+        "inserted": "2025-10-08T16:05:00.088Z",
+        "mapName": "OriginHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5645114,
+                "y": 0.5670196,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-16T19:00:02.272Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T03:00:02.594Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.57625943,
+                "y": 0.5771515,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-12T21:50:02.272Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T03:20:02.202Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.57900846,
+                "y": 0.59292674,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-12T22:00:02.317Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T03:20:02.202Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5625308,
+                "y": 0.5776842,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-16T19:30:02.207Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T03:20:02.202Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.5854926,
+                "y": 0.66353,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-28T11:50:02.296Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T04:00:01.920Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.7207603,
+                "y": 0.85532415,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-03T16:40:02.268Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T07:40:02.204Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.7021684,
+                "y": 0.8669936,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-05T10:50:02.197Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T07:50:02.280Z"
+            }
+        ],
+        "rocketSites": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 37,
+                "x": 0.5312879,
+                "y": 0.8352373,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-03T16:40:02.268Z",
+                "rocketDetected": null,
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-07T11:20:02.398Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 37,
+                "x": 0.6348445,
+                "y": 0.8994364,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-06T03:40:02.287Z",
+                "rocketDetected": null,
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-07T18:10:02.267Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 37,
+                "x": 0.5027956,
+                "y": 0.8971511,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-05T10:30:02.301Z",
+                "rocketDetected": null,
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-08T00:50:02.285Z"
+            }
+        ],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a003657896",
+        "inserted": "2025-10-08T16:05:00.095Z",
+        "mapName": "CallumsCapeHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a00365789a",
+        "inserted": "2025-10-08T16:05:00.103Z",
+        "mapName": "StonecradleHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.807056,
+                "y": 0.6066852,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-28T12:20:02.732Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a00365789e",
+        "inserted": "2025-10-08T16:05:00.111Z",
+        "mapName": "KingsCageHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.32077459,
+                "y": 0.09760529,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T21:20:03.061Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.6874301,
+                "y": 0.54149455,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-28T22:10:03.060Z",
+                "isDestroyed": false,
+                "destructionDetected": null
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.336255,
+                "y": 0.2840591,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-04T12:00:03.023Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.28531232,
+                "y": 0.41890785,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-26T17:20:03.138Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-05T23:00:03.114Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578a2",
+        "inserted": "2025-10-08T16:05:00.118Z",
+        "mapName": "SableportHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.2841033,
+                "y": 0.18507153,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-09T04:10:03.377Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-09T21:30:03.399Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.3107947,
+                "y": 0.2260063,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-11T19:30:03.491Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-16T00:20:03.341Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.72000873,
+                "y": 0.52395624,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-15T12:30:03.375Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-21T05:40:03.402Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 70,
+                "x": 0.4795136,
+                "y": 0.31000614,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-04T16:50:03.365Z",
+                "isGone": true,
+                "goneWhen": "2025-10-06T07:40:03.340Z"
+            }
+        ],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578a6",
+        "inserted": "2025-10-08T16:05:00.126Z",
+        "mapName": "AshFieldsHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6460955,
+                "y": 0.3733482,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-23T13:10:03.729Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.66080487,
+                "y": 0.151443,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-23T07:00:03.636Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T14:40:03.732Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.74676096,
+                "y": 0.3998407,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-07T02:20:03.792Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.75501704,
+                "y": 0.41112536,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-07T03:20:03.675Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.493772,
+                "y": 0.6715794,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-07T18:50:03.673Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578aa",
+        "inserted": "2025-10-08T16:05:00.134Z",
+        "mapName": "SpeakingWoodsHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.3964242,
+                "y": 0.40918738,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-23T01:40:03.911Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.46567672,
+                "y": 0.17707367,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T08:00:03.958Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-08T00:10:03.871Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578ae",
+        "inserted": "2025-10-08T16:05:00.142Z",
+        "mapName": "MooringCountyHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578b2",
+        "inserted": "2025-10-08T16:05:00.192Z",
+        "mapName": "LinnMercyHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.35658982,
+                "y": 0.6879459,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-17T16:30:04.452Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.26252913,
+                "y": 0.7108374,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-28T03:00:04.827Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.44665346,
+                "y": 0.8940034,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-29T15:30:04.442Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.70243204,
+                "y": 0.7508235,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-30T08:20:04.527Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T12:30:04.565Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578b6",
+        "inserted": "2025-10-08T16:05:00.202Z",
+        "mapName": "LochMorHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.47916555,
+                "y": 0.6496253,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-04T21:20:04.812Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-05T02:00:04.822Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5305272,
+                "y": 0.6344837,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-01T09:40:04.850Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-05T02:10:04.823Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5853637,
+                "y": 0.77312475,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T02:10:04.807Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-05T06:10:04.783Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578ba",
+        "inserted": "2025-10-08T16:05:00.210Z",
+        "mapName": "HeartlandsHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.41206628,
+                "y": 0.39221036,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T03:30:05.106Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-01T15:20:05.133Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6162455,
+                "y": 0.3045849,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-22T23:20:05.054Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T08:50:05.103Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.36832958,
+                "y": 0.55312705,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T11:00:05.096Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-07T05:40:05.151Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.37084293,
+                "y": 0.54466486,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T12:40:05.647Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-07T05:40:05.151Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.2848564,
+                "y": 0.47409645,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-02T23:30:05.082Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-07T06:30:05.054Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578be",
+        "inserted": "2025-10-08T16:05:00.218Z",
+        "mapName": "RedRiverHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578c2",
+        "inserted": "2025-10-08T16:05:00.225Z",
+        "mapName": "BasinSionnachHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578c6",
+        "inserted": "2025-10-08T16:05:00.233Z",
+        "mapName": "ReachingTrailHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578ca",
+        "inserted": "2025-10-08T16:05:00.241Z",
+        "mapName": "CallahansPassageHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.711606,
+                "y": 0.6997202,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-11T17:40:06.214Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.62996924,
+                "y": 0.17785254,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-06T20:00:06.219Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-20T19:00:06.574Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.6398208,
+                "y": 0.4761154,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-07T23:40:06.282Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-30T20:40:06.246Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578ce",
+        "inserted": "2025-10-08T16:05:00.249Z",
+        "mapName": "DeadLandsHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.6771548,
+                "y": 0.1648346,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-17T17:50:06.491Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.58070344,
+                "y": 0.21460445,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-22T02:00:06.505Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T09:10:06.592Z"
+            }
+        ],
+        "rocketSites": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 37,
+                "x": 0.593735,
+                "y": 0.20052157,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-29T16:30:06.538Z",
+                "rocketDetected": null,
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T07:00:06.498Z"
+            }
+        ],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578d2",
+        "inserted": "2025-10-08T16:05:00.256Z",
+        "mapName": "UmbralWildwoodHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.65254104,
+                "y": 0.37439024,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-15T02:20:06.725Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-04T15:00:07.167Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578d6",
+        "inserted": "2025-10-08T16:05:00.263Z",
+        "mapName": "GreatMarchHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.41035113,
+                "y": 0.25630224,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-04T02:00:07.000Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-05T22:20:07.066Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578da",
+        "inserted": "2025-10-08T16:05:00.273Z",
+        "mapName": "KalokaiHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578de",
+        "inserted": "2025-10-08T16:05:00.281Z",
+        "mapName": "HowlCountyHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.6670972,
+                "y": 0.87298644,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-10T15:50:07.995Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578e2",
+        "inserted": "2025-10-08T16:05:00.289Z",
+        "mapName": "ViperPitHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.7122405,
+                "y": 0.4237118,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-13T00:00:07.925Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.7393836,
+                "y": 0.5203056,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T22:40:07.873Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.6012054,
+                "y": 0.5583739,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T23:00:07.954Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T03:00:08.249Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.59090495,
+                "y": 0.56588185,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T22:50:07.904Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T03:30:07.838Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578e6",
+        "inserted": "2025-10-08T16:05:00.296Z",
+        "mapName": "MarbanHollow",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.64234996,
+                "y": 0.86391324,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-13T14:40:08.164Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-13T22:40:08.249Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.3297255,
+                "y": 0.6472281,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-13T22:10:08.189Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-14T02:30:06.801Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578ea",
+        "inserted": "2025-10-08T16:05:00.304Z",
+        "mapName": "DrownedValeHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.4095143,
+                "y": 0.4301096,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-22T19:30:08.520Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-30T08:10:08.419Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.486531,
+                "y": 0.2924761,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-15T09:40:08.665Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-02T01:00:08.437Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5461455,
+                "y": 0.5517652,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-19T22:00:08.421Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-02T17:00:08.491Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.4115746,
+                "y": 0.42665446,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-01T12:50:08.535Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-03T00:30:08.419Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.72772664,
+                "y": 0.6496396,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-19T00:20:08.459Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-03T13:30:08.363Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.70282024,
+                "y": 0.6551188,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-12T19:00:08.571Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-03T14:00:08.432Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 70,
+                "x": 0.54461104,
+                "y": 0.5688205,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-30T16:50:08.548Z",
+                "isGone": true,
+                "goneWhen": "2025-10-02T17:00:08.491Z"
+            }
+        ],
+        "rocketGroundZeros": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 71,
+                "x": 0.54461104,
+                "y": 0.5688205,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-02T17:00:08.491Z",
+                "isGone": false,
+                "goneWhen": null
+            }
+        ],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578ee",
+        "inserted": "2025-10-08T16:05:00.312Z",
+        "mapName": "ShackledChasmHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.6900302,
+                "y": 0.7259943,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-12T22:30:08.793Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-05T21:20:08.798Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578f2",
+        "inserted": "2025-10-08T16:05:00.320Z",
+        "mapName": "AcrithiaHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3cc25049a0036578f6",
+        "inserted": "2025-10-08T16:05:00.355Z",
+        "mapName": "ClansheadValleyHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a0036578fa",
+        "inserted": "2025-10-08T16:05:00.379Z",
+        "mapName": "WeatheredExpanseHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.5079069,
+                "y": 0.5493567,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-16T15:20:09.613Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.6442282,
+                "y": 0.696741,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-21T00:20:10.121Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.58121914,
+                "y": 0.4083563,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-08T01:00:09.823Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-07T20:40:09.703Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a0036578fe",
+        "inserted": "2025-10-08T16:05:01.003Z",
+        "mapName": "ClahstraHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.7275555,
+                "y": 0.77855146,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T19:10:09.946Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-18T23:00:09.952Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.7274211,
+                "y": 0.63468254,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-27T02:20:09.738Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-27T19:30:10.149Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.72755545,
+                "y": 0.77855146,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-20T20:00:10.204Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-29T18:50:09.871Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a003657902",
+        "inserted": "2025-10-08T16:05:01.012Z",
+        "mapName": "AllodsBightHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.33073834,
+                "y": 0.27340838,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-29T17:00:10.159Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-29T18:30:10.229Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.31734475,
+                "y": 0.28331566,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-27T14:40:10.187Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-02T21:40:10.171Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.36251578,
+                "y": 0.5612432,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-10T12:20:10.128Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-03T03:30:10.114Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a003657906",
+        "inserted": "2025-10-08T16:05:01.021Z",
+        "mapName": "TerminusHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a00365790a",
+        "inserted": "2025-10-08T16:05:01.029Z",
+        "mapName": "MorgensCrossingHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.418974,
+                "y": 0.30634734,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-17T19:10:10.726Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.6597205,
+                "y": 0.5958688,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-17T19:30:10.835Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.65435266,
+                "y": 0.57664347,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-17T19:30:10.835Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.6545812,
+                "y": 0.6127528,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-17T19:50:10.709Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.5821914,
+                "y": 0.27588382,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-27T15:20:10.771Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.61242884,
+                "y": 0.22910832,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-28T11:40:10.762Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a00365790e",
+        "inserted": "2025-10-08T16:05:01.039Z",
+        "mapName": "StlicanShelfHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.43200913,
+                "y": 0.8590179,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-14T06:40:10.987Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-15T22:20:11.057Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a003657912",
+        "inserted": "2025-10-08T16:05:01.046Z",
+        "mapName": "EndlessShoreHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.40269876,
+                "y": 0.5260366,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-28T14:40:11.310Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-01T09:20:11.262Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.23710144,
+                "y": 0.33298555,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-22T23:10:12.202Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-03T18:00:11.372Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.37136954,
+                "y": 0.25956696,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-25T21:00:11.887Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-05T03:40:11.325Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.3820683,
+                "y": 0.2623846,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-20T20:50:11.357Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-05T03:50:11.308Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.52977145,
+                "y": 0.82126147,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-22T00:40:11.196Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-05T23:30:11.402Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.4152202,
+                "y": 0.19667952,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-29T23:10:11.551Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-05T23:50:11.215Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.517456,
+                "y": 0.8142312,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-15T21:30:12.435Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T00:10:11.317Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.43848422,
+                "y": 0.5183657,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-30T16:30:11.359Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T00:30:11.291Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.44670838,
+                "y": 0.50826395,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-22T06:30:11.306Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T00:40:11.308Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.44220707,
+                "y": 0.15128908,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-22T23:10:12.202Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T01:20:11.235Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a003657916",
+        "inserted": "2025-10-08T16:05:01.055Z",
+        "mapName": "ReaversPassHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5634724,
+                "y": 0.418408,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-14T13:50:11.689Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T01:00:11.539Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.3790854,
+                "y": 0.2081865,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-20T18:10:11.950Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T19:00:11.640Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.3898262,
+                "y": 0.16502593,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-27T11:40:11.527Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-07T23:30:11.571Z"
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a00365791a",
+        "inserted": "2025-10-08T16:05:01.063Z",
+        "mapName": "GodcroftsHex",
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.45523807,
+                "y": 0.23720542,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-23T06:30:11.832Z",
+                "isDestroyed": false,
+                "destructionDetected": null
+            }
+        ],
+        "rocketSites": [],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a00365791e",
+        "inserted": "2025-10-08T16:05:01.070Z",
+        "mapName": "TempestIslandHex",
+        "platforms": [],
+        "rocketSites": [],
+        "rocketTargets": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 70,
+                "x": 0.6131733,
+                "y": 0.5052299,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-01T23:00:12.092Z",
+                "isGone": true,
+                "goneWhen": "2025-10-03T23:10:12.194Z"
+            }
+        ],
+        "rocketGroundZeros": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 71,
+                "x": 0.6131733,
+                "y": 0.5052299,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-10-03T23:10:12.194Z",
+                "isGone": false,
+                "goneWhen": null
+            }
+        ],
+        "bunkers": [],
+        "__v": 0
+    },
+    {
+        "_id": "68b08c3dc25049a003657922",
+        "inserted": "2025-10-08T16:05:01.078Z",
+        "mapName": "TheFingersHex",
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.75047654,
+                "y": 0.828716,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-09T00:00:12.410Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.754815,
+                "y": 0.8193969,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-13T09:10:12.536Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.71491593,
+                "y": 0.8358884,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-14T22:30:12.392Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.73621625,
+                "y": 0.8203175,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-18T00:10:12.379Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.67171806,
+                "y": 0.81591964,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-23T14:00:12.304Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-09-24T10:50:12.466Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.8057649,
+                "y": 0.7190466,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-26T09:40:12.348Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-06T23:20:12.442Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.6616983,
+                "y": 0.8222233,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-23T14:10:12.244Z",
+                "isDestroyed": true,
+                "destructionDetected": "2025-10-07T04:10:12.495Z"
+            }
+        ],
+        "rocketSites": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 37,
+                "x": 0.7453903,
+                "y": 0.7983352,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2025-09-30T22:50:12.405Z",
+                "rocketDetected": null
+            }
+        ],
+        "rocketTargets": [],
+        "rocketGroundZeros": [],
+        "bunkers": [],
+        "__v": 0
+    }
+]

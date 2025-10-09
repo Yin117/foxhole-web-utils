@@ -11,6 +11,7 @@ import {
 import useImage from "use-image";
 import URLImage from "../URLImage";
 import { ImageConfig } from "konva/lib/shapes/Image";
+import { mapItemBasePath } from "@/consts/repo";
 
 const iconSize = 24;
 
@@ -22,8 +23,6 @@ type PropsRegion = {
     mapItems: (MapItem & Partial<ImageConfig>)[]
   },
 };
-
-const mapItemBasePath = '/foxhole-web-utils/images/MapIcons';
 
 function MapItemImage({ mapItem, iconSize, hexWidth, hexHeight }: { mapItem: MapItem & Partial<ImageConfig>, iconSize: number, hexWidth: number, hexHeight: number }) {
   const detail = getMapItemDetail(mapItem.iconType);
