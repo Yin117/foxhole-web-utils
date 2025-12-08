@@ -3,7 +3,18 @@
         "_id": "655283887a458d62e25524f4",
         "inserted": "2023-12-02T08:04:00.025Z",
         "mapName": "OarbreakerHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.24522741,
+                "y": 0.21555299,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-08T18:40:00.230Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -23,7 +34,29 @@
         "_id": "655283887a458d62e25524fc",
         "inserted": "2023-12-02T08:04:00.095Z",
         "mapName": "StemaLandingHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.55072236,
+                "y": 0.1943437,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-07T17:40:00.855Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-25T03:55:00.094Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.20084496,
+                "y": 0.5398912,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-12T06:40:00.796Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -43,7 +76,18 @@
         "_id": "655283887a458d62e2552504",
         "inserted": "2023-12-02T08:04:00.151Z",
         "mapName": "FarranacCoastHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.4165454,
+                "y": 0.88061416,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-21T04:20:01.495Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -63,7 +107,52 @@
         "_id": "655283887a458d62e255250c",
         "inserted": "2023-12-02T08:04:00.219Z",
         "mapName": "OriginHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5753805,
+                "y": 0.48574817,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T12:20:03.292Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-20T03:35:00.193Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6049023,
+                "y": 0.36826804,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T07:30:03.495Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-19T14:55:00.218Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.74303913,
+                "y": 0.5331848,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-18T00:50:01.991Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-18T13:25:00.189Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.52370626,
+                "y": 0.63253,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-18T22:10:02.084Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-20T17:15:00.205Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -73,7 +162,19 @@
         "_id": "655283887a458d62e2552510",
         "inserted": "2023-12-02T08:04:00.250Z",
         "mapName": "CallumsCapeHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.75273025,
+                "y": 0.73701876,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-12T09:10:02.331Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-18T19:05:00.226Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -83,7 +184,18 @@
         "_id": "655283887a458d62e2552514",
         "inserted": "2023-12-02T08:04:00.278Z",
         "mapName": "StonecradleHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.4670867,
+                "y": 0.5185912,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-06T03:10:02.623Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -93,7 +205,40 @@
         "_id": "655283887a458d62e2552518",
         "inserted": "2023-12-02T08:04:00.312Z",
         "mapName": "KingsCageHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.7410215,
+                "y": 0.2853244,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-08T12:10:02.842Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-29T23:15:00.388Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.7478025,
+                "y": 0.27152032,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-08T12:30:04.719Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-29T23:05:00.329Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.7351184,
+                "y": 0.39300978,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T21:20:02.825Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -103,7 +248,18 @@
         "_id": "655283887a458d62e255251c",
         "inserted": "2023-12-02T08:04:00.342Z",
         "mapName": "SableportHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.630774,
+                "y": 0.3012436,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-26T17:50:03.341Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [
             {
                 "teamId": "WARDENS",
@@ -124,7 +280,30 @@
         "_id": "655283887a458d62e2552520",
         "inserted": "2023-12-02T08:04:00.370Z",
         "mapName": "AshFieldsHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.46503443,
+                "y": 0.41079652,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-14T01:10:04.853Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-15T01:55:00.265Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6035366,
+                "y": 0.6389947,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T11:20:04.833Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-20T01:25:00.322Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -144,7 +323,18 @@
         "_id": "655283887a458d62e2552528",
         "inserted": "2023-12-02T08:04:00.428Z",
         "mapName": "MooringCountyHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.29323512,
+                "y": 0.32359877,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T15:50:05.905Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -154,7 +344,647 @@
         "_id": "655283887a458d62e255252c",
         "inserted": "2023-12-02T08:04:00.456Z",
         "mapName": "LinnMercyHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.8122786,
+                "y": 0.5064809,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-07T04:20:05.939Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T10:35:00.487Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.568951,
+                "y": 0.30720052,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-08T21:20:07.277Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T15:45:00.488Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.57692224,
+                "y": 0.30476978,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T04:30:07.175Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T15:55:00.501Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6494217,
+                "y": 0.8104784,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T14:55:00.359Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6544169,
+                "y": 0.8176163,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T14:55:00.359Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.65942967,
+                "y": 0.82477915,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T14:55:00.359Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6685267,
+                "y": 0.77454877,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T15:15:00.346Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.67807454,
+                "y": 0.7828244,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T18:35:00.594Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6966423,
+                "y": 0.8215867,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T18:25:00.369Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6827115,
+                "y": 0.81845856,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T21:25:00.495Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.65604645,
+                "y": 0.78092,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T18:55:00.512Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.64921284,
+                "y": 0.7847429,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T15:15:00.346Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.69340473,
+                "y": 0.8134938,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T18:25:00.369Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.64457273,
+                "y": 0.8033757,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:40:05.731Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-18T10:25:00.405Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.67953795,
+                "y": 0.8105585,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T13:50:04.271Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T21:25:00.495Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.72263205,
+                "y": 0.7942462,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T14:10:07.945Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T20:15:00.383Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.71954095,
+                "y": 0.77809423,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T14:10:07.945Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T20:15:00.383Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.7338502,
+                "y": 0.49498457,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T18:30:07.567Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-17T01:15:00.419Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.7344758,
+                "y": 0.48400524,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T18:40:09.694Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-17T06:15:00.385Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.2804344,
+                "y": 0.6932642,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T19:20:05.774Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T02:35:00.491Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.28641042,
+                "y": 0.7090836,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T19:20:05.774Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T02:05:00.532Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.28968677,
+                "y": 0.691465,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T19:20:05.774Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T00:05:01.019Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.2934167,
+                "y": 0.70674145,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T19:20:05.774Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-22T21:35:00.437Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.74488676,
+                "y": 0.48976958,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T19:20:05.774Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-16T22:35:00.366Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.62046987,
+                "y": 0.3725524,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T20:50:06.896Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-21T17:15:00.425Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.63639575,
+                "y": 0.36396784,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T21:00:08.429Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T00:25:00.548Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.63056296,
+                "y": 0.37179112,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T21:00:08.429Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T11:25:00.542Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.56847525,
+                "y": 0.47688103,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T21:10:06.758Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-17T10:05:00.443Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.56526566,
+                "y": 0.48679635,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T21:20:07.287Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-17T10:25:00.388Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.56002396,
+                "y": 0.45381734,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T21:20:07.287Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-17T14:55:00.372Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.5597546,
+                "y": 0.4432225,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T21:30:04.328Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-19T06:35:00.463Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.36053777,
+                "y": 0.8894336,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T19:30:08.201Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.35498816,
+                "y": 0.8828392,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T19:30:08.201Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.4748943,
+                "y": 0.2819059,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T20:00:09.096Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.4668333,
+                "y": 0.2805155,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T20:30:04.289Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.4637567,
+                "y": 0.28886724,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T21:10:07.568Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.46752694,
+                "y": 0.29794082,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T21:20:05.958Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.457422,
+                "y": 0.28153285,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T22:00:07.656Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6554921,
+                "y": 0.7378883,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T22:20:07.205Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-12T18:35:00.323Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.42564777,
+                "y": 0.8686212,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T22:30:05.554Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.2624615,
+                "y": 0.66349083,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T23:10:04.279Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T01:55:00.434Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.61053264,
+                "y": 0.83923775,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T23:40:07.052Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-11T01:25:00.291Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.2211199,
+                "y": 0.68564004,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T00:10:06.678Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T02:55:00.389Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.21060358,
+                "y": 0.6804242,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T00:10:06.678Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T02:55:00.389Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.22054537,
+                "y": 0.6989317,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T00:10:06.678Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T02:45:00.465Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6345311,
+                "y": 0.7281297,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T10:50:08.618Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-12T19:05:00.324Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.64205295,
+                "y": 0.7289217,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T10:50:08.618Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-12T18:05:00.345Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6518742,
+                "y": 0.72759944,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T11:10:05.694Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-12T18:35:00.323Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.43404934,
+                "y": 0.8932653,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T16:00:05.902Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.42951876,
+                "y": 0.88508373,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T16:00:05.902Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.70369786,
+                "y": 0.87036663,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T17:20:06.971Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T21:35:00.437Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.7097357,
+                "y": 0.86075836,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T17:20:06.971Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T20:25:00.351Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.70072937,
+                "y": 0.8614301,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T17:50:07.347Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T21:25:00.495Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.7072868,
+                "y": 0.8521077,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T17:50:07.347Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T20:25:00.351Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.6634306,
+                "y": 0.80330044,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T18:10:06.419Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T14:55:00.360Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.6473559,
+                "y": 0.1098834,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-13T06:30:07.241Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-18T03:05:00.462Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.6099122,
+                "y": 0.42105913,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-14T01:10:05.726Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-22T23:35:00.435Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.23905951,
+                "y": 0.69102305,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T22:50:06.475Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T02:15:00.413Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.22923093,
+                "y": 0.6899972,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T22:50:06.475Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T02:05:00.532Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -164,7 +994,118 @@
         "_id": "655283887a458d62e2552530",
         "inserted": "2023-12-02T08:04:00.486Z",
         "mapName": "LochMorHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.49632663,
+                "y": 0.53044945,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T20:20:08.534Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-20T20:05:00.766Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.656855,
+                "y": 0.122647576,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T14:50:04.679Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-14T05:35:00.356Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6492399,
+                "y": 0.12663175,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T14:50:04.679Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-14T01:55:00.418Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.649422,
+                "y": 0.118363604,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T15:00:13.685Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-14T01:55:00.418Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.64796615,
+                "y": 0.093491785,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T18:50:08.967Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T19:05:00.368Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.75021434,
+                "y": 0.608605,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T19:00:09.636Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-10T20:25:00.323Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6571698,
+                "y": 0.093655266,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T19:20:09.580Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T19:05:00.368Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5138163,
+                "y": 0.47709516,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-19T13:35:00.470Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-20T06:55:00.436Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.4488373,
+                "y": 0.8596734,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T22:00:06.958Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-20T23:35:00.501Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5137749,
+                "y": 0.46806997,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-19T13:35:00.470Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-20T06:55:00.436Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -174,7 +1115,30 @@
         "_id": "655283887a458d62e2552534",
         "inserted": "2023-12-02T08:04:00.523Z",
         "mapName": "HeartlandsHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.657885,
+                "y": 0.34067154,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T17:10:09.646Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-29T21:35:00.530Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.6521616,
+                "y": 0.3556649,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T18:20:06.430Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-29T21:55:00.534Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [
             {
@@ -208,7 +1172,85 @@
         "_id": "655283887a458d62e2552538",
         "inserted": "2023-12-02T08:04:00.557Z",
         "mapName": "RedRiverHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.13940716,
+                "y": 0.6145131,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T19:50:06.373Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T01:45:00.566Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.15276808,
+                "y": 0.6241223,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T20:30:06.581Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T01:45:00.566Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.16027927,
+                "y": 0.6214754,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T20:40:06.275Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T01:45:00.566Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.36283335,
+                "y": 0.22683929,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-21T07:00:06.362Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-24T20:25:00.512Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.33120978,
+                "y": 0.32020298,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T14:50:05.292Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-24T00:25:00.594Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.72192806,
+                "y": 0.8271388,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-24T06:30:10.717Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T23:45:00.798Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.71442837,
+                "y": 0.8281652,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-24T07:10:10.408Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T23:45:00.798Z"
+            }
+        ],
         "rocketSites": [
             {
                 "teamId": "COLONIALS",
@@ -250,7 +1292,49 @@
         "_id": "655283887a458d62e2552544",
         "inserted": "2023-12-02T08:04:00.662Z",
         "mapName": "CallahansPassageHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.575728,
+                "y": 0.75897765,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-19T11:10:08.793Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.4708113,
+                "y": 0.8755612,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-21T10:10:09.253Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-23T04:45:00.628Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.565544,
+                "y": 0.7635748,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-24T13:35:00.601Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.57634443,
+                "y": 0.74858737,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-21T15:00:09.564Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -270,7 +1354,85 @@
         "_id": "655283887a458d62e255254c",
         "inserted": "2023-12-02T08:04:00.728Z",
         "mapName": "UmbralWildwoodHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.29826787,
+                "y": 0.5574504,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-12T08:20:08.431Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-24T00:25:00.840Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.2997587,
+                "y": 0.54772955,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-13T22:10:10.789Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-24T00:25:00.840Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.36615753,
+                "y": 0.2820902,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-18T19:20:09.219Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-25T20:15:00.810Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.3743842,
+                "y": 0.2823719,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-18T19:40:14.908Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-25T20:15:00.810Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.68465734,
+                "y": 0.2199781,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T02:50:09.541Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-27T20:45:00.818Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.32740316,
+                "y": 0.7891172,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-26T12:40:09.840Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T19:25:00.888Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.33339435,
+                "y": 0.7955988,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-26T12:40:09.840Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T19:25:00.888Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -280,7 +1442,19 @@
         "_id": "655283887a458d62e2552550",
         "inserted": "2023-12-02T08:04:00.756Z",
         "mapName": "GreatMarchHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.41321447,
+                "y": 0.36462465,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-28T05:20:14.316Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-29T22:25:00.773Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -290,7 +1464,49 @@
         "_id": "655283887a458d62e2552554",
         "inserted": "2023-12-02T08:04:00.785Z",
         "mapName": "KalokaiHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.2408015,
+                "y": 0.18151525,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-19T17:40:09.999Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-29T07:25:00.759Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.7377859,
+                "y": 0.26833662,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-29T15:20:07.580Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.7512333,
+                "y": 0.29499984,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-30T11:00:07.544Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.7352852,
+                "y": 0.29542935,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-12-01T12:40:07.491Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [
             {
                 "teamId": "COLONIALS",
@@ -323,7 +1539,18 @@
         "_id": "655283887a458d62e2552558",
         "inserted": "2023-12-02T08:04:00.820Z",
         "mapName": "HowlCountyHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.60998017,
+                "y": 0.8420047,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T15:30:14.005Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -333,7 +1560,82 @@
         "_id": "655283887a458d62e255255c",
         "inserted": "2023-12-02T08:04:00.859Z",
         "mapName": "ViperPitHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.5681338,
+                "y": 0.3397087,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-12T00:20:13.246Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-19T11:55:00.847Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.28025246,
+                "y": 0.81199414,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-13T00:40:14.023Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-28T09:25:00.918Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.2984459,
+                "y": 0.81660503,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-13T18:30:14.683Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-28T08:05:00.927Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.31877384,
+                "y": 0.84245867,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T18:30:16.344Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.31253657,
+                "y": 0.8338934,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T19:40:09.355Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-28T12:35:00.930Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.6458564,
+                "y": 0.69291216,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-17T23:10:11.323Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.6518583,
+                "y": 0.6879299,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-17T23:30:12.222Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -343,7 +1645,169 @@
         "_id": "655283887a458d62e2552560",
         "inserted": "2023-12-02T08:04:00.891Z",
         "mapName": "MarbanHollow",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.7655998,
+                "y": 0.49802238,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-14T23:20:11.288Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-18T23:05:00.714Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.7667338,
+                "y": 0.5069556,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-14T23:40:10.738Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-18T23:05:00.715Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.7603925,
+                "y": 0.48211735,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T11:40:11.835Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-18T23:05:00.715Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.29208362,
+                "y": 0.60272527,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T08:20:13.362Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T01:05:00.888Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.3022247,
+                "y": 0.6066442,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T08:20:13.362Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T01:05:00.888Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.31280652,
+                "y": 0.6002704,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T08:30:12.449Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T01:15:00.908Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.29101166,
+                "y": 0.61343634,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T22:10:17.413Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T01:05:00.888Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.36849287,
+                "y": 0.5503602,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-25T08:10:11.228Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T11:25:01.017Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.34054673,
+                "y": 0.71147573,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-26T05:20:13.393Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T13:35:00.942Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.33427507,
+                "y": 0.6666501,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-26T05:30:10.923Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T13:35:00.942Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.31098914,
+                "y": 0.6695738,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-26T05:40:09.455Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T13:35:00.942Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.7059807,
+                "y": 0.17469117,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-28T14:20:09.878Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.7863531,
+                "y": 0.6168754,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-12-01T18:00:08.419Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.78522354,
+                "y": 0.6280203,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-12-01T19:00:08.436Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.7836949,
+                "y": 0.6362201,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-12-01T19:10:08.291Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [
             {
                 "teamId": "WARDENS",
@@ -363,7 +1827,228 @@
         "_id": "655283887a458d62e2552564",
         "inserted": "2023-12-02T08:04:00.918Z",
         "mapName": "DrownedValeHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.69917053,
+                "y": 0.72513837,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T05:50:10.868Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6975036,
+                "y": 0.7081343,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T17:40:14.768Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.704521,
+                "y": 0.6682288,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T00:10:10.772Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.7169282,
+                "y": 0.67930955,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T00:10:10.772Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6961027,
+                "y": 0.69331384,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T00:40:12.773Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.70047903,
+                "y": 0.7386404,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T01:10:12.369Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.22347093,
+                "y": 0.5667983,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-13T10:50:12.146Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-13T22:15:00.867Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.7208656,
+                "y": 0.7230603,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T00:10:13.865Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.21810126,
+                "y": 0.55831385,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T10:10:09.683Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-15T15:45:00.767Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.3639742,
+                "y": 0.6332579,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T13:50:18.305Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-19T09:45:00.826Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.72729367,
+                "y": 0.26520875,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T17:50:08.494Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-27T23:05:01.125Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.68875146,
+                "y": 0.12747967,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-18T22:50:16.218Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T16:55:00.872Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.36554044,
+                "y": 0.44129595,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-19T00:10:16.141Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-25T10:35:00.920Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6814277,
+                "y": 0.12311521,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-19T00:30:12.108Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T17:25:00.947Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.37462673,
+                "y": 0.42683482,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-19T00:50:14.797Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-25T13:35:00.987Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.69119865,
+                "y": 0.84747195,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T18:50:14.854Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6949375,
+                "y": 0.834343,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T19:50:12.285Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.38255244,
+                "y": 0.3672814,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-26T06:20:11.776Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T19:25:01.166Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.3874541,
+                "y": 0.35838747,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-26T07:00:11.633Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T19:25:01.166Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6778062,
+                "y": 0.86318606,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-27T07:30:10.861Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.67313576,
+                "y": 0.84779257,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-27T07:50:12.974Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [
             {
                 "teamId": "COLONIALS",
@@ -394,7 +2079,19 @@
         "_id": "655283887a458d62e2552568",
         "inserted": "2023-12-02T08:04:00.945Z",
         "mapName": "ShackledChasmHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.55621964,
+                "y": 0.5187446,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-12-01T06:20:08.996Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-12-01T07:25:00.869Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -404,7 +2101,28 @@
         "_id": "655283887a458d62e255256c",
         "inserted": "2023-12-02T08:04:00.972Z",
         "mapName": "AcrithiaHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.47796023,
+                "y": 0.19854255,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T03:30:11.850Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.49431327,
+                "y": 0.20524487,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-27T06:20:12.679Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -414,7 +2132,93 @@
         "_id": "655283887a458d62e2552570",
         "inserted": "2023-12-02T08:04:01.002Z",
         "mapName": "ClansheadValleyHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.6387845,
+                "y": 0.44216418,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T13:00:15.560Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.64097047,
+                "y": 0.451869,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-11T13:50:12.800Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.40470833,
+                "y": 0.8324766,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-13T06:40:12.757Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.592431,
+                "y": 0.6536475,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-18T09:20:09.362Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-12-01T20:25:01.055Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.36561528,
+                "y": 0.900431,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-22T19:50:13.708Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T17:35:01.025Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.3786964,
+                "y": 0.9005072,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-22T20:10:09.503Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T17:45:01.040Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.34889367,
+                "y": 0.87504226,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-22T23:30:13.692Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T10:35:01.203Z"
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.3221508,
+                "y": 0.8712562,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T00:00:14.499Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T14:25:00.951Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -424,7 +2228,68 @@
         "_id": "655283887a458d62e2552574",
         "inserted": "2023-12-02T08:04:01.031Z",
         "mapName": "WeatheredExpanseHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.3491243,
+                "y": 0.09909227,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-08T14:00:15.455Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.34950244,
+                "y": 0.089178994,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-08T14:10:11.025Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.38471913,
+                "y": 0.15906754,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T23:00:12.522Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.40353802,
+                "y": 0.09851782,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-13T15:10:11.061Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.3962358,
+                "y": 0.0968123,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-13T15:10:11.061Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.3610304,
+                "y": 0.101262495,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-14T11:30:13.559Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [
             {
@@ -446,7 +2311,107 @@
         "_id": "655283887a458d62e2552578",
         "inserted": "2023-12-02T08:04:01.064Z",
         "mapName": "ClahstraHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.2249036,
+                "y": 0.566598,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-07T04:50:15.744Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-28T22:35:01.138Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.23641664,
+                "y": 0.5586979,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-07T05:00:16.389Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-28T22:25:01.061Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.22930421,
+                "y": 0.5449858,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-07T05:00:16.389Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-28T21:55:01.036Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.21768853,
+                "y": 0.5529053,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-07T05:10:16.926Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-28T22:05:01.106Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.17977794,
+                "y": 0.5938297,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T00:00:17.445Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-28T23:25:01.193Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.3265424,
+                "y": 0.64233094,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T01:40:16.228Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-29T01:15:01.134Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.32894853,
+                "y": 0.69780576,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-14T15:30:15.832Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-29T05:05:01.071Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.33789665,
+                "y": 0.6975678,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-17T17:10:14.491Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-29T04:15:01.120Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.4228864,
+                "y": 0.50943106,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-20T00:20:16.436Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-29T03:15:01.190Z"
+            }
+        ],
         "rocketSites": [
             {
                 "teamId": "COLONIALS",
@@ -469,7 +2434,19 @@
         "_id": "655283887a458d62e255257c",
         "inserted": "2023-12-02T08:04:01.094Z",
         "mapName": "AllodsBightHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.2905299,
+                "y": 0.6271168,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-27T17:40:16.488Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T22:45:01.079Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -489,7 +2466,88 @@
         "_id": "655283887a458d62e2552584",
         "inserted": "2023-12-02T08:04:01.150Z",
         "mapName": "MorgensCrossingHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.20178592,
+                "y": 0.320745,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-08T01:20:15.876Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.24394661,
+                "y": 0.2805525,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-15T21:40:17.261Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.6902897,
+                "y": 0.21842179,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T20:10:14.872Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.6919764,
+                "y": 0.23186967,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T20:50:17.937Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.7006153,
+                "y": 0.21678907,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-16T23:20:22.448Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.4459957,
+                "y": 0.29321033,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-21T00:40:20.105Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.69418263,
+                "y": 0.63716906,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T15:10:12.303Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "WARDENS",
+                "iconType": 60,
+                "x": 0.4265707,
+                "y": 0.35294762,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-24T13:40:15.621Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [
             {
                 "teamId": "WARDENS",
@@ -511,7 +2569,74 @@
         "_id": "655283887a458d62e2552588",
         "inserted": "2023-12-02T08:04:01.183Z",
         "mapName": "StlicanShelfHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.39463112,
+                "y": 0.7134073,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-17T15:20:14.832Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T23:55:01.363Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.40088582,
+                "y": 0.7066384,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-17T16:20:16.142Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T23:35:01.370Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.40761185,
+                "y": 0.711767,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-17T16:40:15.014Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-27T00:05:01.818Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6250587,
+                "y": 0.28912076,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-23T10:00:16.997Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T14:25:01.262Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.6569259,
+                "y": 0.2664606,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-24T00:50:18.933Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T15:05:01.533Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.64138365,
+                "y": 0.3119139,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-24T02:30:14.886Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-26T17:25:01.341Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [
             {
@@ -557,7 +2682,92 @@
         "_id": "655283887a458d62e255258c",
         "inserted": "2023-12-02T08:04:01.211Z",
         "mapName": "EndlessShoreHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.33908197,
+                "y": 0.7184336,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-06T22:00:18.975Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.51300335,
+                "y": 0.89947855,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-08T00:10:14.877Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.4963615,
+                "y": 0.8986069,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-08T00:10:14.877Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5050683,
+                "y": 0.88946354,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-08T00:20:14.928Z",
+                "isDestroyed": false
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.2409716,
+                "y": 0.5874931,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T01:50:17.795Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T16:15:01.342Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 60,
+                "x": 0.2320315,
+                "y": 0.5797682,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T04:10:16.926Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T15:55:01.413Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.452652,
+                "y": 0.48675576,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T03:20:17.482Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T18:15:01.321Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.45298147,
+                "y": 0.49544808,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-17T14:10:15.179Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-30T18:05:01.335Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -567,7 +2777,19 @@
         "_id": "655283887a458d62e2552590",
         "inserted": "2023-12-02T08:04:01.240Z",
         "mapName": "ReaversPassHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.70011574,
+                "y": 0.8716082,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-29T23:10:12.040Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-12-01T19:55:01.206Z"
+            }
+        ],
         "rocketSites": [
             {
                 "teamId": "COLONIALS",
@@ -587,7 +2809,18 @@
         "_id": "655283887a458d62e2552594",
         "inserted": "2023-12-02T08:04:01.266Z",
         "mapName": "GodcroftsHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "WARDENS",
+                "iconType": 59,
+                "x": 0.58249104,
+                "y": 0.48540285,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-12T09:45:00.867Z",
+                "isDestroyed": false
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
@@ -607,7 +2840,41 @@
         "_id": "655283887a458d62e255259c",
         "inserted": "2023-12-02T08:04:01.321Z",
         "mapName": "TheFingersHex",
-        "platforms": [],
+        "platforms": [
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.567416,
+                "y": 0.82801205,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T20:20:19.206Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-14T21:15:01.238Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.5584066,
+                "y": 0.8274466,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-09T20:20:19.206Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-14T21:15:01.238Z"
+            },
+            {
+                "teamId": "COLONIALS",
+                "iconType": 59,
+                "x": 0.2257626,
+                "y": 0.7413988,
+                "flags": 0,
+                "viewDirection": 0,
+                "detected": "2023-11-10T19:10:19.714Z",
+                "isDestroyed": true,
+                "destructionDetected": "2023-11-27T06:05:01.567Z"
+            }
+        ],
         "rocketSites": [],
         "rocketTargets": [],
         "rocketGroundZeros": [],
