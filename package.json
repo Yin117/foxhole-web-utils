@@ -22,6 +22,7 @@
     "@mui/styled-engine-sc": "^6.4.3",
     "@tanstack/react-query": "^5.66.9",
     "axios": "^1.8.1",
+    "heatmap.js": "^2.0.5",
     "konva": "^9.3.18",
     "next": "15.1.7",
     "react": "^19.0.0",
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/heatmap.js": "^2.0.41",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

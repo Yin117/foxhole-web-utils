@@ -17,6 +17,7 @@ import { MapDynamic } from '@/types/warData';
 import { useQuery } from '@tanstack/react-query';
 import { getCurrentMapDynamicForRegion } from '@/apiFunctions/foxhole/dynamicMap';
 import { getCurrentWarState } from '@/apiFunctions/foxhole/war';
+import { warNumberToMetaMapDynamic } from '@/consts/warData/metaMapDynamic';
 
 // TODO: Responsive: https://konvajs.org/docs/sandbox/Responsive_Canvas.html
 
@@ -47,9 +48,9 @@ function refactorMapDynamicData(display: MapDynamic) { // , compare: MapDynamic 
         return false;
       }
       if (details.isPlayerBuilt) {
-        return false;
+        return true;
       }
-      return true;
+      return false;
     })
     .map(item => {
       const details = getMapItemDetail(item.iconType);
@@ -252,7 +253,23 @@ export function ResourcesComparePage() {
           {hexMapDynamicForWarBefore ?
           <Region
             hex={regionHex}
-            data={refactorMapDynamicData(hexMapDynamicForWarBefore /*, hexMapDynamicForWarAfter*/)}
+            data={(() => {
+              const metaData = warNumberToMetaMapDynamic.get(beforeWarNumber)?.find(({ mapName }) => {
+                return mapName === regionHex;
+              });
+              console.log('metaData', metaData);
+              return {
+                mapName: regionHex,
+                mapItems: metaData?.platforms,
+                inserted: '',
+                // mapName: HexKeysUnion,
+                regionId: 1,
+                scorchedVictoryTowns: 1,
+                // mapItems: MapItem[],
+                etag: 'string',
+              }
+            })()}
+            // data={refactorMapDynamicData(hexMapDynamicForWarBefore /*, hexMapDynamicForWarAfter*/)}
             width={worldExtents.getWidthFromHeight(getRegionHeight(window))}
             height={getRegionHeight(window)}
           /> : (
