@@ -5,6 +5,7 @@ import Link from "next/link";
 type PropsHomeNavCard = {
   imagePath?: string,
   label: string,
+  subtext?: string,
   navPath: string,
 }
 
@@ -12,6 +13,7 @@ export function HomeNavCard(props: PropsHomeNavCard) {
   const {
     imagePath,
     label,
+    subtext,
     navPath,
   } = props;
 
@@ -26,10 +28,10 @@ export function HomeNavCard(props: PropsHomeNavCard) {
           <Typography gutterBottom variant="h5" component="div">
             {label}
           </Typography>
-          {/* <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography> */}
+          {(subtext?.length ?? 0) > 0 &&
+          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+            {subtext}
+          </Typography>}
         </CardContent>
         {imagePath &&
         <Image

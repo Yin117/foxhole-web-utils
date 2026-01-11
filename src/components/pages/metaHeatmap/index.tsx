@@ -458,6 +458,10 @@ export function MetaHeatmap() {
             </Box>
           </Paper>
 
+          <Typography>
+            Note, Region Images are not back-dated to their historic versions
+          </Typography>
+
         </div>
       </div>
     </div>

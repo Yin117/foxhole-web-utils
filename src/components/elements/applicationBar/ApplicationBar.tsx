@@ -23,7 +23,6 @@ export function ApplicationBar() {
   const warNumber = data?.data.warNumber;
   const isResistancePhase = !!data?.data.resistanceStartTime;
 
-
   return (
     <AppBar>
       <Toolbar>
@@ -33,6 +32,7 @@ export function ApplicationBar() {
           color="inherit"
           aria-label="menu"
           sx={{ mr: 2 }}
+          disabled
         >
           <MenuIcon />
         </IconButton>
