@@ -1,9 +1,22 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Box, Typography } from "@mui/material";
 import { HomeNavCard } from "@/components/homeNavCard";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => setIsClient(true), []);
+
+  if (isClient === false) {
+    return (
+      <div>
+        <h2>Loading...</h2>
+      </div>
+    )
+  }
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -32,6 +45,16 @@ export default function Home() {
               label="Compare War Resource Layouts"
               imagePath="/foxhole-web-utils/images/Concepts/App/CompareResources.png"
               navPath="/tools/resources-compare"
+              subtext="Ever wanted to see the differnt layouts of resources between two wars?"
+            />
+          </Box>
+
+          <Box maxWidth="30%">
+            <HomeNavCard
+              label="Platform Heatmap"
+              imagePath="/foxhole-web-utils/images/Concepts/App/PlatformHeatmap.png"
+              navPath="/tools/meta-heatmap"
+              subtext="Curious how each faction tends to position their Storm Cannons?"
             />
           </Box>
 
@@ -40,6 +63,7 @@ export default function Home() {
               label="Meta Stats"
               imagePath="/foxhole-web-utils/images/Concepts/App/MetaStats.png"
               navPath="/tools/meta-stats"
+              subtext="Want to know how many Storm Cannons, Intel Centers, and Rockets occured in a war?"
             />
           </Box>
 

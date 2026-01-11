@@ -34,6 +34,10 @@ const nextConfig: NextConfig = {
     config.externals = [...config.externals, { canvas: 'canvas' }]; // required to make Konva & react-konva work
     return config;
   },
+
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 export default nextConfig;

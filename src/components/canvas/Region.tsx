@@ -68,6 +68,9 @@ function MapItemImage({ mapItem, iconSize, hexWidth, hexHeight }: { mapItem: Map
 }
 
 function MapItemImages({ mapItems, iconSize, hexWidth, hexHeight }: { mapItems: (MapItem & Partial<ImageConfig>)[], iconSize: number, hexWidth: number, hexHeight: number }) {
+  if (mapItems == null) {
+    return null;
+  }
   return mapItems.map(mapItem => {
     const key = `${mapItem.iconType}_${mapItem.x}_${mapItem.y}`;
     if (key === '38') {
@@ -93,7 +96,7 @@ export default function Region(props: PropsRegion) {
     height = 500,
   } = props;
   
-  console.log('Region', { data });
+  console.log(`Region (${data?.mapItems?.length} Map Items)`, { data });
   const [image] = useImage(`/foxhole-web-utils/images/Maps/${hexInfo[hex]?.icon}.png`);
   
   return (
