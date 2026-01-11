@@ -79,7 +79,7 @@ export default function MetaHeatmap() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   
   // Placeholder image URL
-  const [image] = useImage(`/foxhole-web-utils/images/Maps/Map${regionHex}.png`);
+  const [image] = useImage(`/foxhole-web-utils/images/Maps/${hexInfo[regionHex].icon}.png`);
   
   // State to hold the dimensions of the image/container once loaded
   const width = worldExtents.getWidthFromHeight(getRegionHeight(window));
