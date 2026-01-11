@@ -10,4 +10,5 @@
   flex-direction: column;
   gap: 12px;
   margin-left: 12px;
+  min-width: 250px;
 }

@@ -25,16 +25,25 @@ export const factions = {
     mapItemKey: 'NONE',
     label: 'Netural',
     labelPlural: 'Warden',
+    imageSrc: null,
   },
   wardens: {
     mapItemKey: 'WARDENS',
     label: 'Warden',
     labelPlural: 'Wardens',
+    imageSrc: "/foxhole-web-utils/images/Factions/Warden.png",
   },
   colonials: {
     mapItemKey: 'COLONIALS',
     label: 'Colonial',
     labelPlural: 'Colonials',
+    imageSrc: "/foxhole-web-utils/images/Factions/Colonial.png",
+  },
+  both: {
+    mapItemKey: null,
+    label: 'Both',
+    labelPlural: 'Both',
+    imageSrc: "/foxhole-web-utils/images/Factions/WardenAndColonial.png",
   },
 };
 
@@ -1122,3 +1131,19 @@ export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
 		'TheFingersHex',
   ],
 ]);
+
+export enum StructureKeys {
+  stormCannon = 'stormCannon',
+  intelCenter = 'intelCenter',
+}
+type StructureKey = `${StructureKeys}`;
+
+export const structureToIconType: Record<StructureKey, number> = {
+  stormCannon: 59,
+  intelCenter: 60,
+}
+
+export const structureToMapDetail: Record<StructureKey, Partial<MapItemDetail>> = {
+  stormCannon: iconTypeToMapDetail[structureToIconType.stormCannon],
+  intelCenter: iconTypeToMapDetail[structureToIconType.intelCenter]
+}

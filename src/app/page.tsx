@@ -1,9 +1,22 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Box, Typography } from "@mui/material";
 import { HomeNavCard } from "@/components/homeNavCard";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => setIsClient(true), []);
+
+  if (isClient === false) {
+    return (
+      <div>
+        <h2>Loading...</h2>
+      </div>
+    )
+  }
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>

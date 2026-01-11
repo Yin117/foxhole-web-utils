@@ -1,22 +1,30 @@
 "use client"
 
 import React, { useRef, useEffect, useState, useMemo } from 'react';
+import InfoIcon from "@mui/icons-material/InfoOutlined";
 import styles from './metaHeatmap.module.css';
 import h337 from 'heatmap.js';
 import { HeatmapConfiguration } from 'heatmap.js';
 import useImage from 'use-image';
 import Image from 'next/image';
-import { hexInfo, HexKeys, HexKeysUnion, warNumbers, worldExtents } from '@/consts/foxhole';
+import { factions, hexInfo, HexKeys, HexKeysUnion, StructureKeys, structureToIconType, structureToMapDetail, warNumbers, worldExtents } from '@/consts/foxhole';
 import { warNumberToMetaMapDynamic } from '@/consts/warData/metaMapDynamic';
 import { MetaMapDynamic } from '@/types/warData';
-import { MenuItem, Slider, TextField, Typography } from '@mui/material';
+import { Box, IconButton, MenuItem, Paper, Slider, TextField, ToggleButton, ToggleButtonGroup, Tooltip, Typography, useTheme } from '@mui/material';
 import { getObjectEntries } from '@/helpers/typescriptHelper';
+
+const MAP_ICON_PATH_PREFIX = "/foxhole-web-utils/images/MapIcons/"
+
+const INFO_STRUCTURE_VALUE = "Each Structure contributes this value to the Heatmap";
+
+const INFO_RED_VALUE = "The Heatmap will display as Red when the Structures result in this value in that area";
 
 // 1. Define the TypeScript interface for a data point
 interface HeatmapPoint {
   x: number;
   y: number;
   value: number;
+  _platform: unknown,
 }
 
 // Configuration for the heatmap instance
@@ -60,9 +68,27 @@ export function MetaHeatmap() {
     setIsClient(true);
   }, []);
 
+  const theme = useTheme();
+
   const [regionHex, setRegionHex] = useState<HexKeysUnion>(HexKeys.SpeakingWoodsHex);
   const [startWarNumber, setStartWarNumber] = useState(warNumbers[warNumbers.length - 5]);
   const [endWarNumber, setEndWarNumber] = useState(warNumbers[warNumbers.length - 1]);
+  
+  const [factionKeys, setFactionKeys] = useState([
+    factions.wardens.mapItemKey,
+    factions.colonials.mapItemKey,
+  ].sort());
+  function handleSetFactions(_e: React.MouseEvent<HTMLElement>, newFactions: string[]) {
+    setFactionKeys(newFactions);
+  }
+
+  const [platformKeys, setPlatformKeys] = useState([
+    'stormCannon',
+    'intelCenter',
+  ]);
+  function handleSetPlatforms(_e: React.MouseEvent<HTMLElement>, newPlatforms: string[]) {
+    setPlatformKeys(newPlatforms);
+  }
     
   // Ref to hold the canvas element where the heatmap will be drawn
   const hexImageRef = useRef<HTMLImageElement>(null);
@@ -71,13 +97,20 @@ export function MetaHeatmap() {
   // Placeholder image URL
   const [image] = useImage(`/foxhole-web-utils/images/Maps/Map${regionHex}.png`);
   
-  
   // State to hold the dimensions of the image/container once loaded
   const width = worldExtents.getWidthFromHeight(getRegionHeight(window));
   const height = getRegionHeight(window);
 
   const [structureValue, setStructureValue] = useState(0.3);
   const [max, setMax] = useState(1);
+
+  const filters = useMemo(() => ({
+    region: regionHex,
+    warden: factionKeys.includes(factions.wardens.mapItemKey),
+    colonial: factionKeys.includes(factions.colonials.mapItemKey),
+    stormCannon: platformKeys.includes(StructureKeys.stormCannon),
+    intelCenter: platformKeys.includes(StructureKeys.intelCenter),
+  }), [regionHex, factionKeys, platformKeys]);
 
   const structureData = useMemo(() => {
     const mapDatas: MetaMapDynamic[] = [];
@@ -88,13 +121,14 @@ export function MetaHeatmap() {
         continue;
       }
       for (const map of data) {
-        if (map.mapName === regionHex) {
-          mapDatas.push(map);
+        if (map.mapName !== filters.region) {
+          continue;
         }
+        mapDatas.push(map);
       }
     }
     return mapDatas;
-  }, [regionHex, startWarNumber, endWarNumber]);
+  }, [startWarNumber, endWarNumber, filters.region]);
 
   // 2. Generate Starter Density Data
   // Create an array of mock data points
@@ -107,11 +141,27 @@ export function MetaHeatmap() {
     for (const map of structureData) {
       let singleMapMax = 0;
       for (const platform of map.platforms) {
+
+        if (platform.teamId === factions.wardens.mapItemKey && filters.warden === false) {
+          continue;
+        }
+        if (platform.teamId === factions.colonials.mapItemKey && filters.colonial === false) {
+          continue;
+        }
+        if (platform.iconType === structureToIconType.stormCannon && filters.stormCannon === false) {
+          continue;
+        }
+        if (platform.iconType === structureToIconType.intelCenter && filters.intelCenter === false) {
+          continue;
+        }
+
+
         singleMapMax++;
         points.push({
           x: Math.floor(width * platform.x),
           y: Math.floor(height * platform.y),
           value: structureValue,
+          _platform: platform,
         })
       }
       if (overallMax < singleMapMax) {
@@ -121,7 +171,7 @@ export function MetaHeatmap() {
     // console.log(`Total of ${points.length} Structures Found, with an Overall Max of ${overallMax}`);
 
     return points;
-  }, [width, height, structureData, structureValue]);
+  }, [structureData, filters.warden, filters.colonial, filters.stormCannon, filters.intelCenter, width, height, structureValue]);
   // console.log('starterData', heatmapData);
 
   const heatmapDataLen = heatmapData.length;
@@ -168,7 +218,7 @@ export function MetaHeatmap() {
       }
     };  
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isClient, heatmapDataLen, max, structureValue]); // Re-run if starterData changes
+  }, [isClient, heatmapDataLen, max, structureValue, factionKeys]); // Re-run if starterData changes
 
   if (!isClient || typeof window === 'undefined') {
     return <Typography>Loading...</Typography>;
@@ -272,55 +322,142 @@ export function MetaHeatmap() {
             {getWarNumberMenuItems()}
           </TextField>
 
-          <Typography gutterBottom>Red Value: {max}</Typography>
-          <Slider
-            aria-label="Max"
-            defaultValue={1}
-            value={max}
-            onChange={(event: Event, newValue: number | number[]) => {
-              if (typeof newValue === 'number') {
-                setMax(newValue)
-              }
-            }}
-            valueLabelDisplay="auto"
-            shiftStep={0.1}
-            step={0.1}
-            marks
-            min={1}
-            max={10}
-          />
-
-          <Typography
-            gutterBottom
-            onClick={() => {
-              console.log('Page Data', {
-                structureData,
-                heatmapData,
-                max,
-                structureValue,
-                startWarNumber,
-                endWarNumber,
-              })
-            }}
+          {/* Factions */}
+          <ToggleButtonGroup
+            value={factionKeys}
+            onChange={handleSetFactions}
           >
-            Structure Value: {structureValue}
-          </Typography>
-          <Slider
-            aria-label="Structure Value"
-            defaultValue={1}
-            value={structureValue}
-            onChange={(event: Event, newValue: number | number[]) => {
-              if (typeof newValue === 'number') {
-                setStructureValue(newValue)
-              }
-            }}
-            valueLabelDisplay="auto"
-            shiftStep={0.1}
-            step={0.1}
-            marks
-            min={0.1}
-            max={5}
-          />
+            <ToggleButton value={factions.wardens.mapItemKey}>
+              <Image
+                src={factions.wardens.imageSrc}
+                alt={factions.wardens.label}
+                width={40}
+                height={40}
+              />
+            </ToggleButton>
+            <ToggleButton value={factions.colonials.mapItemKey}>
+              <Image
+                src={factions.colonials.imageSrc}
+                alt={factions.colonials.label}
+                width={40}
+                height={40}
+              />
+            </ToggleButton>
+          </ToggleButtonGroup>
+
+          {/* Platforms */}
+          <ToggleButtonGroup
+            value={platformKeys}
+            onChange={handleSetPlatforms}
+          >
+            <ToggleButton value={StructureKeys.stormCannon}>
+              <Image
+                src={MAP_ICON_PATH_PREFIX + structureToMapDetail[StructureKeys.stormCannon].iconFunc?.() + '.png'}
+                alt="Storm Cannon"
+                width={40}
+                height={40}
+              />
+            </ToggleButton>
+            <ToggleButton value={StructureKeys.intelCenter}>
+              <Image
+                src={MAP_ICON_PATH_PREFIX + structureToMapDetail[StructureKeys.intelCenter].iconFunc?.() + '.png'}
+                alt="Intel Center"
+                width={40}
+                height={40}
+              />
+            </ToggleButton>
+          </ToggleButtonGroup>
+
+          {/* Structure Value */}
+          <Paper elevation={1}>
+            <Box padding={theme.spacing(1, 2)}>
+              <Box
+                display="flex"
+                flexDirection="row"
+                justifyContent="space-between"
+                alignItems="center"
+                gap={3}
+              >
+                <Typography
+                  onClick={() => {
+                    console.log('Page Data', {
+                      structureData,
+                      heatmapData,
+                      filters,
+                      max,
+                      structureValue,
+                      startWarNumber,
+                      endWarNumber,
+                    })
+                  }}
+                >
+                  Structure Value: {structureValue}
+                </Typography>
+
+                <Tooltip title={INFO_STRUCTURE_VALUE}>
+                  <IconButton>
+                    <InfoIcon/>
+                  </IconButton>
+                </Tooltip>
+              </Box>
+              <Slider
+                aria-label="Structure Value"
+                defaultValue={1}
+                value={structureValue}
+                onChange={(event: Event, newValue: number | number[]) => {
+                  if (typeof newValue === 'number') {
+                    setStructureValue(newValue)
+                  }
+                }}
+                valueLabelDisplay="auto"
+                shiftStep={0.1}
+                step={0.1}
+                marks
+                min={0.1}
+                max={5}
+              />
+            </Box>
+          </Paper>
+
+          {/* Red Value */}
+          <Paper elevation={1}>
+            <Box padding={theme.spacing(1, 2)}>
+              <Box
+                display="flex"
+                flexDirection="row"
+                justifyContent="space-between"
+                alignItems="center"
+                gap={3}
+              >
+                <Typography>
+                  Red Value: {max}
+                </Typography>
+
+                <Tooltip title={INFO_RED_VALUE}>
+                  <IconButton>
+                    <InfoIcon/>
+                  </IconButton>
+                </Tooltip>
+              </Box>
+              <Slider
+                aria-label="Max"
+                defaultValue={1}
+                value={max}
+                onChange={(event: Event, newValue: number | number[]) => {
+                  if (typeof newValue === 'number') {
+                    setMax(newValue)
+                  }
+                }}
+                valueLabelDisplay="auto"
+                shiftStep={0.1}
+                step={0.1}
+                marks
+                min={1}
+                max={10}
+              />
+            </Box>
+          </Paper>
+
         </div>
       </div>
     </div>
