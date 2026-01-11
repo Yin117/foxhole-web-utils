@@ -89,7 +89,7 @@ export function MetaStats() {
   }, []);
 
   const rowData = useMemo<RowData[]>(() => {
-    const ret = warNumberToMetaMapDynamic.entries().toArray().map(([wc, worldData]) => {
+    const ret = (isClient ? warNumberToMetaMapDynamic.entries().toArray() : []).map(([wc, worldData]) => {
       const totals = {
         colonials: {
           sc: {

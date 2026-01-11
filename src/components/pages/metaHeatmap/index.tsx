@@ -27,22 +27,6 @@ interface HeatmapPoint {
   _platform: unknown,
 }
 
-// Configuration for the heatmap instance
-const config: HeatmapConfiguration = {
-  // Use the canvas element directly
-  container: document.createElement('div'), // This will be replaced by the ref
-  radius: 40,
-  maxOpacity: 0.6,
-  minOpacity: 0,
-  blur: 0.85,
-  // Define the color gradient
-  gradient: {
-    '.5': 'blue',
-    '.8': 'yellow',
-    '.95': 'red'
-  }
-};
-
 function getRegionHeight(window: Window) {
   return window.innerHeight * 0.75;
 }
@@ -62,7 +46,7 @@ function getWarNumberMenuItems(currentWar?: number) {
   );
 }
 
-export function MetaHeatmap() {
+export default function MetaHeatmap() {
   const [isClient, setIsClient] = useState(false);
   useEffect(() => {
     setIsClient(true);
@@ -183,6 +167,22 @@ export function MetaHeatmap() {
     if (!isClient || typeof window === 'undefined') {
       return;
     }
+    
+    // Configuration for the heatmap instance
+    const config: HeatmapConfiguration = {
+      // Use the canvas element directly
+      container: document.createElement('div'), // This will be replaced by the ref
+      radius: 40,
+      maxOpacity: 0.6,
+      minOpacity: 0,
+      blur: 0.85,
+      // Define the color gradient
+      gradient: {
+        '.5': 'blue',
+        '.8': 'yellow',
+        '.95': 'red'
+      }
+    };
 
     // A small hack: heatmap.js takes a container element, not the canvas itself.
     // We'll create the instance and then manually insert its canvas into our ref'd canvas parent.
@@ -220,7 +220,10 @@ export function MetaHeatmap() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isClient, heatmapDataLen, max, structureValue, factionKeys]); // Re-run if starterData changes
 
-  if (!isClient || typeof window === 'undefined') {
+  if (isClient === false) {
+    return <Typography>Loading...</Typography>;
+  }
+  if (typeof window === 'undefined') {
     return <Typography>Loading...</Typography>;
   }
 

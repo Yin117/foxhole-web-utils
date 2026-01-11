@@ -153,6 +153,11 @@ export function ResourcesComparePage() {
     return worldMapDynamicDataForWarBefore?.find(({ mapName }) => mapName === regionHex);
   }, [worldMapDynamicDataForWarBefore, regionHex, beforeWarNumber, currentWarMapDynamicPromise?.data]);
 
+  const hexMapBefore = useMemo(() => {
+    return warNumberToMetaMapDynamic.get(beforeWarNumber)?.find(({ mapName }) => {
+      return mapName === regionHex;
+    });
+  }, [beforeWarNumber, regionHex])
 
   // Map Dynamic - After
   const hexMapDynamicForWarAfter = useMemo(() => {
@@ -165,6 +170,12 @@ export function ResourcesComparePage() {
     console.log('worldMapDynamicDataForWarAfter', worldMapDynamicDataForWarAfter);
     return worldMapDynamicDataForWarAfter?.find(({ mapName }) => mapName === regionHex);
   }, [worldMapDynamicDataForWarAfter, regionHex, afterWarNumber, currentWarMapDynamicPromise?.data]);
+  
+  // const hexMapAfter = useMemo(() => {
+  //   return warNumberToMetaMapDynamic.get(afterWarNumber)?.find(({ mapName }) => {
+  //     return mapName === regionHex;
+  //   });
+  // }, [afterWarNumber, regionHex])
 
   console.log('hexMapDynamicForWarBefore', hexMapDynamicForWarBefore);
   console.log('hexMapDynamicForWarAfter', hexMapDynamicForWarAfter);
@@ -250,17 +261,14 @@ export function ResourcesComparePage() {
 
         {/* Left */}
         <div className={styles.regionBefore}>
-          {hexMapDynamicForWarBefore ?
+          {hexMapBefore ?
           <Region
             hex={regionHex}
             data={(() => {
-              const metaData = warNumberToMetaMapDynamic.get(beforeWarNumber)?.find(({ mapName }) => {
-                return mapName === regionHex;
-              });
-              console.log('metaData', metaData);
+              console.log('hexMapBefore', hexMapBefore);
               return {
                 mapName: regionHex,
-                mapItems: metaData?.platforms,
+                mapItems: hexMapBefore?.platforms,
                 inserted: '',
                 // mapName: HexKeysUnion,
                 regionId: 1,
