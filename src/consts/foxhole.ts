@@ -1,6 +1,28 @@
 import { getObjectEntries } from "@/helpers/typescriptHelper";
 import { TeamId } from "@/types/warData";
+import { Shard, ShardKeys } from "@/types/api";
 import { warNumberToMapDynamic } from "./warData/mapDynamic";
+
+
+
+export const shards: Record<ShardKeys, Shard> = {
+  live1: {
+    name: 'Able',
+    rootURL: 'https://war-service-live.foxholeservices.com/api/worldconquest',
+  },
+  live2: {
+    name: 'Baker',
+    rootURL: 'https://war-service-live-2.foxholeservices.com/api/worldconquest',
+  },
+  live3: {
+    name: 'Charlie',
+    rootURL: 'https://war-service-live-3.foxholeservices.com/api/worldconquest',
+  },
+  devBranch: {
+    name: 'Dev-Branch',
+    rootURL: 'https://war-service-dev.foxholeservices.com/api/worldconquest',
+  },
+}
 
 const worldExtentsDraft = {
   x: {
@@ -20,30 +42,42 @@ worldExtentsDraft.x.total = Math.abs(worldExtentsDraft.x.min) + worldExtentsDraf
 
 export const worldExtents = worldExtentsDraft;
 
-export const factions = {
+type Faction = {
+  mapItemKey?: string;
+  label: string;
+  labelPlural: string;
+  imageSrc?: string;
+  fill: string;
+}
+
+export const factions: Record<'none' | 'wardens' | 'colonials' | 'both', Faction> = {
   none: {
     mapItemKey: 'NONE',
     label: 'Netural',
-    labelPlural: 'Warden',
-    imageSrc: null,
+    labelPlural: 'Netural',
+    imageSrc: undefined,
+    fill: '#FFFFFF'
   },
   wardens: {
     mapItemKey: 'WARDENS',
     label: 'Warden',
     labelPlural: 'Wardens',
     imageSrc: "/foxhole-web-utils/images/Factions/Warden.png",
+    fill: '#245682',
   },
   colonials: {
     mapItemKey: 'COLONIALS',
     label: 'Colonial',
     labelPlural: 'Colonials',
     imageSrc: "/foxhole-web-utils/images/Factions/Colonial.png",
+    fill: '#516c4b',
   },
   both: {
-    mapItemKey: null,
+    mapItemKey: undefined,
     label: 'Both',
     labelPlural: 'Both',
     imageSrc: "/foxhole-web-utils/images/Factions/WardenAndColonial.png",
+    fill: '#3b6167',
   },
 };
 
@@ -71,13 +105,14 @@ export const warNumbers = warNumbersDraft;
 
 
 type MapItemDetail = {
+  isUndocumented?: boolean,
+  isUnexpectedInAPI?: boolean,
   name: string,
   friendlyName?: string,
   folder?: string,
   iconFunc?: (teamId?: TeamId) => string,
   isMapBase?: boolean,
   isNeutral?: boolean,
-  isUndocumented?: boolean,
   isRocketType?: boolean,
   isRocketSiteEither?: boolean,
   isRocketSite?: boolean,
@@ -86,6 +121,7 @@ type MapItemDetail = {
   isStormCannon?: boolean,
   isIntelCenter?: boolean,
   isPlatform?: boolean,
+  isAirRadar?: boolean,
   isBunker?: boolean,
   isResource?: boolean,
   isPlayerBuilt?: boolean,
@@ -93,12 +129,15 @@ type MapItemDetail = {
 
 export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
   5: {
+    isUnexpectedInAPI: true,
     name: 'StaticBase1', // Removed in v0.46
   },
   6: {
+    isUnexpectedInAPI: true,
     name: 'StaticBase2', // Removed in v0.46
   },
   7: {
+    isUnexpectedInAPI: true,
     name: 'StaticBase3', // Removed in v0.46
   },
   8: {
@@ -131,15 +170,19 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     iconFunc: () => 'MapIconVehicle',
   },
   13: {
+    isUnexpectedInAPI: true,
     name: 'Armory', // Old (Special Ammo)
   },
   14: {
+    isUnexpectedInAPI: true,
     name: 'Supply Station',
   },
   15: {
+    isUnexpectedInAPI: true,
     name: 'Workshop', // Old: crossed Wrenches?
   },
   16: {
+    isUnexpectedInAPI: true,
     name: 'Manufacturing Plant', // Old
   },
   17: {
@@ -175,6 +218,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
   },
   22: {
     // This is something
+    isUnexpectedInAPI: true,
     name: 'Fuel Field',
     isResource: true,
   },
@@ -186,12 +230,15 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     isResource: true,
   },
   24: {
+    isUnexpectedInAPI: true,
     name: 'World Map Tent',
   },
   25: {
+    isUnexpectedInAPI: true,
     name: 'Travel Tent',
   },
   26: {
+    isUnexpectedInAPI: true,
     name: 'Training Area',
   },
   27: {
@@ -212,12 +259,14 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     iconFunc: () => 'MapIconFort',
   },
   30: {
+    isUnexpectedInAPI: true,
     name: 'Troop Ship',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconTroopShip',
     isPlayerBuilt: true,
   },
   31: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-31',
     folder: 'MapIcons',
@@ -248,6 +297,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     iconFunc: () => 'MapIconSafehouse',
   },
   36: {
+    isUnexpectedInAPI: true,
     name: 'Ammo Factory',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconArmory',
@@ -281,6 +331,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     isResource: true,
   },
   41: {
+    isUnexpectedInAPI: true,
     name: 'Oil Well (old)',
     friendlyName: 'Oil Well (old)',
     folder: 'MapIcons',
@@ -288,18 +339,21 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     isResource: true,
   },
   42: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-42',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   43: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-43',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   44: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-44',
     folder: 'MapIcons',
@@ -330,6 +384,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     isScoreBase: true,
   },
   48: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'BOB', // T1?
     folder: 'MapIcons',
@@ -338,6 +393,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     isPlayerBuilt: true,
   },
   49: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'BOB', // T2?
     folder: 'MapIcons',
@@ -346,6 +402,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     isPlayerBuilt: true,
   },
   50: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'BOB', // T3?
     folder: 'MapIcons',
@@ -369,6 +426,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     iconFunc: () => 'MapIconCoastalGun',
   },
   55: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'Border Base',
     folder: 'MapIcons',
@@ -457,36 +515,42 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     isResource: true,
   },
   63: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-63',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   64: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-64',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   65: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-65',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   67: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-67',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   68: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-68',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   69: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-69',
     folder: 'MapIcons',
@@ -526,12 +590,14 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     // fuelTime: 1000 * 60 * 60 * 48,
   },
   73: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-73',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   74: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-74',
     folder: 'MapIcons',
@@ -544,42 +610,49 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     isResource: true,
   },
   76: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-76',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   77: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-77',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   78: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-78',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   79: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-79',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   80: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-80',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   81: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-81',
     folder: 'MapIcons',
     iconFunc: () => 'MapIconUNKNOWN',
   },
   82: {
+    isUnexpectedInAPI: true,
     isUndocumented: true,
     name: 'UNK-82',
     folder: 'MapIcons',
@@ -597,10 +670,66 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     name: 'Mortar House',
     folder: 'MapIcons',
     iconFunc: () => 'MapIcon_Temp_MortarHouse_84',
-  }
+  },
+
+  85: {
+    isUnexpectedInAPI: true,
+    isUndocumented: true,
+    name: 'UNK-85', // Likly Resource Transfer 4
+    folder: 'MapIcons',
+    iconFunc: () => 'MapIconUNKNOWN',
+  },
+  86: {
+    isUnexpectedInAPI: true,
+    isUndocumented: true,
+    name: 'UNK-86', // Likly Facility Small Arms Factory
+    folder: 'MapIcons',
+    iconFunc: () => 'MapIconUNKNOWN',
+  },
+  87: {
+    isUnexpectedInAPI: true,
+    isUndocumented: true,
+    name: 'UNK-87', // Likly  Fort Garrison Station
+    folder: 'MapIcons',
+    iconFunc: () => 'MapIconUNKNOWN',
+  },
+
+  88: {
+    name: 'Aircraft Depot', // Airborne Update
+    folder: 'MapIcons',
+    iconFunc: () => 'MapiIconAircraftDepot',
+  },
+
+  89: {
+    isUnexpectedInAPI: true,
+    name: 'Aircraft Hanger', // aka Air Factory // Airborne Update
+    folder: 'MapIcons',
+    iconFunc: () => 'MapiIconAircraftFactory',
+  },
+
+  90: {
+    name: 'Aerial Interceptor Array', // Airborne Update
+    folder: 'MapIcons',
+    iconFunc: () => 'MapIconFortLargeRadar',
+    isAirRadar: true,
+  },
+
+  91: {
+    isUnexpectedInAPI: true,
+    name: 'Aircraft Runway T1', // Airborne Update
+    folder: 'MapIcons',
+    iconFunc: () => 'MapiIconAircraftRunwayT1',
+  },
+
+  92: {
+    isUnexpectedInAPI: true,
+    name: 'Aircraft Runway T2', // Airborne Update
+    folder: 'MapIcons',
+    iconFunc: () => 'MapiIconAircraftRunwayT2',
+  },
 };
 
-export const getMapItemDetail = (iconType: number) => {
+export const getMapItemDetail = (iconType: number): Partial<MapItemDetail> | undefined => {
   return iconTypeToMapDetail[iconType];
 }
 

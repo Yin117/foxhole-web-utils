@@ -11,13 +11,14 @@ import {
 } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import styles from './resourcesCompare.module.css';
-import { getMapItemDetail, hexInfo, HexKeys, HexKeysUnion, warNumbers, worldExtents } from '@/consts/foxhole';
+import { getMapItemDetail, hexInfo, HexKeys, HexKeysUnion, shards, warNumbers, worldExtents } from '@/consts/foxhole';
 import { getObjectEntries } from '@/helpers/typescriptHelper';
 import { MapDynamic } from '@/types/warData';
 import { useQuery } from '@tanstack/react-query';
 import { getCurrentMapDynamicForRegion } from '@/apiFunctions/foxhole/dynamicMap';
 import { getCurrentWarState } from '@/apiFunctions/foxhole/war';
 import { warNumberToMetaMapDynamic } from '@/consts/warData/metaMapDynamic';
+import { Positioning } from '@/components/canvas/Region';
 
 // TODO: Responsive: https://konvajs.org/docs/sandbox/Responsive_Canvas.html
 
@@ -48,16 +49,16 @@ function refactorMapDynamicData(display: MapDynamic) { // , compare: MapDynamic 
         return false;
       }
       if (details.isPlayerBuilt) {
-        return true;
+        return false;
       }
-      return false;
+      return true;
     })
     .map(item => {
       const details = getMapItemDetail(item.iconType);
 
       return {
         ...item,
-        opacity: details.isResource ? 1 : 0.25,
+        opacity: details?.isResource ?? true ? 1 : 0.25,
       };
     });
 
@@ -119,17 +120,23 @@ export function ResourcesComparePage() {
   
 
   const {
-    data: currentWarMapDynamicPromise,
+    data: currentWarMapDynamicRes,
   } = useQuery({
     queryKey: ['MapDynamic', regionHex],
     queryFn: async () => {
-      return await getCurrentMapDynamicForRegion(regionHex)
+      return await getCurrentMapDynamicForRegion(shards.live1, regionHex)
     },
     staleTime: 1000 * 60 * 5, // 5mins
     enabled: true,
   });
 
-  console.log('currentWarMapDynamicPromise', currentWarMapDynamicPromise);
+  console.log('currentWarMapDynamicRes', currentWarMapDynamicRes);
+  
+  const [stage, setStage] = useState<Positioning>({
+    scale: 1,
+    x: 0,
+    y: 0,
+  });
 
   // World - Before 
   const worldMapDynamicDataForWarBefore = useMemo(() => {
@@ -144,38 +151,26 @@ export function ResourcesComparePage() {
   // Map Dynamic - Before
   const hexMapDynamicForWarBefore = useMemo(() => {
     if (beforeWarNumber === CURRENT_WAR) {
-      return currentWarMapDynamicPromise?.data
+      return currentWarMapDynamicRes?.data
     }
     if (!worldMapDynamicDataForWarBefore) {
       return undefined;
     }
     console.log('worldMapDynamicDataForWarBefore', worldMapDynamicDataForWarBefore);
     return worldMapDynamicDataForWarBefore?.find(({ mapName }) => mapName === regionHex);
-  }, [worldMapDynamicDataForWarBefore, regionHex, beforeWarNumber, currentWarMapDynamicPromise?.data]);
-
-  const hexMapBefore = useMemo(() => {
-    return warNumberToMetaMapDynamic.get(beforeWarNumber)?.find(({ mapName }) => {
-      return mapName === regionHex;
-    });
-  }, [beforeWarNumber, regionHex])
+  }, [worldMapDynamicDataForWarBefore, regionHex, beforeWarNumber, currentWarMapDynamicRes?.data]);
 
   // Map Dynamic - After
   const hexMapDynamicForWarAfter = useMemo(() => {
     if (afterWarNumber === CURRENT_WAR) {
-      return currentWarMapDynamicPromise?.data
+      return currentWarMapDynamicRes?.data
     }
     if (!worldMapDynamicDataForWarAfter) {
       return undefined;
     }
     console.log('worldMapDynamicDataForWarAfter', worldMapDynamicDataForWarAfter);
     return worldMapDynamicDataForWarAfter?.find(({ mapName }) => mapName === regionHex);
-  }, [worldMapDynamicDataForWarAfter, regionHex, afterWarNumber, currentWarMapDynamicPromise?.data]);
-  
-  // const hexMapAfter = useMemo(() => {
-  //   return warNumberToMetaMapDynamic.get(afterWarNumber)?.find(({ mapName }) => {
-  //     return mapName === regionHex;
-  //   });
-  // }, [afterWarNumber, regionHex])
+  }, [worldMapDynamicDataForWarAfter, regionHex, afterWarNumber, currentWarMapDynamicRes?.data]);
 
   console.log('hexMapDynamicForWarBefore', hexMapDynamicForWarBefore);
   console.log('hexMapDynamicForWarAfter', hexMapDynamicForWarAfter);
@@ -261,25 +256,14 @@ export function ResourcesComparePage() {
 
         {/* Left */}
         <div className={styles.regionBefore}>
-          {hexMapBefore ?
+          {hexMapDynamicForWarBefore ?
           <Region
             hex={regionHex}
-            data={(() => {
-              console.log('hexMapBefore', hexMapBefore);
-              return {
-                mapName: regionHex,
-                mapItems: hexMapBefore?.platforms,
-                inserted: '',
-                // mapName: HexKeysUnion,
-                regionId: 1,
-                scorchedVictoryTowns: 1,
-                // mapItems: MapItem[],
-                etag: 'string',
-              }
-            })()}
-            // data={refactorMapDynamicData(hexMapDynamicForWarBefore /*, hexMapDynamicForWarAfter*/)}
+            data={refactorMapDynamicData(hexMapDynamicForWarBefore /*, hexMapDynamicForWarAfter*/)}
             width={worldExtents.getWidthFromHeight(getRegionHeight(window))}
             height={getRegionHeight(window)}
+            stage={stage}
+            onPositioning={setStage}
           /> : (
             <NoDataBox/>
           )}
@@ -300,9 +284,11 @@ export function ResourcesComparePage() {
             data={refactorMapDynamicData(hexMapDynamicForWarAfter /*, hexMapDynamicForWarBefore*/)}
             width={worldExtents.getWidthFromHeight(getRegionHeight(window))}
             height={getRegionHeight(window)}
-            /> : (
+            stage={stage}
+            onPositioning={setStage}
+          /> : (
               <NoDataBox/>
-            )}
+          )}
         </div>
       </div>
     </div>
