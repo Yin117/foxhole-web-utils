@@ -25,13 +25,7 @@ const Region = dynamic(() => import('@/components/canvas/Region'), {
   ssr: false,
 });
 
-export function ViewHex() {
-  const [isClient, setIsClient] = useState(false);
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  const regionSize = useMemo(() => {
+function getRegionSize() {
     let width = (window.innerWidth * 0.75) - 50;
     let height = worldExtents.getHeightFromWidth(width);
 
@@ -44,7 +38,23 @@ export function ViewHex() {
       width,
       height,
     };
+  }
+
+export function ViewHex() {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
   }, []);
+
+  const regionSize = useMemo(() => {
+    if (isClient) {
+      return getRegionSize();
+    }
+    return {
+      width: 0,
+      height: 0,
+    }
+  }, [isClient]);
 
   const [currentShard, setCurrentShard] = useState<ShardKeys>('live1');
   const [regionHex, setRegionHex] = useState<HexKeysUnion>(HexKeys.AcrithiaHex);
