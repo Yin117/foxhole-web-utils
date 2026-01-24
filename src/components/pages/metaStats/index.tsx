@@ -145,13 +145,13 @@ export function MetaStats() {
       for (const mapData of worldData) {
         for (const platform of mapData.platforms) {
           const factionKey = factionKeyToProp(platform.teamId);
-          if (getMapItemDetail(platform.iconType).isStormCannon) {
+          if (getMapItemDetail(platform.iconType)?.isStormCannon) {
             totals[factionKey].sc.built += 1;
             if (platform.isDestroyed === true) {
               totals[factionKey].sc.lost += 1;
             }
           }
-          if (getMapItemDetail(platform.iconType).isIntelCenter) {
+          if (getMapItemDetail(platform.iconType)?.isIntelCenter) {
             totals[factionKey].ic.built += 1;
             if (platform.isDestroyed === true) {
               totals[factionKey].ic.lost += 1;

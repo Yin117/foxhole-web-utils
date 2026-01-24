@@ -43,10 +43,10 @@ worldExtentsDraft.x.total = Math.abs(worldExtentsDraft.x.min) + worldExtentsDraf
 export const worldExtents = worldExtentsDraft;
 
 type Faction = {
-  mapItemKey?: string;
+  mapItemKey: string;
   label: string;
   labelPlural: string;
-  imageSrc?: string;
+  imageSrc: string;
   fill: string;
   rgb: {
     red: number,
@@ -60,7 +60,7 @@ export const factions: Record<'none' | 'wardens' | 'colonials' | 'both', Faction
     mapItemKey: 'NONE',
     label: 'Netural',
     labelPlural: 'Netural',
-    imageSrc: undefined,
+    imageSrc: "/foxhole-web-utils/images/Factions/None.png",
     fill: '#FFFFFF',
     rgb: {
       red: 255,
@@ -93,7 +93,7 @@ export const factions: Record<'none' | 'wardens' | 'colonials' | 'both', Faction
     },
   },
   both: {
-    mapItemKey: undefined,
+    mapItemKey: 'BOTH',
     label: 'Both',
     labelPlural: 'Both',
     imageSrc: "/foxhole-web-utils/images/Factions/WardenAndColonial.png",
