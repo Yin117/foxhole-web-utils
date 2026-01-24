@@ -30,6 +30,8 @@ export type WarState = {
   winner: TeamId,
 };
 
+export type MapList = HexKeysUnion[];
+
 export type MetaPlatform = {
   teamId: TeamId;
   iconType: 59 | 60;

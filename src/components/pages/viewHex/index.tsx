@@ -186,10 +186,6 @@ export function ViewHex() {
           })}>
             Reset Pan & Zoom
           </Button>
-          
-          <Typography variant="body2">
-            Note, Not all Structures are colored to owning faction at this time
-          </Typography>
 
           {iconTypeToDetailsAndCount &&
           <Box>

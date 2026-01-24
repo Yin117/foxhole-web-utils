@@ -67,6 +67,24 @@ export default function Home() {
             />
           </Box>
 
+          <Box maxWidth="30%">
+            <HomeNavCard
+              label="View Map List"
+              imagePath="/foxhole-web-utils/images/Concepts/App/ViewMapList.png"
+              navPath="/tools/view-map-list"
+              subtext="Queries the Map List API to see if new Hexes have been defined (highlights them)"
+            />
+          </Box>
+
+          <Box maxWidth="30%">
+            <HomeNavCard
+              label="View Hex"
+              imagePath="/foxhole-web-utils/images/Concepts/App/ViewHex.png"
+              navPath="/tools/view-hex"
+              subtext="Query any of the War APIs for realtime information"
+            />
+          </Box>
+
         </Box>
       </main>
       <footer className={styles.footer}>

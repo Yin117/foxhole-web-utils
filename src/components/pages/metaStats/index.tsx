@@ -192,7 +192,7 @@ export function MetaStats() {
       }
     });
     return ret;
-  }, []);
+  }, [isClient]);
 
 
   if (!isClient || typeof window === 'undefined') {

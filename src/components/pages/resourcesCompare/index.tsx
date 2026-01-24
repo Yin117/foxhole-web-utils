@@ -5,6 +5,7 @@ import pageStyles from "@/app/page.module.css";
 import { getMapDynamicForWar } from "@/utils/warData";
 import {
   Box,
+  Button,
   MenuItem,
   TextField,
   Typography,
@@ -17,7 +18,6 @@ import { MapDynamic } from '@/types/warData';
 import { useQuery } from '@tanstack/react-query';
 import { getCurrentMapDynamicForRegion } from '@/apiFunctions/foxhole/dynamicMap';
 import { getCurrentWarState } from '@/apiFunctions/foxhole/war';
-import { warNumberToMetaMapDynamic } from '@/consts/warData/metaMapDynamic';
 import { Positioning } from '@/components/canvas/Region';
 
 // TODO: Responsive: https://konvajs.org/docs/sandbox/Responsive_Canvas.html
@@ -274,6 +274,15 @@ export function ResourcesComparePage() {
             <Typography variant="body2">
               Note, Region Images are not back-dated to their historic versions
             </Typography>
+            
+
+            <Button onClick={() => setStage({
+              scale: 1,
+              x: 0,
+              y: 0,
+            })}>
+              Reset Pan & Zoom
+            </Button>
         </div>
 
         {/* Right */}

@@ -48,6 +48,11 @@ type Faction = {
   labelPlural: string;
   imageSrc?: string;
   fill: string;
+  rgb: {
+    red: number,
+    green: number,
+    blue: number,
+  }
 }
 
 export const factions: Record<'none' | 'wardens' | 'colonials' | 'both', Faction> = {
@@ -56,7 +61,12 @@ export const factions: Record<'none' | 'wardens' | 'colonials' | 'both', Faction
     label: 'Netural',
     labelPlural: 'Netural',
     imageSrc: undefined,
-    fill: '#FFFFFF'
+    fill: '#FFFFFF',
+    rgb: {
+      red: 255,
+      green: 255,
+      blue: 255,
+    },
   },
   wardens: {
     mapItemKey: 'WARDENS',
@@ -64,6 +74,11 @@ export const factions: Record<'none' | 'wardens' | 'colonials' | 'both', Faction
     labelPlural: 'Wardens',
     imageSrc: "/foxhole-web-utils/images/Factions/Warden.png",
     fill: '#245682',
+    rgb: {
+      red: 45,
+      green: 107,
+      blue: 161,
+    },
   },
   colonials: {
     mapItemKey: 'COLONIALS',
@@ -71,6 +86,11 @@ export const factions: Record<'none' | 'wardens' | 'colonials' | 'both', Faction
     labelPlural: 'Colonials',
     imageSrc: "/foxhole-web-utils/images/Factions/Colonial.png",
     fill: '#516c4b',
+    rgb: {
+      red: 99,
+      green: 132,
+      blue: 94,
+    },
   },
   both: {
     mapItemKey: undefined,
@@ -78,6 +98,11 @@ export const factions: Record<'none' | 'wardens' | 'colonials' | 'both', Faction
     labelPlural: 'Both',
     imageSrc: "/foxhole-web-utils/images/Factions/WardenAndColonial.png",
     fill: '#3b6167',
+    rgb: {
+      red: 59,
+      green: 97,
+      blue: 103,
+    },
   },
 };
 
@@ -737,28 +762,38 @@ export const getMapItemDetail = (iconType: number): Partial<MapItemDetail> | und
 
 export enum HexKeys {
   // Col 1
+  'OlavisWakeHex' = 'OlavisWakeHex', // UNCONFIRMED NAME
+
+  // Col 2
+  'PariPeakHex' = 'PariPeakHex', // UNCONFIRMED NAME
+  'PalantineBermHex' =  'PalantineBermHex', // UNCONFIRMED NAME
   'OarbreakerHex' = 'OarbreakerHex',
+
+  // Col 3
+  'KurraStrandHex' = 'KurraStrandHex', // UNCONFIRMED NAME
+  'TheGutterHex' = 'TheGutterHex', // UNCONFIRMED NAME
   'FishermansRowHex' = 'FishermansRowHex',
   'StemaLandingHex' = 'StemaLandingHex',
-  // Col 2
+
+  // Col 4
   'NevishLineHex' = 'NevishLineHex',
   'FarranacCoastHex' = 'FarranacCoastHex',
   'WestgateHex' = 'WestgateHex',
   'OriginHex' = 'OriginHex',
-  // Col 3
+  // Col 5
   'CallumsCapeHex' = 'CallumsCapeHex',
   'StonecradleHex' = 'StonecradleHex',
   'KingsCageHex' = 'KingsCageHex',
   'SableportHex' = 'SableportHex',
   'AshFieldsHex' = 'AshFieldsHex',
-  // Col 4
+  // Col 6
   'SpeakingWoodsHex' = 'SpeakingWoodsHex',
   'MooringCountyHex' = 'MooringCountyHex',
   'LinnMercyHex' = 'LinnMercyHex',
   'LochMorHex' = 'LochMorHex',
   'HeartlandsHex' = 'HeartlandsHex',
   'RedRiverHex' = 'RedRiverHex',
-  // Col 5
+  // Col 7
   'BasinSionnachHex' = 'BasinSionnachHex',
   'ReachingTrailHex' = 'ReachingTrailHex',
   'CallahansPassageHex' = 'CallahansPassageHex',
@@ -766,40 +801,99 @@ export enum HexKeys {
   'UmbralWildwoodHex' = 'UmbralWildwoodHex',
   'GreatMarchHex' = 'GreatMarchHex',
   'KalokaiHex' = 'KalokaiHex',
-  // Col 6
+  // Col 8
   'HowlCountyHex' = 'HowlCountyHex',
   'ViperPitHex' = 'ViperPitHex',
   'MarbanHollow' = 'MarbanHollow', /** Is Correctly Different */
   'DrownedValeHex' = 'DrownedValeHex',
   'ShackledChasmHex' = 'ShackledChasmHex',
   'AcrithiaHex' = 'AcrithiaHex',
-  // Col 7
+  // Col 9
   'ClansheadValleyHex' = 'ClansheadValleyHex',
   'WeatheredExpanseHex' = 'WeatheredExpanseHex',
   'ClahstraHex' = 'ClahstraHex',
   'AllodsBightHex' = 'AllodsBightHex',
   'TerminusHex' = 'TerminusHex',
-  // Col 8
+  // Col 10
   'MorgensCrossingHex' = 'MorgensCrossingHex',
   'StlicanShelfHex' = 'StlicanShelfHex',
   'EndlessShoreHex' = 'EndlessShoreHex',
   'ReaversPassHex' = 'ReaversPassHex',
-  // Col 9
+
+  // Col 11
   'GodcroftsHex' = 'GodcroftsHex',
   'TempestIslandHex' = 'TempestIslandHex',
+  'WrestaHex' = 'WrestaHex', // UNCONFIRMED NAME
+  'OnyxHex' = 'OnyxHex', // UNCONFIRMED NAME
+  
+  // Col 12
+  'LykosIsleHex' = 'LykosIsleHex', // UNCONFIRMED NAME
   'TheFingersHex' = 'TheFingersHex',
+  'TyrantFoothillsHex' = 'TyrantFoothillsHex', // UNCONFIRMED NAME
+
+  // Col 13
+  'PipersEnclaveHex' = 'PipersEnclaveHex', // UNCONFIRMED NAME
 };
 export type HexKeysUnion = `${HexKeys}`;
 
+export type HexInfo = {
+  isUndocumented?: boolean,
+  name: string,
+  nameTiny: string,
+  folder: string,
+  icon: string,
+};
 
-export const hexInfo = {
+export const hexInfo: Record<HexKeysUnion, HexInfo> = {
   // Col 1 -----------------------------------------------------------
+  // Added Feb 2026
+  [HexKeys.OlavisWakeHex]: {
+    isUndocumented: true,
+    name: `Olavi's Wake`,
+    nameTiny: 'OW',
+    folder: 'Maps',
+    icon: 'MapOlavisWakeHex',
+  },
+  // Col 2 -----------------------------------------------------------
+  // Added Feb 2026
+  [HexKeys.PariPeakHex]: {
+    isUndocumented: true,
+    name: 'Pari Peak',
+    nameTiny: 'PP',
+    folder: 'Maps',
+    icon: 'MapPariPeakHex',
+  },
+  [HexKeys.PalantineBermHex]: {
+    isUndocumented: true,
+    name: 'Palantine Berm',
+    nameTiny: 'PB',
+    folder: 'Maps',
+    icon: 'MapPalantineBermHex',
+  },
   /** Restored and Changed in Naval Update 2023-10-10 */
   OarbreakerHex: {
     name: 'Oarbreaker Isles',
     nameTiny: 'OB',
     folder: 'Maps',
     icon: 'MapOarbreakerHex',
+  },
+
+  // Col 3 -----------------------------------------------------------
+  // Added Feb 2026
+  [HexKeys.KurraStrandHex]: {
+    isUndocumented: true,
+    name: 'Kurra Strand',
+    nameTiny: 'KS',
+    folder: 'Maps',
+    icon: 'MapKuuraStrandHex',
+  },
+  
+  [HexKeys.TheGutterHex]: {
+    isUndocumented: true,
+    name: 'The Gutter',
+    nameTiny: 'Gut',
+    folder: 'Maps',
+    icon: 'MapTheGutterHex',
   },
   /** Restored and Changed in Naval Update 2023-10-10 */
   FishermansRowHex: {
@@ -814,8 +908,9 @@ export const hexInfo = {
     folder: 'Maps',
     icon: 'MapStemaLandingHex',
   },
-  // Col 2 -----------------------------------------------------------
+  // Col 4 -----------------------------------------------------------
   NevishLineHex: {
+    isUndocumented: true,
     name: 'Nevish Line',
     nameTiny: 'NL',
     folder: 'Maps',
@@ -841,7 +936,7 @@ export const hexInfo = {
     folder: 'Maps',
     icon: 'MapOriginHex',
   },
-  // Col 3 -----------------------------------------------------------
+  // Col 5 -----------------------------------------------------------
   CallumsCapeHex: {
     name: "Callum's Cape",
     nameTiny: 'CC',
@@ -874,7 +969,7 @@ export const hexInfo = {
     folder: 'Maps',
     icon: 'MapAshFieldsHex',
   },
-  // Col 4 -----------------------------------------------------------
+  // Col 6 -----------------------------------------------------------
   SpeakingWoodsHex: {
     name: 'Speaking Woods',
     nameTiny: 'SW',
@@ -911,7 +1006,7 @@ export const hexInfo = {
     folder: 'Maps',
     icon: 'MapRedRiverHex',
   },
-  // Col 5 -----------------------------------------------------------
+  // Col 7 -----------------------------------------------------------
   BasinSionnachHex: {
     name: 'Basin Sionnach',
     nameTiny: 'BS',
@@ -954,7 +1049,7 @@ export const hexInfo = {
     folder: 'Maps',
     icon: 'MapKalokaiHex',
   },
-  // Col 6 -----------------------------------------------------------
+  // Col 8 -----------------------------------------------------------
   HowlCountyHex: {
     name: 'Howl County',
     nameTiny: 'HC',
@@ -991,7 +1086,7 @@ export const hexInfo = {
     folder: 'Maps',
     icon: 'MapAcrithiaHex',
   },
-  // Col 7 -----------------------------------------------------------
+  // Col 9 -----------------------------------------------------------
   ClansheadValleyHex: {
     name: 'Clanshead Valley',
     nameTiny: 'CV',
@@ -1023,7 +1118,7 @@ export const hexInfo = {
     folder: 'Maps',
     icon: 'MapTerminusHex',
   },
-  // Col 8 -----------------------------------------------------------
+  // Col 10 -----------------------------------------------------------
   MorgensCrossingHex: {
     name: "Morgen's Crossing",
     nameTiny: 'MC',
@@ -1051,7 +1146,7 @@ export const hexInfo = {
     folder: 'Maps',
     icon: 'MapReaversPassHex',
   },
-  // Col 9 -----------------------------------------------------------
+  // Col 11 -----------------------------------------------------------
   GodcroftsHex: {
     name: 'Godcrofts',
     nameTiny: 'Gods',
@@ -1064,25 +1159,80 @@ export const hexInfo = {
     folder: 'Maps',
     icon: 'MapTempestIslandHex',
   },
+  // Added Feb 2026
+  [HexKeys.WrestaHex]: {
+    isUndocumented: true,
+    name: 'Wresta',
+    nameTiny: 'Wr',
+    folder: 'Maps',
+    icon: 'MapWrestaHex',
+  },
+  [HexKeys.OnyxHex]: {
+    isUndocumented: true,
+    name: 'Onyx',
+    nameTiny: 'Ox',
+    folder: 'Maps',
+    icon: 'MapOnyxHex',
+  },
+  // Col 12 -----------------------------------------------------------
+  [HexKeys.LykosIsleHex]: {
+    isUndocumented: true,
+    name: 'Lykos Isle',
+    nameTiny: 'LI',
+    folder: 'Maps',
+    icon: 'MapLykosIsleHex',
+  },
   TheFingersHex: {
     name: 'The Fingers',
     nameTiny: 'Fin',
     folder: 'Maps',
     icon: 'MapTheFingersHex',
   },
-} satisfies Record<HexKeysUnion, {
-  name: string,
-  nameTiny: string,
-  folder: string,
-  icon: string,
-}>;
+  [HexKeys.TyrantFoothillsHex]: {
+    isUndocumented: true,
+    name: 'Tyrant Foothills',
+    nameTiny: 'TF',
+    folder: 'Maps',
+    icon: 'MapTyrantFoothillsHex',
+  },
+  // Col 13 -----------------------------------------------------------
+  [HexKeys.PipersEnclaveHex]: {
+    isUndocumented: true,
+    name: `Piper's Enclave`,
+    nameTiny: 'PE',
+    folder: 'Maps',
+    icon: 'MapPipersEnclaveHex',
+  },
+};
 
-export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
+const regionIdToHexKeyEntries: [number, HexKeysUnion][] = [
 	// Col 1
+  [
+    9001,
+    HexKeys.OlavisWakeHex,
+  ],
+  // Col 2
+  [
+    9002,
+    HexKeys.PariPeakHex,
+  ],
+  [
+    9003,
+    HexKeys.PalantineBermHex,
+  ],
+  // Col 3
 	[
 		16,
     'OarbreakerHex',
 	],
+  [
+    9004,
+    HexKeys.KurraStrandHex,
+  ],
+  [
+    9005,
+    HexKeys.TheGutterHex,
+  ],
 	[
 		15,
 		'FishermansRowHex',
@@ -1091,7 +1241,7 @@ export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
 		48,
 		'StemaLandingHex',
 	],
-	// Col 2
+	// Col 4
 	[
 		29,
 		'NevishLineHex',
@@ -1108,7 +1258,7 @@ export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
 		42,
 		'OriginHex',
 	],
-	// Col 3
+	// Col 5
 	[
 		32,
 		'CallumsCapeHex',
@@ -1129,7 +1279,7 @@ export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
 		41,
 		'AshFieldsHex',
 	],
-	// Col 4
+	// Col 6
 	[
 		33,
 		'SpeakingWoodsHex',
@@ -1154,7 +1304,7 @@ export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
 		31,
 		'RedRiverHex',
 	],
-	// Col 5
+	// Col 7
 	[
 		34,
 		'BasinSionnachHex',
@@ -1183,7 +1333,7 @@ export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
 		40,
 		'KalokaiHex',
 	],
-	// Col 6
+	// Col 8
 	[
 		35,
 		'HowlCountyHex',
@@ -1208,7 +1358,7 @@ export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
 		30,
 		'AcrithiaHex',
 	],
-	// Col 7
+	// Col 9
 	[
 		36,
 		'ClansheadValleyHex',
@@ -1229,7 +1379,7 @@ export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
 		39,
 		'TerminusHex',
 	],
-	// Col 8
+	// Col 10
 	[
 		37,
 		'MorgensCrossingHex',
@@ -1246,7 +1396,7 @@ export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
 		47,
 		'ReaversPassHex',
 	],
-	// Col 9
+	// Col 11
 	[
 		19,
 		'GodcroftsHex',
@@ -1255,24 +1405,52 @@ export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map([
 		18,
 		'TempestIslandHex',
 	],
-	[
+  [
+    9006,
+    HexKeys.WrestaHex,
+  ],
+  [
+    9007,
+    HexKeys.OnyxHex,
+  ],
+  [
+    9008,
+    HexKeys.LykosIsleHex,
+  ],
+  [
 		38,
 		'TheFingersHex',
   ],
-]);
+  [
+    9009,
+    HexKeys.TyrantFoothillsHex,
+  ],
+  // Col 13
+  [
+    9010,
+    HexKeys.PipersEnclaveHex,
+  ],
+];
+export const regionIdToHexKey: Map<number, HexKeysUnion> = new Map(regionIdToHexKeyEntries);
 
 export enum StructureKeys {
   stormCannon = 'stormCannon',
   intelCenter = 'intelCenter',
+  weatherStation = 'weatherStation',
+  airRadar    = 'airRadar',
 }
 type StructureKey = `${StructureKeys}`;
 
 export const structureToIconType: Record<StructureKey, number> = {
   stormCannon: 59,
   intelCenter: 60,
+  weatherStation: 83,
+  airRadar: 90,
 }
 
 export const structureToMapDetail: Record<StructureKey, Partial<MapItemDetail>> = {
   stormCannon: iconTypeToMapDetail[structureToIconType.stormCannon],
-  intelCenter: iconTypeToMapDetail[structureToIconType.intelCenter]
+  intelCenter: iconTypeToMapDetail[structureToIconType.intelCenter],
+  weatherStation: iconTypeToMapDetail[structureToIconType.weatherStation],
+  airRadar:    iconTypeToMapDetail[structureToIconType.airRadar],
 }

@@ -1,4 +1,4 @@
-import { factionForKey, getMapItemDetail, hexInfo, HexKeysUnion } from "@/consts/foxhole";
+import { factionForKey, factions, getMapItemDetail, hexInfo, HexKeysUnion } from "@/consts/foxhole";
 import {
   MapDynamic,
   MapItem,
@@ -80,6 +80,8 @@ function MapItemImage({ mapItem, iconSize, hexWidth, hexHeight, scale }: MapItem
   
   // TODO: shift icons by 50% their width and
 
+  const rgb = factionForKey(mapItem.teamId)?.[1] ?? { };
+
   const width = mapItem.width ?? iconSize;
   const height = mapItem.height ?? iconSize;
   return (
@@ -91,6 +93,7 @@ function MapItemImage({ mapItem, iconSize, hexWidth, hexHeight, scale }: MapItem
       width={width}
       height={height}
       alt={detail.name ?? detail.friendlyName}
+      {...rgb}
     />
   )
 }
