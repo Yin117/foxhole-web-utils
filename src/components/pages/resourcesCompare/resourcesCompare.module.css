@@ -13,6 +13,8 @@
 }
 .toolbarMid {
   grid-area: toolbarMid;
+
+  padding: 0 6px;
 }
 .toolbarRight {
   grid-area: toolbarRight;
@@ -24,6 +26,11 @@
 
 .middle {
   grid-area: middle;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px;
 }
 
 .regionAfter {

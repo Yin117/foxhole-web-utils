@@ -1,12 +1,10 @@
-import { HexKeysUnion } from "@/consts/foxhole";
+import { HexKeysUnion, shards } from "@/consts/foxhole";
+import { Shard } from "@/types/api";
 import { MapDynamic } from "@/types/warData";
 import axios, { AxiosPromise } from "axios";
 
-
-
-
-export async function getCurrentMapDynamicForRegion(mapName: HexKeysUnion, eTag?: string): AxiosPromise<MapDynamic> {
-  return axios.get(`https://war-service-live.foxholeservices.com/api/worldconquest/maps/${mapName}/dynamic/public`, {
+export async function getCurrentMapDynamicForRegion(shard: Shard = shards.live1, mapName: HexKeysUnion, eTag?: string): AxiosPromise<MapDynamic> {
+  return axios.get(`${shard.rootURL}/maps/${mapName}/dynamic/public`, {
     headers: {
       ...(
         eTag ? {

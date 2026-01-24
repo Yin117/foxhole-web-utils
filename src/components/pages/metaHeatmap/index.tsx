@@ -12,8 +12,9 @@ import { warNumberToMetaMapDynamic } from '@/consts/warData/metaMapDynamic';
 import { MetaMapDynamic } from '@/types/warData';
 import { Box, IconButton, MenuItem, Paper, Slider, TextField, ToggleButton, ToggleButtonGroup, Tooltip, Typography, useTheme } from '@mui/material';
 import { getObjectEntries } from '@/helpers/typescriptHelper';
+import { mapItemBasePath } from '@/consts/repo';
 
-const MAP_ICON_PATH_PREFIX = "/foxhole-web-utils/images/MapIcons/"
+const MAP_ICON_PATH_PREFIX = mapItemBasePath
 
 const INFO_STRUCTURE_VALUE = "Each Structure contributes this value to the Heatmap";
 
@@ -229,7 +230,7 @@ export default function MetaHeatmap() {
 
   // 4. Render the Container and Overlay Elements
   return (
-    <div id="components-pages-resourcesCompare" className={styles.page}>
+    <div id="components-pages-metaHeatMap" className={styles.page}>
       <div className={styles.container}>
         <div
           style={{ 
@@ -355,7 +356,7 @@ export default function MetaHeatmap() {
           >
             <ToggleButton value={StructureKeys.stormCannon}>
               <Image
-                src={MAP_ICON_PATH_PREFIX + structureToMapDetail[StructureKeys.stormCannon].iconFunc?.() + '.png'}
+                src={MAP_ICON_PATH_PREFIX + '/' + structureToMapDetail[StructureKeys.stormCannon].iconFunc?.() + '.png'}
                 alt="Storm Cannon"
                 width={40}
                 height={40}
@@ -363,7 +364,7 @@ export default function MetaHeatmap() {
             </ToggleButton>
             <ToggleButton value={StructureKeys.intelCenter}>
               <Image
-                src={MAP_ICON_PATH_PREFIX + structureToMapDetail[StructureKeys.intelCenter].iconFunc?.() + '.png'}
+                src={MAP_ICON_PATH_PREFIX + '/' + structureToMapDetail[StructureKeys.intelCenter].iconFunc?.() + '.png'}
                 alt="Intel Center"
                 width={40}
                 height={40}
