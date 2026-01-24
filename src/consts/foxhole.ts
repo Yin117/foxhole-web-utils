@@ -910,7 +910,6 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
   },
   // Col 4 -----------------------------------------------------------
   NevishLineHex: {
-    isUndocumented: true,
     name: 'Nevish Line',
     nameTiny: 'NL',
     folder: 'Maps',
