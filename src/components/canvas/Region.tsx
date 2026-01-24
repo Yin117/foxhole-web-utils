@@ -1,4 +1,4 @@
-import { factionForKey, factions, getMapItemDetail, hexInfo, HexKeysUnion } from "@/consts/foxhole";
+import { factionForKey, getMapItemDetail, hexInfo, HexKeysUnion } from "@/consts/foxhole";
 import {
   MapDynamic,
   MapItem,
