@@ -5,5 +5,7 @@ import axios, { AxiosPromise } from "axios";
 
 
 export async function getMapList(shard: Shard = shards.live1): AxiosPromise<MapList> {
-  return axios.get(`${shard.rootURL}/maps`);
+  const res = await axios.get(`${shard.rootURL}/maps`);
+  // res.data.push('UNKNOWN');
+  return res;
 }
