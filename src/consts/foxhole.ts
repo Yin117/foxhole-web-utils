@@ -770,8 +770,8 @@ export enum HexKeys {
   'OarbreakerHex' = 'OarbreakerHex',
 
   // Col 3
-  'KurraStrandHex' = 'KurraStrandHex', // UNCONFIRMED NAME
-  'TheGutterHex' = 'TheGutterHex', // UNCONFIRMED NAME
+  'KuuraStrandHex' = 'KuuraStrandHex', // UNCONFIRMED NAME
+  'GutterHex' = 'GutterHex', // UNCONFIRMED NAME
   'FishermansRowHex' = 'FishermansRowHex',
   'StemaLandingHex' = 'StemaLandingHex',
 
@@ -880,20 +880,20 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
 
   // Col 3 -----------------------------------------------------------
   // Added Feb 2026
-  [HexKeys.KurraStrandHex]: {
+  [HexKeys.KuuraStrandHex]: {
     isUndocumented: true,
-    name: 'Kurra Strand',
+    name: 'Kuura Strand',
     nameTiny: 'KS',
     folder: 'Maps',
     icon: 'MapKuuraStrandHex',
   },
   
-  [HexKeys.TheGutterHex]: {
+  [HexKeys.GutterHex]: {
     isUndocumented: true,
     name: 'The Gutter',
     nameTiny: 'Gut',
     folder: 'Maps',
-    icon: 'MapTheGutterHex',
+    icon: 'MapGutterHex',
   },
   /** Restored and Changed in Naval Update 2023-10-10 */
   FishermansRowHex: {
@@ -1226,11 +1226,11 @@ const regionIdToHexKeyEntries: [number, HexKeysUnion][] = [
 	],
   [
     9004,
-    HexKeys.KurraStrandHex,
+    HexKeys.KuuraStrandHex,
   ],
   [
     9005,
-    HexKeys.TheGutterHex,
+    HexKeys.GutterHex,
   ],
 	[
 		15,
