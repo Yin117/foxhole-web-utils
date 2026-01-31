@@ -31,9 +31,11 @@ import * as wc127 from './Map_Dynamic_WC127.json';
 import * as wc128 from './Map_Dynamic_WC128.json';
 import * as wc129 from './Map_Dynamic_WC129.json';
 import * as wc130 from './Map_Dynamic_WC130.json';
+import * as wc131 from './Map_Dynamic_WC131.json';
 
 // Went with Strings for Keys, incase War Numbers get "exciting" in the future
 export const warNumberToMapDynamic = new Map<string, MapDynamic[]>([
+  ['131', wc131 as MapDynamic[]],
   ['130', wc130 as MapDynamic[]],
   ['129', wc129 as MapDynamic[]],
   ['128', wc128 as MapDynamic[]],
