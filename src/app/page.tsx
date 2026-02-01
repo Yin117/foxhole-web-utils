@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Box, Typography } from "@mui/material";
@@ -9,17 +10,17 @@ export default function Home() {
   const [isClient, setIsClient] = useState(false);
   useEffect(() => setIsClient(true), []);
 
-  const cardWidth = window.innerWidth < 900
-    ? '90%'
-    : '30%';
-
-  if (isClient === false) {
+  if (isClient === false || typeof window === 'undefined') {
     return (
       <div>
         <h2>Loading...</h2>
       </div>
     )
   }
+
+  const cardWidth = window.innerWidth < 900
+    ? '90%'
+    : '30%';
 
   return (
     <div className={styles.page}>
