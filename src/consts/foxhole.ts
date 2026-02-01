@@ -848,7 +848,6 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
   // Col 1 -----------------------------------------------------------
   // Added Feb 2026
   [HexKeys.OlavisWakeHex]: {
-    isUndocumented: true,
     name: `Olavi's Wake`,
     nameTiny: 'OW',
     folder: 'Maps',
@@ -857,14 +856,12 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
   // Col 2 -----------------------------------------------------------
   // Added Feb 2026
   [HexKeys.PariPeakHex]: {
-    isUndocumented: true,
     name: 'Pari Peak',
     nameTiny: 'PP',
     folder: 'Maps',
     icon: 'MapPariPeakHex',
   },
   [HexKeys.PalantineBermHex]: {
-    isUndocumented: true,
     name: 'Palantine Berm',
     nameTiny: 'PB',
     folder: 'Maps',
@@ -881,7 +878,6 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
   // Col 3 -----------------------------------------------------------
   // Added Feb 2026
   [HexKeys.KuuraStrandHex]: {
-    isUndocumented: true,
     name: 'Kuura Strand',
     nameTiny: 'KS',
     folder: 'Maps',
@@ -889,7 +885,6 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
   },
   
   [HexKeys.GutterHex]: {
-    isUndocumented: true,
     name: 'The Gutter',
     nameTiny: 'Gut',
     folder: 'Maps',
@@ -1160,14 +1155,12 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
   },
   // Added Feb 2026
   [HexKeys.WrestaHex]: {
-    isUndocumented: true,
     name: 'Wresta',
     nameTiny: 'Wr',
     folder: 'Maps',
     icon: 'MapWrestaHex',
   },
   [HexKeys.OnyxHex]: {
-    isUndocumented: true,
     name: 'Onyx',
     nameTiny: 'Ox',
     folder: 'Maps',
@@ -1175,7 +1168,6 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
   },
   // Col 12 -----------------------------------------------------------
   [HexKeys.LykosIsleHex]: {
-    isUndocumented: true,
     name: 'Lykos Isle',
     nameTiny: 'LI',
     folder: 'Maps',
@@ -1188,7 +1180,6 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
     icon: 'MapTheFingersHex',
   },
   [HexKeys.TyrantFoothillsHex]: {
-    isUndocumented: true,
     name: 'Tyrant Foothills',
     nameTiny: 'TF',
     folder: 'Maps',
@@ -1196,7 +1187,6 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
   },
   // Col 13 -----------------------------------------------------------
   [HexKeys.PipersEnclaveHex]: {
-    isUndocumented: true,
     name: `Piper's Enclave`,
     nameTiny: 'PE',
     folder: 'Maps',

@@ -197,8 +197,16 @@ export function ViewHex() {
             Reset Pan & Zoom
           </Button>
 
+          {hexApiMapDynamicRes.data?.data.regionId &&
+          <Typography>
+            RegionId: {hexApiMapDynamicRes.data?.data.regionId}
+          </Typography>}
+
           {iconTypeToDetailsAndCount &&
-          <Box>
+          <Box
+            maxHeight="50vh"
+            style={{ overflowY: 'auto' }}
+          >
             <List>
               {getObjectEntries(iconTypeToDetailsAndCount)
                 .filter(([, data]) => {

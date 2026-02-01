@@ -68,8 +68,9 @@ export function ViewMapList() {
             alignItems="center"
             gap={2}
             flexWrap="wrap"
-            maxWidth="60%"
-            maxHeight="70%"
+            maxWidth="90vw"
+            maxHeight="50vh"
+            style={{ overflowY: 'auto' }}
           >
             {mapListData?.data
             .sort()

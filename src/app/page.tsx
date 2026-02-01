@@ -9,6 +9,10 @@ export default function Home() {
   const [isClient, setIsClient] = useState(false);
   useEffect(() => setIsClient(true), []);
 
+  const cardWidth = window.innerWidth < 900
+    ? '90%'
+    : '30%';
+
   if (isClient === false) {
     return (
       <div>
@@ -39,8 +43,9 @@ export default function Home() {
           flexDirection="row"
           justifyContent="space-between"
           marginTop={5}
+          gap={2}
         >
-          <Box maxWidth="30%">
+          <Box maxWidth={cardWidth}>
             <HomeNavCard
               label="Compare War Resource Layouts"
               imagePath="/foxhole-web-utils/images/Concepts/App/CompareResources.png"
@@ -49,7 +54,7 @@ export default function Home() {
             />
           </Box>
 
-          <Box maxWidth="30%">
+          <Box maxWidth={cardWidth}>
             <HomeNavCard
               label="Platform Heatmap"
               imagePath="/foxhole-web-utils/images/Concepts/App/PlatformHeatmap.png"
@@ -58,7 +63,7 @@ export default function Home() {
             />
           </Box>
 
-          <Box maxWidth="30%">
+          <Box maxWidth={cardWidth}>
             <HomeNavCard
               label="Meta Stats"
               imagePath="/foxhole-web-utils/images/Concepts/App/MetaStats.png"
@@ -67,7 +72,7 @@ export default function Home() {
             />
           </Box>
 
-          <Box maxWidth="30%">
+          <Box maxWidth={cardWidth}>
             <HomeNavCard
               label="View Map List"
               imagePath="/foxhole-web-utils/images/Concepts/App/ViewMapList.png"
@@ -76,7 +81,7 @@ export default function Home() {
             />
           </Box>
 
-          <Box maxWidth="30%">
+          <Box maxWidth={cardWidth}>
             <HomeNavCard
               label="View Hex"
               imagePath="/foxhole-web-utils/images/Concepts/App/ViewHex.png"
