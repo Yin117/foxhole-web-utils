@@ -1060,7 +1060,7 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
     name: 'Marban Hollow',
     nameTiny: 'MH',
     folder: 'Maps',
-    icon: 'MapMarbanHollow',
+    icon: 'MapMarbanHollowHex',
   },
   DrownedValeHex: {
     name: 'Drowned Vale',
