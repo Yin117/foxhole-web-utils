@@ -1197,16 +1197,16 @@ export const hexInfo: Record<HexKeysUnion, HexInfo> = {
 const regionIdToHexKeyEntries: [number, HexKeysUnion][] = [
 	// Col 1
   [
-    9001,
+    49,
     HexKeys.OlavisWakeHex,
   ],
   // Col 2
   [
-    9002,
+    50,
     HexKeys.PariPeakHex,
   ],
   [
-    9003,
+    51,
     HexKeys.PalantineBermHex,
   ],
   // Col 3
@@ -1215,11 +1215,11 @@ const regionIdToHexKeyEntries: [number, HexKeysUnion][] = [
     'OarbreakerHex',
 	],
   [
-    9004,
+    52,
     HexKeys.KuuraStrandHex,
   ],
   [
-    9005,
+    53,
     HexKeys.GutterHex,
   ],
 	[
@@ -1395,15 +1395,15 @@ const regionIdToHexKeyEntries: [number, HexKeysUnion][] = [
 		'TempestIslandHex',
 	],
   [
-    9006,
+    54,
     HexKeys.WrestaHex,
   ],
   [
-    9007,
+    55,
     HexKeys.OnyxHex,
   ],
   [
-    9008,
+    56,
     HexKeys.LykosIsleHex,
   ],
   [
@@ -1411,12 +1411,12 @@ const regionIdToHexKeyEntries: [number, HexKeysUnion][] = [
 		'TheFingersHex',
   ],
   [
-    9009,
+    57,
     HexKeys.TyrantFoothillsHex,
   ],
   // Col 13
   [
-    9010,
+    58,
     HexKeys.PipersEnclaveHex,
   ],
 ];
