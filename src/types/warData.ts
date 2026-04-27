@@ -82,6 +82,42 @@ export type MetaRocketGroundZero = {
   goneWhen?: string;
 }
 
+export type MetaAirRadar = {
+  teamId: TeamId,
+  iconType: 90,
+  x: number,
+  y: number,
+  flags: number,
+  viewDirection?: number,
+  detected?: string,
+  isDestroyed?: boolean,
+  destructionDetected?: string,
+}
+
+export type MetaWeatherStation = {
+  teamId: TeamId,
+  iconType: 83,
+  x: number,
+  y: number,
+  flags: number,
+  viewDirection?: number,
+  detected?: string,
+  isDestroyed?: boolean,
+  destructionDetected?: string,
+}
+
+export type MetaAircraftRunways = {
+  teamId: TeamId,
+  iconType: 92 | 93,
+  x: number,
+  y: number,
+  flags: number,
+  viewDirection?: number,
+  lastTeamId: TeamId | null,
+  tierTwoDetected?: string,
+  drynessAlertSent?: boolean,
+}
+
 export type MetaMapDynamic = {
   inserted: string;
   mapName: HexKeysUnion;
@@ -89,6 +125,8 @@ export type MetaMapDynamic = {
   rocketSites: MetaRocketSite[];
   rocketTargets: MetaRocketTarget[];
   rocketGroundZeros: MetaRocketGroundZero[];
+  airRadars?: MetaAirRadar[];
+  weatherStation?: MetaWeatherStation[],
 }
 
 export type WarPlatformsRecordFormat = Record<HexKeysUnion, {

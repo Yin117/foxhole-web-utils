@@ -737,6 +737,7 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
     folder: 'MapIcons',
     iconFunc: () => 'MapIconFortLargeRadar',
     isAirRadar: true,
+    isPlayerBuilt: true,
   },
 
   91: {

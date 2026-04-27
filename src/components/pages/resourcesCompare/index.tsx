@@ -118,7 +118,6 @@ export function ResourcesComparePage() {
   const [afterWarNumber, setAfterWarNumber] = useState(warNumbers[warNumbers.length - 1]);
   const [regionHex, setRegionHex] = useState<HexKeysUnion>(HexKeys.WestgateHex);
   
-
   const {
     data: currentWarMapDynamicRes,
   } = useQuery({

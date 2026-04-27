@@ -39,6 +39,9 @@ import wc128 from './metaMapDynamic/Meta_Map_Dynamic_WC128.json' assert { type: 
 import wc129 from './metaMapDynamic/Meta_Map_Dynamic_WC129.json' assert { type: 'json' };
 import wc130 from './metaMapDynamic/Meta_Map_Dynamic_WC130.json' assert { type: 'json' };
 import wc131 from './metaMapDynamic/Meta_Map_Dynamic_WC131.json' assert { type: 'json' };
+import wc132 from './metaMapDynamic/Meta_Map_Dynamic_WC132.json' assert { type: 'json' }; // first with Weather Stations and Airfields
+import wc133 from './metaMapDynamic/Meta_Map_Dynamic_WC133.json' assert { type: 'json' };
+
 
 /**
  * Note, Platforms were recorded by `warPlatforms` while Rockets were recorded by
@@ -47,6 +50,8 @@ import wc131 from './metaMapDynamic/Meta_Map_Dynamic_WC131.json' assert { type: 
 
 // Went with Strings for Keys, incase War Numbers get "exciting" in the future
 export const warNumberToMetaMapDynamic = new Map<string, MetaMapDynamic[]>([
+  ['133', wc133 as MetaMapDynamic[]],
+  ['132', wc132 as MetaMapDynamic[]],
   ['131', wc131 as MetaMapDynamic[]],
   ['130', wc130 as MetaMapDynamic[]],
   ['129', wc129 as MetaMapDynamic[]],

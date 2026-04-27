@@ -48,7 +48,17 @@ type RowData = {
     colonials: number,
     wardens: number,
   },
+  airRadar: {
+    colonials: BuiltLost,
+    wardens: BuiltLost,
+  },
+  weatherStation: {
+    colonials: BuiltLost,
+    wardens: BuiltLost,
+  }
 }
+
+const borderLeft = { borderLeft: '1px solid gainsboro' };
 
 function hyphen(val: number) {
   return val > 0 ? `${val}` : '-';
@@ -85,6 +95,10 @@ export function MetaStats() {
         minWidth: 100,
         align: "center"
       },
+      { id: 'ARBuilt', content: 'Built', minWidth: 100, align: 'center' },
+      { id: 'ARLost' , content: 'Lost' , minWidth: 100, align: 'center' },
+      { id: 'WSBuilt', content: 'Built', minWidth: 100, align: 'center' },
+      { id: 'WSLost' , content: 'Lost' , minWidth: 100, align: 'center' },
     ]
   }, []);
 
@@ -104,7 +118,15 @@ export function MetaStats() {
             built: 0,
             lost: 0,
           },
-          rocketGroundZeros: 0
+          rocketGroundZeros: 0,
+          airRadar: {
+            built: 0,
+            lost: 0,
+          },
+          weatherStation: {
+            built: 0,
+            lost: 0,
+          }
         },
         wardens: {
           sc: {
@@ -119,7 +141,15 @@ export function MetaStats() {
             built: 0,
             lost: 0,
           },
-          rocketGroundZeros: 0
+          rocketGroundZeros: 0,
+          airRadar: {
+            built: 0,
+            lost: 0,
+          },
+          weatherStation: {
+            built: 0,
+            lost: 0,
+          }
         },
         none: {
           sc: {
@@ -134,7 +164,15 @@ export function MetaStats() {
             built: 0,
             lost: 0,
           },
-          rocketGroundZeros: 0
+          rocketGroundZeros: 0,
+          airRadar: {
+            built: 0,
+            lost: 0,
+          },
+          weatherStation: {
+            built: 0,
+            lost: 0,
+          }
         },
       }
 
@@ -169,6 +207,20 @@ export function MetaStats() {
           const factionKey = factionKeyToProp(groundZero.teamId);
           totals[factionKey].rocketGroundZeros += 1;
         }
+        for (const airRadar of mapData.airRadars ?? []) {
+          const factionKey = factionKeyToProp(airRadar.teamId);
+          totals[factionKey].airRadar.built += 1;
+          if (airRadar.isDestroyed === true) {
+            totals[factionKey].airRadar.lost += 1;
+          }
+        }
+        for (const weatherStation of mapData.weatherStation ?? []) {
+          const factionKey = factionKeyToProp(weatherStation.teamId);
+          totals[factionKey].weatherStation.built += 1;
+          if (weatherStation.isDestroyed === true) {
+            totals[factionKey].weatherStation.lost += 1;
+          }
+        }
       }
 
       return {
@@ -188,6 +240,14 @@ export function MetaStats() {
         rocketGroundZeros: {
           colonials: totals.colonials.rocketGroundZeros,
           wardens: totals.wardens.rocketGroundZeros,
+        },
+        airRadar: {
+          colonials: totals.colonials.airRadar,
+          wardens: totals.wardens.airRadar,
+        },
+        weatherStation: {
+          colonials: totals.colonials.weatherStation,
+          wardens: totals.wardens.weatherStation,
         },
       }
     });
@@ -257,6 +317,28 @@ export function MetaStats() {
                   <TableCell align="center" colSpan={1}>
                     {/* Impacts */}
                   </TableCell>
+                  <TableCell align="center" colSpan={2}>
+                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" gap={2}>
+                      Air Radar
+                      <Image
+                        src={`${mapItemBasePath}/MapIconFortLargeRadar.png`}
+                        width={20}
+                        height={20}
+                        alt="Air Radar"
+                      />
+                    </Box>
+                  </TableCell>
+                  <TableCell align="center" colSpan={2}>
+                    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" gap={2}>
+                      Weather Station
+                      <Image
+                        src={`${mapItemBasePath}/MapIconWeatherStation.png`}
+                        width={20}
+                        height={20}
+                        alt="Weather Station"
+                      />
+                    </Box>
+                  </TableCell>
                 </TableRow>
                 <TableRow>
                   {columns.map((column) => (
@@ -271,12 +353,14 @@ export function MetaStats() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {rowData.map(({ wc, sc, ic, rocketSites, rocketGroundZeros }) => {
+                {rowData.map(({ wc, sc, ic, rocketSites, rocketGroundZeros, airRadar, weatherStation }) => {
+
                   return (
                     <TableRow key={wc}>
                       <TableCell>
                         WC{wc}
                       </TableCell>
+
                       <TableCell>
                         <Box display="flex" flexDirection="row" gap={1} justifyContent="space-between">
                           <Box>
@@ -289,40 +373,46 @@ export function MetaStats() {
                           </Box>
                         </Box>
                       </TableCell>
+
                       <TableCell>
                         <Box textAlign="center">
                           <Typography variant="body1">{hyphen(sc.colonials.lost)}</Typography>
                           <Typography variant="body1">{hyphen(sc.wardens.lost)}</Typography>
                         </Box>
                       </TableCell>
-                      <TableCell style={{ borderLeft: '1px solid gainsboro' }}>
+
+                      <TableCell style={borderLeft}>
                         <Box textAlign="center">
                           <Typography variant="body1">{hyphen(ic.colonials.built)}</Typography>
                           <Typography variant="body1">{hyphen(ic.wardens.built)}</Typography>
                         </Box>
                       </TableCell>
+                      
                       <TableCell>
                         <Box textAlign="center">
                           <Typography variant="body1">{hyphen(ic.colonials.lost)}</Typography>
                           <Typography variant="body1">{hyphen(ic.wardens.lost)}</Typography>
                         </Box>
                       </TableCell>
-                      <TableCell style={{ borderLeft: '1px solid gainsboro' }}>
-                        {(rocketSites.colonials.built > 0 && rocketSites.wardens.built > 0) &&
+
+                      <TableCell style={borderLeft}>
+                        {(rocketSites.colonials.built > 0 || rocketSites.wardens.built > 0) &&
                         <Box textAlign="center">
                           <Typography variant="body1">{hyphen(rocketSites.colonials.built)}</Typography>
                           <Typography variant="body1">{hyphen(rocketSites.wardens.built)}</Typography>
                         </Box>}
                       </TableCell>
+
                       <TableCell>
-                        {(rocketSites.colonials.lost > 0 && rocketSites.wardens.lost > 0) &&
+                        {(rocketSites.colonials.lost > 0 || rocketSites.wardens.lost > 0) &&
                         <Box textAlign="center">
                           <Typography variant="body1">{hyphen(rocketSites.colonials.lost)}</Typography>
                           <Typography variant="body1">{hyphen(rocketSites.wardens.lost)}</Typography>
                         </Box>}
                       </TableCell>
-                      <TableCell style={{ borderLeft: '1px solid gainsboro' }}>
-                        {(rocketGroundZeros.colonials > 0 && rocketGroundZeros.wardens > 0) ?
+
+                      <TableCell style={borderLeft}>
+                        {(rocketGroundZeros.colonials > 0 || rocketGroundZeros.wardens > 0) ?
                         <Box textAlign="center">
                           <Typography variant="body1">{hyphen(rocketGroundZeros.colonials)}</Typography>
                           <Typography variant="body1">{hyphen(rocketGroundZeros.wardens)}</Typography>
@@ -335,6 +425,65 @@ export function MetaStats() {
                           </Typography>}  
                         </Box>}
                       </TableCell>
+
+                      <>
+                        {wc === '131' ?
+                          <TableCell colSpan={2} style={borderLeft}>
+                            <Box textAlign="center">
+                              <Typography variant="body1" fontSize="small" textAlign="center">
+                                Air Radar added WC132
+                              </Typography>
+                            </Box>
+                          </TableCell> : 
+                          <>
+                            <TableCell style={borderLeft}>
+                              {(airRadar.colonials.built > 0 || airRadar.wardens.built > 0) &&
+                              <Box textAlign="center">
+                                <Typography variant="body1">{hyphen(airRadar.colonials.built)}</Typography>
+                                <Typography variant="body1">{hyphen(airRadar.wardens.built)}</Typography>
+                              </Box>}
+                            </TableCell>
+
+                            <TableCell>
+                              {(airRadar.colonials.lost > 0 || airRadar.wardens.lost > 0) &&
+                              <Box textAlign="center">
+                                <Typography variant="body1">{hyphen(airRadar.colonials.lost)}</Typography>
+                                <Typography variant="body1">{hyphen(airRadar.wardens.lost)}</Typography>
+                              </Box>}
+                            </TableCell>
+                          </>
+                          }
+                      </>
+
+                      <>
+                        {wc === '131' ?
+                          <TableCell colSpan={2} style={borderLeft}>
+                            <Box textAlign="center">
+                              <Typography variant="body1" fontSize="small" textAlign="center">
+                                Weather Stations not Recorded prior to WC132
+                              </Typography>
+                            </Box>
+                          </TableCell> : 
+                          <>
+                            <TableCell style={borderLeft}>
+                              {(weatherStation.colonials.built > 0 || weatherStation.wardens.built > 0) &&
+                              <Box textAlign="center">
+                                <Typography variant="body1">{hyphen(weatherStation.colonials.built)}</Typography>
+                                <Typography variant="body1">{hyphen(weatherStation.wardens.built)}</Typography>
+                              </Box>}
+                            </TableCell>
+
+                            <TableCell>
+                              {(weatherStation.colonials.lost > 0 || weatherStation.wardens.lost > 0) &&
+                              <Box textAlign="center">
+                                <Typography variant="body1">{hyphen(weatherStation.colonials.lost)}</Typography>
+                                <Typography variant="body1">{hyphen(weatherStation.wardens.lost)}</Typography>
+                              </Box>}
+                            </TableCell>
+                          </>
+                          }
+                      </>
+                      
                     </TableRow>
                   )
                 })}

@@ -95,6 +95,8 @@ export default function MetaHeatmap() {
     colonial: factionKeys.includes(factions.colonials.mapItemKey),
     stormCannon: platformKeys.includes(StructureKeys.stormCannon),
     intelCenter: platformKeys.includes(StructureKeys.intelCenter),
+    airRadar: platformKeys.includes(StructureKeys.airRadar),
+    weatherStation: platformKeys.includes(StructureKeys.weatherStation),
   }), [regionHex, factionKeys, platformKeys]);
 
   const structureData = useMemo(() => {
@@ -127,6 +129,10 @@ export default function MetaHeatmap() {
       let singleMapMax = 0;
       for (const platform of map.platforms) {
 
+        if (platform.iconType === structureToIconType.airRadar) {
+          console.log('Air Radar');
+        }
+
         if (platform.teamId === factions.wardens.mapItemKey && filters.warden === false) {
           continue;
         }
@@ -139,6 +145,12 @@ export default function MetaHeatmap() {
         if (platform.iconType === structureToIconType.intelCenter && filters.intelCenter === false) {
           continue;
         }
+        if (platform.iconType === structureToIconType.airRadar && filters.airRadar === false) {
+          continue;
+        }
+        if (platform.iconType === structureToIconType.weatherStation && filters.weatherStation === false) {
+          continue;
+        }
 
 
         singleMapMax++;
@@ -149,6 +161,44 @@ export default function MetaHeatmap() {
           _platform: platform,
         })
       }
+
+      if (filters.airRadar === true && map.airRadars != undefined) {
+        for (const platform of map.airRadars) {
+          if (platform.teamId === factions.wardens.mapItemKey && filters.warden === false) {
+            continue;
+          }
+          if (platform.teamId === factions.colonials.mapItemKey && filters.colonial === false) {
+            continue;
+          }
+          singleMapMax++;
+          points.push({
+            x: Math.floor(width * platform.x),
+            y: Math.floor(height * platform.y),
+            value: structureValue,
+            _platform: platform,
+          })
+        }
+      }
+
+      if (filters.weatherStation === true && map.weatherStation != undefined) {
+        for (const platform of map.weatherStation) {
+          if (platform.teamId === factions.wardens.mapItemKey && filters.warden === false) {
+            continue;
+          }
+          if (platform.teamId === factions.colonials.mapItemKey && filters.colonial === false) {
+            continue;
+          }
+          singleMapMax++;
+          points.push({
+            x: Math.floor(width * platform.x),
+            y: Math.floor(height * platform.y),
+            value: structureValue,
+            _platform: platform,
+          })
+        }
+      }
+
+
       if (overallMax < singleMapMax) {
         overallMax = singleMapMax;
       }
@@ -156,7 +206,18 @@ export default function MetaHeatmap() {
     // console.log(`Total of ${points.length} Structures Found, with an Overall Max of ${overallMax}`);
 
     return points;
-  }, [structureData, filters.warden, filters.colonial, filters.stormCannon, filters.intelCenter, width, height, structureValue]);
+  }, [
+    structureData,
+    filters.warden,
+    filters.colonial,
+    filters.stormCannon,
+    filters.intelCenter,
+    filters.airRadar,
+    filters.weatherStation,
+    width,
+    height,
+    structureValue
+  ]);
   // console.log('starterData', heatmapData);
 
   const heatmapDataLen = heatmapData.length;
@@ -362,10 +423,29 @@ export default function MetaHeatmap() {
                 height={40}
               />
             </ToggleButton>
+            
             <ToggleButton value={StructureKeys.intelCenter}>
               <Image
                 src={MAP_ICON_PATH_PREFIX + '/' + structureToMapDetail[StructureKeys.intelCenter].iconFunc?.() + '.png'}
                 alt="Intel Center"
+                width={40}
+                height={40}
+              />
+            </ToggleButton>
+            
+            <ToggleButton value={StructureKeys.airRadar}>
+              <Image
+                src={MAP_ICON_PATH_PREFIX + '/' + structureToMapDetail[StructureKeys.airRadar].iconFunc?.() + '.png'}
+                alt="Air Radar"
+                width={40}
+                height={40}
+              />
+            </ToggleButton>
+            
+            <ToggleButton value={StructureKeys.weatherStation}>
+              <Image
+                src={MAP_ICON_PATH_PREFIX + '/' + structureToMapDetail[StructureKeys.weatherStation].iconFunc?.() + '.png'}
+                alt="Weather Station"
                 width={40}
                 height={40}
               />
