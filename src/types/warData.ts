@@ -12,6 +12,12 @@ export type MapItem = {
 };
 
 export type MapDynamic = {
+  _id?: {
+    "$oid"?: string,
+  },
+  source?: string,
+  __v?: number,
+  
   inserted: string;
   mapName: HexKeysUnion,
   regionId: number,
@@ -21,6 +27,9 @@ export type MapDynamic = {
 }
 
 export type WarState = {
+  _id?: {
+    "$oid"?: string,
+  },
   conquestEndTime: number | null,
   conquestStartTime: number | null,
   requiredVictoryTowns: number,
@@ -119,6 +128,9 @@ export type MetaAircraftRunways = {
 }
 
 export type MetaMapDynamic = {
+  _id?: {
+    "$oid"?: string,
+  },
   inserted: string;
   mapName: HexKeysUnion;
   platforms: MetaPlatform[];
