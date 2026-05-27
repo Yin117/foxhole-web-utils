@@ -10,15 +10,25 @@ import Image from 'next/image';
 import { factions, hexInfo, HexKeys, HexKeysUnion, StructureKeys, structureToIconType, structureToMapDetail, warNumbers, worldExtents } from '@/consts/foxhole';
 import { warNumberToMetaMapDynamic } from '@/consts/warData/metaMapDynamic';
 import { MetaMapDynamic } from '@/types/warData';
-import { Box, IconButton, MenuItem, Paper, Slider, TextField, ToggleButton, ToggleButtonGroup, Tooltip, Typography, useTheme } from '@mui/material';
+import { Box, Button, IconButton, MenuItem, Paper, Slider, TextField, ToggleButton, ToggleButtonGroup, Tooltip, Typography, useTheme } from '@mui/material';
 import { getObjectEntries } from '@/helpers/typescriptHelper';
 import { mapItemBasePath } from '@/consts/repo';
+import { downloadCanvasAsImage } from '@/helpers/canvasHelper';
+import $ from 'jquery';
 
 const MAP_ICON_PATH_PREFIX = mapItemBasePath
 
 const INFO_STRUCTURE_VALUE = "Each Structure contributes this value to the Heatmap";
 
 const INFO_RED_VALUE = "The Heatmap will display as Red when the Structures result in this value in that area";
+
+const regionsSorted = getObjectEntries(hexInfo)
+  .sort((([, { name: nameA }], [, { name: nameB }]) => {
+    if (nameA < nameB) {
+      return -1;
+    }
+    return 1;
+  }))
 
 // 1. Define the TypeScript interface for a data point
 interface HeatmapPoint {
@@ -343,13 +353,7 @@ export default function MetaHeatmap() {
             }}
           >
             {
-              getObjectEntries(hexInfo)
-                .sort((([, { name: nameA }], [, { name: nameB }]) => {
-                  if (nameA < nameB) {
-                    return -1;
-                  }
-                  return 1;
-                }))
+              regionsSorted
                 .map(([key, { name }]) => {
                   return (
                     <MenuItem
@@ -547,6 +551,35 @@ export default function MetaHeatmap() {
           </Typography>
 
         </div>
+
+
+        {/* Furthur Right-Side Toolbar */}
+        {window.location.href.startsWith("http://localhost:") &&
+        <div className={styles.rightSideToolbar}>
+          <p>Points: {heatmapData.length}</p>
+          <Button
+            variant="contained"
+            onClick={() => {
+              downloadCanvasAsImage(
+                $('.heatmap-canvas').get(0) as HTMLCanvasElement,
+                `${regionHex}.png`
+              )
+            }}
+          >
+            Download Image
+          </Button>
+          
+          <Button
+            onClick={() => {
+              const currentRegionIdx: number = regionsSorted.findIndex(([hex]) => hex === regionHex);
+              const nextHex = regionsSorted[currentRegionIdx + 1][0]; // entries
+
+              setRegionHex(nextHex as HexKeysUnion);
+            }}
+          >
+            Next Region
+          </Button>
+        </div>}
       </div>
     </div>
   )
