@@ -35,9 +35,11 @@ import * as wc131 from './Map_Dynamic_WC131.json';
 import * as wc132 from './Map_Dynamic_WC132.json'; // Airfields (+2) added
 import * as wc133 from './Map_Dynamic_WC133.json';
 import * as wc134 from './Map_Dynamic_WC134.json';
+import * as wc135 from './Map_Dynamic_WC134.json';
 
 // Went with Strings for Keys, incase War Numbers get "exciting" in the future
 export const warNumberToMapDynamic = new Map<string, MapDynamic[]>([
+  ['135', wc135 as MapDynamic[]],
   ['134', wc134 as MapDynamic[]],
   ['133', wc133 as MapDynamic[]],
   ['132', wc132 as MapDynamic[]],

@@ -741,17 +741,38 @@ export const iconTypeToMapDetail: Record<number, Partial<MapItemDetail>> = {
   },
 
   91: {
-    isUnexpectedInAPI: true,
     name: 'Aircraft Runway T1', // Airborne Update
     folder: 'MapIcons',
     iconFunc: () => 'MapiIconAircraftRunwayT1',
   },
 
   92: {
-    isUnexpectedInAPI: true,
     name: 'Aircraft Runway T2', // Airborne Update
     folder: 'MapIcons',
     iconFunc: () => 'MapiIconAircraftRunwayT2',
+  },
+
+  93: {
+    isUndocumented: true,
+    name: 'Intel Ground',
+  },
+  94: {
+    isUndocumented: true,
+    name: 'Intel Air',
+  },
+  95: {
+    isUndocumented: true,
+    name: 'UNKNOWN 95',
+  },
+  96: {
+    isUndocumented: true,
+    name: 'UNKNOWN 96',
+  },
+  97: {
+    // Added ~June-July 2026 (e.g. Weather Expanse at Wightwalk)
+    name: 'Anti Air Gun',
+    folder: 'MapIcons',
+    iconFunc: () => 'MapIconAAGunAI',
   },
 };
 
