@@ -60,8 +60,8 @@ type RowData = {
 
 const borderLeft = { borderLeft: '1px solid gainsboro' };
 
-function hyphen(val: number) {
-  return val > 0 ? `${val}` : '-';
+function numSubstitute(val: number, sub: string = '-') {
+  return val > 0 ? `${val}` : sub;
 }
 
 export function MetaStats() {
@@ -73,6 +73,7 @@ export function MetaStats() {
   const columns = useMemo<Column[]>(() => {
     return [
       { id: 'WC', content: 'War', minWidth: 50, align: "center" },
+      { id: 'FACTION', content: 'Faction', minWidth: 50, align: "center" },
       { id: 'SCBuilt', content: 'Built', minWidth: 100, align: "center" },
       { id: 'SCLost', content: 'Lost', minWidth: 100, align: "center" },
       { id: 'ICBuilt', content: 'Built', minWidth: 100, align: "center" },
@@ -281,6 +282,9 @@ export function MetaStats() {
                   <TableCell align="center" colSpan={1}>
                     {/* WC */}
                   </TableCell>
+                  <TableCell align="center" colSpan={1}>
+                    {/* WC */}
+                  </TableCell>
                   <TableCell align="center" colSpan={2}>
                     <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" gap={2}>
                       Storm Cannons
@@ -367,55 +371,77 @@ export function MetaStats() {
                             <Typography variant="body1">Colonials</Typography>
                             <Typography variant="body1">Wardens</Typography>
                           </Box>
+                        </Box>
+                      </TableCell>
+
+                      {wc !== '135' &&
+                      <TableCell id="SC_Built_Not_WC135">
+                        <Box display="flex" flexDirection="row" gap={1} justifyContent="space-between">
+                          
                           <Box display="flex" flexDirection="column" alignItems="center" minWidth="20%">
-                            <Typography variant="body1">{hyphen(sc.colonials.built)}</Typography>
-                            <Typography variant="body1">{hyphen(sc.wardens.built)}</Typography>
+                            <Typography variant="body1">{numSubstitute(sc.colonials.built)}</Typography>
+                            <Typography variant="body1">{numSubstitute(sc.wardens.built)}</Typography>
                           </Box>
                         </Box>
-                      </TableCell>
+                      </TableCell>}
 
+                      {wc === '135' ? null :
                       <TableCell>
                         <Box textAlign="center">
-                          <Typography variant="body1">{hyphen(sc.colonials.lost)}</Typography>
-                          <Typography variant="body1">{hyphen(sc.wardens.lost)}</Typography>
+                          <Typography variant="body1">{numSubstitute(sc.colonials.lost)}</Typography>
+                          <Typography variant="body1">{numSubstitute(sc.wardens.lost)}</Typography>
                         </Box>
-                      </TableCell>
+                      </TableCell>}
 
-                      <TableCell style={borderLeft}>
-                        <Box textAlign="center">
-                          <Typography variant="body1">{hyphen(ic.colonials.built)}</Typography>
-                          <Typography variant="body1">{hyphen(ic.wardens.built)}</Typography>
-                        </Box>
-                      </TableCell>
-                      
-                      <TableCell>
-                        <Box textAlign="center">
-                          <Typography variant="body1">{hyphen(ic.colonials.lost)}</Typography>
-                          <Typography variant="body1">{hyphen(ic.wardens.lost)}</Typography>
-                        </Box>
-                      </TableCell>
+                      {/* Intel Centers */}
+                      <>
+                        {wc === '135' ?
+                        <TableCell colSpan={4} style={borderLeft}>
+                          <Box textAlign="center">
+                            <Typography variant="body1" fontSize="small" textAlign="center">
+                              Removed from War API
+                            </Typography>
+                          </Box>
+                        </TableCell>
+                        :
+                        <>
+                          <TableCell style={borderLeft}>
+                            <Box textAlign="center">
+                              <Typography variant="body1">{numSubstitute(ic.colonials.lost)}</Typography>
+                              <Typography variant="body1">{numSubstitute(ic.wardens.lost)}</Typography>
+                            </Box>
+                          </TableCell>
+                          <TableCell>
+                            <Box textAlign="center">
+                              <Typography variant="body1">{numSubstitute(ic.colonials.built)}</Typography>
+                              <Typography variant="body1">{numSubstitute(ic.wardens.built)}</Typography>
+                            </Box>
+                          </TableCell>
+                        </>
+                      }
+                      </>
 
                       <TableCell style={borderLeft}>
                         {(rocketSites.colonials.built > 0 || rocketSites.wardens.built > 0) &&
                         <Box textAlign="center">
-                          <Typography variant="body1">{hyphen(rocketSites.colonials.built)}</Typography>
-                          <Typography variant="body1">{hyphen(rocketSites.wardens.built)}</Typography>
+                          <Typography variant="body1">{numSubstitute(rocketSites.colonials.built)}</Typography>
+                          <Typography variant="body1">{numSubstitute(rocketSites.wardens.built)}</Typography>
                         </Box>}
                       </TableCell>
 
                       <TableCell>
                         {(rocketSites.colonials.lost > 0 || rocketSites.wardens.lost > 0) &&
                         <Box textAlign="center">
-                          <Typography variant="body1">{hyphen(rocketSites.colonials.lost)}</Typography>
-                          <Typography variant="body1">{hyphen(rocketSites.wardens.lost)}</Typography>
+                          <Typography variant="body1">{numSubstitute(rocketSites.colonials.lost)}</Typography>
+                          <Typography variant="body1">{numSubstitute(rocketSites.wardens.lost)}</Typography>
                         </Box>}
                       </TableCell>
 
                       <TableCell style={borderLeft}>
                         {(rocketGroundZeros.colonials > 0 || rocketGroundZeros.wardens > 0) ?
                         <Box textAlign="center">
-                          <Typography variant="body1">{hyphen(rocketGroundZeros.colonials)}</Typography>
-                          <Typography variant="body1">{hyphen(rocketGroundZeros.wardens)}</Typography>
+                          <Typography variant="body1">{numSubstitute(rocketGroundZeros.colonials)}</Typography>
+                          <Typography variant="body1">{numSubstitute(rocketGroundZeros.wardens)}</Typography>
                         </Box>
                         :
                         <Box>
@@ -426,6 +452,7 @@ export function MetaStats() {
                         </Box>}
                       </TableCell>
 
+                      {/* Air Radar */}
                       <>
                         {wc === '131' ?
                           <TableCell colSpan={2} style={borderLeft}>
@@ -434,27 +461,38 @@ export function MetaStats() {
                                 Air Radar added WC132
                               </Typography>
                             </Box>
-                          </TableCell> : 
+                          </TableCell>
+
+                        : wc === '135' ?
+                          <TableCell colSpan={4} style={borderLeft}>
+                            <Box textAlign="center">
+                              <Typography variant="body1" fontSize="small" textAlign="center">
+                                Removed from War API
+                              </Typography>
+                            </Box>
+                          </TableCell>
+                        :
                           <>
                             <TableCell style={borderLeft}>
                               {(airRadar.colonials.built > 0 || airRadar.wardens.built > 0) &&
                               <Box textAlign="center">
-                                <Typography variant="body1">{hyphen(airRadar.colonials.built)}</Typography>
-                                <Typography variant="body1">{hyphen(airRadar.wardens.built)}</Typography>
+                                <Typography variant="body1">{numSubstitute(airRadar.colonials.built)}</Typography>
+                                <Typography variant="body1">{numSubstitute(airRadar.wardens.built)}</Typography>
                               </Box>}
                             </TableCell>
 
                             <TableCell>
                               {(airRadar.colonials.lost > 0 || airRadar.wardens.lost > 0) &&
                               <Box textAlign="center">
-                                <Typography variant="body1">{hyphen(airRadar.colonials.lost)}</Typography>
-                                <Typography variant="body1">{hyphen(airRadar.wardens.lost)}</Typography>
+                                <Typography variant="body1">{numSubstitute(airRadar.colonials.lost)}</Typography>
+                                <Typography variant="body1">{numSubstitute(airRadar.wardens.lost)}</Typography>
                               </Box>}
                             </TableCell>
                           </>
                           }
                       </>
 
+                      {/* Weather Stations */}
                       <>
                         {wc === '131' ?
                           <TableCell colSpan={2} style={borderLeft}>
@@ -463,21 +501,25 @@ export function MetaStats() {
                                 Weather Stations not Recorded prior to WC132
                               </Typography>
                             </Box>
-                          </TableCell> : 
+                          </TableCell>
+
+                        : wc === '135' ?
+                          null
+                        : 
                           <>
                             <TableCell style={borderLeft}>
                               {(weatherStation.colonials.built > 0 || weatherStation.wardens.built > 0) &&
                               <Box textAlign="center">
-                                <Typography variant="body1">{hyphen(weatherStation.colonials.built)}</Typography>
-                                <Typography variant="body1">{hyphen(weatherStation.wardens.built)}</Typography>
+                                <Typography variant="body1">{numSubstitute(weatherStation.colonials.built)}</Typography>
+                                <Typography variant="body1">{numSubstitute(weatherStation.wardens.built)}</Typography>
                               </Box>}
                             </TableCell>
 
                             <TableCell>
                               {(weatherStation.colonials.lost > 0 || weatherStation.wardens.lost > 0) &&
                               <Box textAlign="center">
-                                <Typography variant="body1">{hyphen(weatherStation.colonials.lost)}</Typography>
-                                <Typography variant="body1">{hyphen(weatherStation.wardens.lost)}</Typography>
+                                <Typography variant="body1">{numSubstitute(weatherStation.colonials.lost)}</Typography>
+                                <Typography variant="body1">{numSubstitute(weatherStation.wardens.lost)}</Typography>
                               </Box>}
                             </TableCell>
                           </>
